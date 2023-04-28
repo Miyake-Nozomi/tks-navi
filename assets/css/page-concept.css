@@ -1,0 +1,138 @@
+@charset "utf-8";
+/***********************
+    子供食堂とは
+ **********************/
+
+.title {
+    width: 180px;
+    z-index: 10;
+    position: relative;
+}
+.btn_box {
+    width: 100%;
+    text-align: center;
+}
+.btn_item {
+    /* display: block;
+    width: 325px;
+    margin: 0 auto;
+    color: black;
+    padding: 10px 80px; */
+}
+
+/* .qbtn {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #f8b600;
+    border-radius: 10px;
+    color: black;
+    /* text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.44), 1px 1px 1px #4a0a11; */
+/* margin: 50px 50px 0;
+}
+.qbtn:hover { */
+/* background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: shad26 1.5s infinite;
+}
+@keyframes shad26 {
+    0% {
+        box-shadow: 0 0 0 0 orange;
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgb(39 172 217 / 0%);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);
+    } } */
+
+.text {
+    z-index: 10;
+    position: relative;
+}
+@media screen and (min-width: 770px) {
+    .qbtn {
+        margin-top: 50px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .btn_item {
+        color: black;
+        padding: 10px 80px;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+}
+.concept {
+    position: relative;
+    overflow: hidden;
+}
+
+.concept_img {
+    position: absolute;
+}
+
+.rice {
+    width: 200px;
+    height: 200px;
+    top: -5px;
+    left: -10%;
+    opacity: 40%;
+    z-index: 1;
+}
+
+/* .curry {
+    width: 316px;
+    height: 316px;
+    right: -90px;
+    top: 720px;
+    z-index: 1;
+    opacity: 30%;
+} */
+
+.curry {
+    display: none;
+}
+
+@media (min-width: 770px) {
+    .concept {
+        overflow: visible;
+        padding-bottom: 30px;
+    }
+    main {
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+    footer {
+        position: relative;
+        top: 100px;
+    }
+    .rice {
+        width: 350px;
+        height: 350px;
+        top: -35px;
+        left: -20%;
+    }
+    .curry {
+        display: block;
+        width: 526px;
+        height: 526px;
+        top: 50px;
+        right: -40%;
+        z-index: 1;
+        opacity: 30%;
+    }
+}
+@media (min-width: 1024px) {
+    .rice {
+        width: 550px;
+        height: 550px;
+        left: -30%;
+        top: -90px;
+    }
+    .curry {
+        width: 726px;
+        height: 725px;
+    }
+}

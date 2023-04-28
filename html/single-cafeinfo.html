@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>こども食堂詳細</title>
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="../assets/slick/css/slick.css" />
+        <link rel="stylesheet" href="../assets/slick/css/slick-theme.css" />
+        <link rel="stylesheet" href="../assets/css/common.css" />
+        <link rel="stylesheet" href="../assets/css/single-cafeinfo.css" />
+        <script src="../assets/js/jquery-3.6.3.min.js"></script>
+        <!-- slick js -->
+        <script src="../assets/slick/js/slick.min.js"></script>
+        <!-- Googleフォント -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;900&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- fontawesomeCDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="body_inner">
+            <!-- トップページへ戻るボタン -->
+            <div class="body_inner">
+                <div class="toppage_btn">
+                    <a href="#"
+                        ><img
+                            src="../assets/images/index/toppage_btn.png"
+                            alt="トップへ戻るボタン"
+                    /></a>
+                </div>
+                <!-- トップページへ戻るボタン 終了-->
+                <header class="header">
+                    <div class="header_inner flex">
+                        <div class="header_logo">
+                            <a href="#"
+                                ><img
+                                    src="../assets/images/logo.png"
+                                    alt="ホームボタン"
+                            /></a>
+                        </div>
+
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!-- hamburger箱end -->
+                        <nav class="menu_pc">
+                            <ul class="menu_pc_ul flex">
+                                <li class="btn_header_pc_1 flex">
+                                    <a href="#"> こども食堂とは</a>
+                                </li>
+                                <li class="btn_header_pc_2 flex">
+                                    <a href="#"> エリアから<br />さがす</a>
+                                </li>
+                                <li class="btn_header_pc_3 flex">
+                                    <a href="#"> 条件から<br />さがす</a>
+                                </li>
+                                <li class="btn_header_pc_4 flex">
+                                    <a href="#"> 支援 <br />したい方へ</a>
+                                </li>
+                                <li class="btn_header_pc_5 flex">
+                                    <a href="#"> 特集記事</a>
+                                </li>
+                                <li class="btn_header_pc_6 flex">
+                                    <a href="#">開催情報</a>
+                                </li>
+                                <li>
+                                    <form
+                                        class="btn_header_search_pc"
+                                        action="#"
+                                        method="get"
+                                    >
+                                        <input
+                                            type="hidden"
+                                            name="search_type"
+                                            value=""
+                                        />
+                                        <input
+                                            class="hbg_form"
+                                            size="20"
+                                            type="search"
+                                            value=""
+                                            name="search"
+                                            placeholder="キーワードを入力"
+                                        />
+                                        <input
+                                            class="hbg_submit_pc"
+                                            type="submit"
+                                            value="   "
+                                            name=" "
+                                        />
+                                    </form>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a class="a_menu" href="#"
+                                    ><img
+                                        src="../assets/images/logo.png"
+                                        alt="ホームボタン"
+                                /></a>
+                            </li>
+                            <li class="btn_header">
+                                <a href="#"> こども食堂とは</a>
+                            </li>
+                            <li class="btn_header">
+                                <a href="#"> エリアからさがす</a>
+                            </li>
+                            <li class="btn_header">
+                                <a href="#"> 条件からさがす</a>
+                            </li>
+                            <li class="btn_header">
+                                <a href="#"> 支援したい方へ</a>
+                            </li>
+                            <li class="btn_header">
+                                <a href="#"> 特集記事</a>
+                            </li>
+                            <li class="btn_header">
+                                <a href="#"> 開催情報</a>
+                            </li>
+                            <!-- 検索機能 -->
+                            <li class="btn_header menu_search">
+                                <form
+                                    class="hbg_search"
+                                    action="#"
+                                    method="get"
+                                >
+                                    <input
+                                        type="hidden"
+                                        name="search_type"
+                                        value=""
+                                    />
+                                    <input
+                                        class="hbg_form"
+                                        size="25"
+                                        type="search"
+                                        value=""
+                                        name="search"
+                                        placeholder="キーワードを入力"
+                                    />
+                                    <input
+                                        class="hbg_submit fas"
+                                        type="submit"
+                                        value="   "
+                                        name=" "
+                                    />
+                                </form>
+                            </li>
+                            <!-- 検索機能end -->
+                        </ul>
+                    </nav>
+                    <!-- hamburger中身end -->
+                </header>
+                <main>
+                    <div class="main_inner">
+                        <!-- ページトップ -->
+                        <div class="yellow color">
+                            <div class="yellow_inner m1024">
+                                <h2 class="title">サンプル食堂</h2>
+                                <div class="pc_flex">
+                                    <div>
+                                        <img
+                                            src="../assets/images/delete/kv1_kari.jpg"
+                                            alt=""
+                                            class="main_visual"
+                                        />
+                                        <div
+                                            class="underimg text cafeinfo_flex flex"
+                                        >
+                                            <p class="address">徳島市</p>
+                                            <div
+                                                class="good cafeinfo_flex flex"
+                                            >
+                                                <p class="iine">いいね</p>
+                                                <p>(00)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="pc_w320">
+                                                <h3 class="subtitle">
+                                                    こども食堂の特色
+                                                </h3>
+                                                <div class="text intro">
+                                                    <p>
+                                                        暮らしを愉しみ、分かち合う学校
+                                                        ご飯を中心とした体に優しい食事を作りましょう。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn_item">
+                                                <a href="#"
+                                                    >〇〇食堂の特集記事はこちら</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- スクロール -->
+                            <div class="scroll"></div>
+                            <img
+                                src="../assets/images/shabondama01.png"
+                                alt="シャボン玉"
+                                class="shingle-cafeinfo_img shabondama01"
+                            />
+                            <img
+                                src="../assets/images/shabondama02.png"
+                                alt="シャボン玉"
+                                class="shingle-cafeinfo_img shabondama02"
+                            />
+                        </div>
+
+                        <div class="beige color">
+                            <!-- <img
+                                src="../assets/images/beigetop.png"
+                                alt="波"
+                                class="wave_img btop"
+                            /> -->
+                            <svg
+                                class="beigetop svgwave"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0  200 1440 100"
+                            >
+                                <path
+                                    fill="#f7dd94"
+                                    fill-opacity="1"
+                                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                                ></path>
+                            </svg>
+                            <div class="beige_inner m1024">
+                                <h3 class="beige_categorytitle beige_basic">
+                                    基本情報
+                                </h3>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">住所</h4>
+                                    <p class="subtitle_text">徳島県○○市○○町</p>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">担当者</h4>
+                                    <p class="subtitle_text">山田　花子</p>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">開催日時・頻度</h4>
+                                    <p class="subtitle_text">
+                                        第2、第3月曜日　午後5時30分~
+                                    </p>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">
+                                        こどもは保護者同伴条件
+                                    </h4>
+                                    <div>
+                                        <p class="subtitle_text">子ども:○○円</p>
+                                        <p class="subtitle_text">大人:○○円</p>
+                                    </div>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">駐車場</h4>
+                                    <p class="subtitle_text">敷地内5台あり</p>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">参加条件</h4>
+                                    <p class="subtitle_text">
+                                        こどもだけでもOK<br />
+                                        対象年齢 5歳<br />
+                                        その他
+                                    </p>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">事前予約</h4>
+                                    <p class="subtitle_text">
+                                        必要あり<br />
+                                        ※電話にて事前に連絡お願いします
+                                    </p>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">食事スタイル</h4>
+                                    <p class="subtitle_text">
+                                        参加者と料理を作ってその場で食べる
+                                    </p>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">参加者の主な年代</h4>
+                                    <p class="subtitle_text">○○代～○○代</p>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">ボランティア募集中</h4>
+                                    <p class="subtitle_text">
+                                        ボランティア募集中　現在募集中。誰でもきてもよいです。お気軽にお問合せください。
+                                    </p>
+                                </div>
+                            </div>
+                            <img
+                                src="../assets/images/beigebottom.png"
+                                alt="波"
+                                class="wave_img bbottom"
+                            />
+                        </div>
+                        <div class="green color">
+                            <div class="green_inner m1024">
+                                <h3 class="beige_categorytitle beige_address">
+                                    連絡先・SNSなど
+                                </h3>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">連絡先</h4>
+                                    <div>
+                                        <p class="subtitle_text">
+                                            電話番号: <br />
+                                            000-000-0000
+                                        </p>
+                                        <p class="subtitle_text">
+                                            メールアドレス: <br />
+                                            sample@sample.com
+                                        </p>
+                                        <p class="subtitle_text">
+                                            LINE: <br />
+                                            shokudou@LINE
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">LINE QRコード</h4>
+                                    <img
+                                        src="#"
+                                        alt="LINEQRコード"
+                                        class="qrcode"
+                                    />
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">SNS</h4>
+                                    <div class="sns_items">
+                                        <p class="subtitle_text">
+                                            <a href="#"
+                                                >instagram:インスタアカウント</a
+                                            >
+                                        </p>
+                                        <p class="subtitle_text">
+                                            <a href="#"
+                                                >twitter:ツイッターアカウント</a
+                                            >
+                                        </p>
+                                        <p class="subtitle_text">
+                                            <a href="#"
+                                                >facebook:フェイスブックアカウント</a
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">公式WEBサイト</h4>
+                                    <p class="subtitle_text">http/example</p>
+                                </div>
+                                <div class="detail_item">
+                                    <h4 class="subtitle">
+                                        Amazonみんなで応援プログラム
+                                    </h4>
+                                    <p class="subtitle_text">
+                                        Amazon/url/urlurl
+                                    </p>
+                                </div>
+                                <p class="volunteer">
+                                    <span class="volunteer_text">
+                                        ボランティア募集中</span
+                                    >
+                                </p>
+                            </div>
+                            <!-- スクロール -->
+                            <div class="scroll"></div>
+                            <img
+                                src="../assets/images/greenbottmo.png"
+                                alt="波"
+                                class="wave_img gbottom"
+                            />
+                        </div>
+                        <div class="bgcolor color">
+                            <div class="bgcolor_inner m1024">
+                                <div class="bgcolor_flex">
+                                    <div class="others">
+                                        <h3
+                                            class="beige_categorytitle beige_other"
+                                        >
+                                            取り扱いのあるもの
+                                        </h3>
+                                        <div class="others_item">
+                                            <p>おもちゃ</p>
+                                            <p>おむつ交換スペース</p>
+                                            <p>おもちゃ</p>
+                                            <p>おむつ交換スペース</p>
+                                            <p>おもちゃ</p>
+                                            <p>おむつ交換スペース</p>
+                                            <p>おもちゃ</p>
+                                        </div>
+                                    </div>
+                                    <div class="addressmap">
+                                        <h3
+                                            class="beige_categorytitle beige_access"
+                                        >
+                                            アクセス
+                                        </h3>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1671457.3013939436!2d134.69202636250003!3d35.0925991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037bf455fa707d%3A0xfaaea9929402ee59!2z5bmz5bCG6ZaA6aaW5aGa!5e0!3m2!1sja!2sjp!4v1680162253664!5m2!1sja!2sjp"
+                                            width="600"
+                                            height="300"
+                                            style="border: 0"
+                                            allow="fullscreen"
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                                <h3 class="subtitle_ulineorange">開催情報</h3>
+                                <div class="bgcolor_news">
+                                    <div class="text_box">
+                                        <p>
+                                            <a href="#"
+                                                >3/1　徳島市　山田花子食堂　開催情報</a
+                                            >
+                                        </p>
+                                        <p>
+                                            <a href="#"
+                                                >3/2　小松島市　山田花子食堂　開催情報</a
+                                            >
+                                        </p>
+                                        <p>
+                                            <a href="#"
+                                                >3/3　北島町　山田花子食堂　開催情報</a
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <h3 class="subtitle_ulineorange">活動の様子</h3>
+                                <ul class="ac_slide">
+                                    <li>
+                                        <img
+                                            src="../assets/images/delete/kv1_kari.jpg"
+                                            alt="#"
+                                        />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="../assets/images/delete/kv2_kari.jpg"
+                                            alt="#"
+                                        />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="../assets/images/delete/kv3_kari.jpg"
+                                            alt="#"
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- メインインナー終わり -->
+                    </div>
+                </main>
+                <footer class="footer">
+                    <!-- 波型の画像 -->
+                    <!-- <img
+                        class="footer_wave"
+                        src="../assets/images/footer_wave.svg"
+                        alt=""
+                    /> -->
+                    <div class="footer_inner">
+                        <nav class="footer_container with_girl">
+                            <!-- 女の子の画像 -->
+                            <img
+                                src="../assets/images/girl.png"
+                                alt=""
+                                class="footer_girl"
+                            />
+                            <ul class="footer_nav flex">
+                                <li class="footer_nav_title_concept">
+                                    <p>こども食堂とは</p>
+                                    <ul class="footer_nav_menu">
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">ことも食堂とは</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#"
+                                                >特集記事Pick
+                                                Upインタビュー一覧</a
+                                            >
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">ニュース一覧</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">お問い合わせ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- こども食堂とはend -->
+                                <li class="footer_nav_title_taxonomy_area">
+                                    <p>こども食堂をみつける</p>
+                                    <ul class="footer_nav_menu">
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">エリアをしらべる</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">こども食堂一覧</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">こども食堂　東部</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">こども食堂　西部</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">こども食堂　南部</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">条件でさがす</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">支援したい方へ</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#"
+                                                >Amazonみんなで応援プログラム</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- こども食堂をみつけるend -->
+                                <li class="footer_nav_title_other">
+                                    <p>その他</p>
+                                    <ul class="footer_nav_menu">
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">子育て支援関連</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">こども食堂関連</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">こどもの居場所関連</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#">このサイトについて</a>
+                                        </li>
+                                        <li class="footer_nav_menu_item">
+                                            <a href="#"
+                                                >プライバシーポリシー・免責事項</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- その他end -->
+                            </ul>
+                            <!-- footer_nav end -->
+                            <div class="footer_copyright">
+                                <p>copyright©</p>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- footer_inner end -->
+                </footer>
+                <script src="../assets/js/header.js"></script>
+                <script src="../assets/js/single-cafeinfo.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+.cafeinfo_tab {
+    width: 166px;
+    height: 55px;
+    padding: 13px 0;
+    text-align: center;
+    background-color: #f7dd94;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.east {
+    background-color: #f7dd94;
+}
+
+.south {
+    background-color: #d7f794;
+}
+
+.west {
+    background-color: #fdffb0;
+}
+
+.cafeinfo_section {
+    margin: 50px 20%;
+}
+
+/* 市町村装飾 */
+.cafeinfo_subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.subtitle_east {
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: #f7dd94;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+}
+
+.subtitle_south {
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: #d7f794;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+}
+
+.subtitle_west {
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: #faff66;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+}
+
+/* 文字間隔調整・アンダーライン */
+
+.cafeinfo_flex p {
+    margin: 15px 0;
+}
+
+.cafeinfo_flex {
+    text-decoration: underline;
+    text-decoration-color: #c0c0c0;
+}
+
+/* 最後のコンテンツを左寄せにする指定 */
+.cafeinfo_flex:after {
+    content: "";
+    display: block;
+    width: 25%; /* .boxに指定したwidthと同じ幅を指定する */
+    height: 0;
+}
+
+@media screen and (min-width: 770px) {
+    .cafeinfo_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .cafeinfo_flex p {
+        margin: 0 0;
+    }
+
+    .cafeinfo_tab {
+        width: 70%;
+    }
+
+    .cafeinfo_subtitle {
+        margin: 10px 0;
+    }
+
+    .cafeinfo p {
+        display: inline-block;
+        margin: 20px 15px;
+    }
+
+    /* ホバーアクション */
+
+    .cafeinfo_flex {
+        text-decoration: none;
+    }
+
+    .cafeinfo_flex p:hover {
+        color: #f8b600;
+    }
+}

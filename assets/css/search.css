@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.search_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search_item a {
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.search_item {
+    max-width: 330px;
+    margin: 60px auto;
+}
+
+/* キーワードが一致するものが無かった場合の表示 */
+.not_found a {
+    color: red;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+}
+
+.not_found_inner {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.not_found img {
+    width: 200px;
+    display: block;
+}
+
+.not_found_img {
+    width: 200px;
+}
+
+.not_found_inner p {
+    text-align: left;
+}
+
+@media (min-width: 770px) {
+    .search_flex {
+        /* display: flex; */
+        flex-direction: row;
+    }
+
+    .search_item a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .search_item {
+        max-width: 1024px;
+        margin: 80px auto 80px;
+        align-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .page_nav {
+        margin: 20px auto;
+    }
+}

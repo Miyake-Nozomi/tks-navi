@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/***********************
+    プライバシーポリシー
+ **********************/
+
+body {
+    line-height: 1.8;
+}
+
+main {
+    margin-bottom: 150px;
+}
+
+.title {
+    width: fit-content;
+    font-size: 20px;
+}
+
+.text {
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.text_title {
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 770px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .text_title {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+}
