@@ -1,9 +1,6 @@
 <?php
 
 
-//index.phpを更新
-
-
 $event_fields = get_field_objects();
 $test = $event_fields;
 
