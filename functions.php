@@ -10,6 +10,14 @@ add_filter( 'style_loader_src', 'remove_cssjs_ver2', 9999 );
 add_filter( 'script_loader_src', 'remove_cssjs_ver2', 9999 );
 
 
+//global-styles-inline-cssを排除
+function remove_my_global_styles() {
+	wp_dequeue_style( 'global-styles' );
+}
+add_action( 'wp_enqueue_scripts', 'remove_my_global_styles' );
+
+
+
 
 //after_setup_themeアクションフックを使用する関数をまとめる
 function my_theme_setup() {
