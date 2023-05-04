@@ -266,7 +266,9 @@ $event_query = new WP_Query($fuga);
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/flug.png" alt="pudding"
                         class="flug" />
                 </div>
-                <a href="<?php echo home_url('/event'); ?>" class="btn_item01">もっと見る</a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/event'); ?>">もっと見る</a>
+                </div>
             </div>
         </div>
         <!-- Pick Upインタビュー一覧 -->
@@ -298,7 +300,9 @@ $event_query = new WP_Query($fuga);
                         <?php wp_reset_postdata(); ?>
                     </ul>
                 </div>
-                <a href="<?php echo home_url('/interview'); ?>" class="btn_item01">もっと見る</a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/interview'); ?>">もっと見る</a>
+                </div>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/interviewbottom.png" alt="波"
                 class="interview" />
@@ -323,7 +327,9 @@ $event_query = new WP_Query($fuga);
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/index/tokushima_map.png"
                         alt="地図" />
                 </div>
-                <a href="<?php echo home_url('/find'); ?>" class="btn_item01">条件からさがす</a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/find'); ?>" class="btn_item01">条件からさがす</a>
+                </div>
             </div>
         </div>
         <!-- 子ども食堂とは -->
@@ -349,7 +355,9 @@ $event_query = new WP_Query($fuga);
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png" alt="おにぎり" />
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png"
                         class="onigiri_small" aria-hidden="true" />
-                    <a href="<?php echo home_url('/concept'); ?>" class="btn_item01">もっと見る</a>
+                    <div class="btn_item">
+                        <a href="<?php echo home_url('/concept'); ?>">もっと見る</a>
+                    </div>
                 </div>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiribottom.png" alt="波"
@@ -380,7 +388,9 @@ $event_query = new WP_Query($fuga);
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_pc.png"
                         alt="野菜を収穫した人">
                 </div>
-                <a href="<?php echo home_url('/support'); ?>" class="btn_item01">もっと見る</a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/support'); ?>" class="btn_item01">もっと見る</a>
+                </div>
             </div>
         </div>
         <!-- リンク集 -->
@@ -460,7 +470,9 @@ $event_query = new WP_Query($fuga);
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/sun.png" alt="太陽"
                         class="sun" />
                 </div>
-                <a href="<?php echo home_url('/post'); ?>" class="btn_item01">もっとみる</a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/post'); ?>" class="btn_item01">もっとみる</a>
+                </div>
             </div>
         </div>
         <!-- お問い合わせ -->
@@ -474,7 +486,9 @@ $event_query = new WP_Query($fuga);
             </svg> -->
             <div class="section_inner">
                 <h2 class="title">お問い合わせ</h2>
-                <a href="<?php echo home_url('/contact'); ?>" class="btn_item01">お問い合わせはこちら</a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/contact'); ?>" class="btn_item01">お問い合わせはこちら</a>
+                </div>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contactbottom.png" alt="波"
                 class="contact_wave" />
