@@ -228,11 +228,13 @@ $event_query = new WP_Query($fuga);
                         ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
                     </p>
                 </div>
-                <div class="btn_item">
-                    <a href="<?php echo home_url('/about'); ?>">
+
+                <a href="<?php echo home_url('/about'); ?>">
+                    <div class="btn_item">
                         もっと見る
-                    </a>
-                </div>
+                    </div>
+                </a>
+
             </div>
         </section>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbowbottom.png" alt="#"
@@ -245,7 +247,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <div class="section_inner">
+            <section class="section_inner">
                 <div class="title">
                     <h2>開催情報</h2>
                 </div>
@@ -266,10 +268,11 @@ $event_query = new WP_Query($fuga);
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/flug.png" alt="pudding"
                         class="flug" />
                 </div>
-                <div class="btn_item">
-                    <a href="<?php echo home_url('/event'); ?>">もっと見る</a>
-                </div>
-            </div>
+                <a href="<?php echo home_url('/event'); ?>">
+                    <div class="btn_item">もっと見る</div>
+                </a>
+
+            </section>
         </div>
         <!-- Pick Upインタビュー一覧 -->
         <div class="interviews w100">
@@ -300,9 +303,9 @@ $event_query = new WP_Query($fuga);
                         <?php wp_reset_postdata(); ?>
                     </ul>
                 </div>
-                <div class="btn_item">
-                    <a href="<?php echo home_url('/interview'); ?>">もっと見る</a>
-                </div>
+                <a href="<?php echo home_url('/interview'); ?>">
+                    <div class="btn_item">もっと見る</div>
+                </a>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/interviewbottom.png" alt="波"
                 class="interview" />
@@ -327,9 +330,9 @@ $event_query = new WP_Query($fuga);
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/index/tokushima_map.png"
                         alt="地図" />
                 </div>
-                <div class="btn_item">
-                    <a href="<?php echo home_url('/find'); ?>" class="btn_item01">条件からさがす</a>
-                </div>
+                <a href="<?php echo home_url('/find'); ?>">
+                    <div class="btn_item">条件からさがす</div>
+                </a>
             </div>
         </div>
         <!-- 子ども食堂とは -->
@@ -355,9 +358,9 @@ $event_query = new WP_Query($fuga);
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png" alt="おにぎり" />
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png"
                         class="onigiri_small" aria-hidden="true" />
-                    <div class="btn_item">
-                        <a href="<?php echo home_url('/concept'); ?>">もっと見る</a>
-                    </div>
+                    <a href="<?php echo home_url('/concept'); ?>">
+                        <div class="btn_item">もっと見る</div>
+                    </a>
                 </div>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiribottom.png" alt="波"
@@ -388,9 +391,9 @@ $event_query = new WP_Query($fuga);
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_pc.png"
                         alt="野菜を収穫した人">
                 </div>
-                <div class="btn_item">
-                    <a href="<?php echo home_url('/support'); ?>" class="btn_item01">もっと見る</a>
-                </div>
+                <a href="<?php echo home_url('/support'); ?>">
+                    <div class="btn_item">もっと見る</div>
+                </a>
             </div>
         </div>
         <!-- リンク集 -->
@@ -470,9 +473,9 @@ $event_query = new WP_Query($fuga);
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/sun.png" alt="太陽"
                         class="sun" />
                 </div>
-                <div class="btn_item">
-                    <a href="<?php echo home_url('/post'); ?>" class="btn_item01">もっとみる</a>
-                </div>
+                <a href="<?php echo home_url('/post'); ?>">
+                    <div class="btn_item">もっと見る</div>
+                </a>
             </div>
         </div>
         <!-- お問い合わせ -->
@@ -486,9 +489,9 @@ $event_query = new WP_Query($fuga);
             </svg> -->
             <div class="section_inner">
                 <h2 class="title">お問い合わせ</h2>
-                <div class="btn_item">
-                    <a href="<?php echo home_url('/contact'); ?>" class="btn_item01">お問い合わせはこちら</a>
-                </div>
+                <a href="<?php echo home_url('/contact'); ?>">
+                    <div class="btn_item">お問い合わせはこちら</div>
+                </a>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contactbottom.png" alt="波"
                 class="contact_wave" />

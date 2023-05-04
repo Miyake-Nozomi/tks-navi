@@ -45,19 +45,15 @@ body {
 /* ボタンのエフェクト */
 
 .btn_item {
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.btn_item a {
-    display: inline-block;
+    width: 180px;
     padding: 15px 30px;
     background-color: rgba(255, 212, 102, 1);
     transition: 0.3s;
     border-radius: 20px;
     transform: translateY(0);
     color: black;
+    margin: 50px auto 0;
+    text-align: center;
 }
 
 .btn_item a:hover {
@@ -153,6 +149,10 @@ body {
 
     .text {
         width: 70%;
+    }
+
+    .btn_item {
+        margin: 70px auto 0;
     }
 }
 
