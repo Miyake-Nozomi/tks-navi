@@ -124,9 +124,7 @@ body {
     .main_inner {
         max-width: 1024px;
     }
-    h2 {
-        font-size: 32px;
-    }
+
     .btn {
         margin-top: 75px;
         width: 200px;
@@ -138,8 +136,7 @@ body {
     }
 
     .title {
-        margin-top: 70px;
-        margin-bottom: 75px;
+        font-size: 32px;
     }
 
     .subtitle {
@@ -244,7 +241,7 @@ body {
     position: fixed;
     top: -100vh;
     left: 0;
-    transition: all 0.7s;
+    transition: all 1s;
 }
 
 .menu img {
