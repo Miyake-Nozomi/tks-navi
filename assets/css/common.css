@@ -42,6 +42,13 @@ body {
     margin: 0 auto;
 }
 
+.section_inner {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 10%;
+    width: 100%;
+}
+
 /* ボタンのエフェクト */
 
 .btn_item {
@@ -137,6 +144,10 @@ body {
 
     .subtitle {
         font-size: 24px;
+    }
+
+    .text {
+        margin: 70px auto 0;
     }
 
     h3 {
@@ -593,7 +604,6 @@ body {
 
 @media (min-width: 770px) {
     .footer_nav {
-        padding-top: 50px;
         padding-bottom: 10px;
         max-width: 1024px;
         flex-direction: row;
