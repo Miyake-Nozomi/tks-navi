@@ -210,14 +210,14 @@ $event_query = new WP_Query($fuga);
                 <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/kv/kv9.jpg" alt="KV画像">
                 </li>
             </ul>
-            <p class="kvphrase">
+            <h2 class="kvphrase">
                 誰でもおいで！<br />
                 &emsp;みんなでごはん、<br />
                 &emsp;&emsp;食べるんじょ！
-            </p>
+            </h2>
         </section>
         <!-- このサイトについて -->
-        <div class="about w100">
+        <section class="about w100">
             <div class="section_inner niji_re">
                 <h2 class="title">このサイトについて</h2>
                 <div class="text niji">
@@ -230,8 +230,9 @@ $event_query = new WP_Query($fuga);
                 </div>
                 <a href="<?php echo home_url('/about'); ?>" class="btn_item01">もっと見る</a>
             </div>
-        </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbowbottom.png" alt="#" class="about_wave" />
+        </section>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbowbottom.png" alt="#"
+            class="about_wave" />
 
         <!-- 今月の開催一覧 -->
         <div class="info w100">
@@ -266,7 +267,8 @@ $event_query = new WP_Query($fuga);
         </div>
         <!-- Pick Upインタビュー一覧 -->
         <div class="interviews w100">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/interviewtop.png" alt="波" class="interview" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/interviewtop.png" alt="波"
+                class="interview" />
             <!-- <svg class="interviewtop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                 <path fill="#FDFFB0" fill-opacity="1"
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -294,7 +296,8 @@ $event_query = new WP_Query($fuga);
                 </div>
                 <a href="<?php echo home_url('/interview'); ?>" class="btn_item01">もっと見る</a>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/interviewbottom.png" alt="波" class="interview" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/interviewbottom.png" alt="波"
+                class="interview" />
         </div>
         <!-- MAP -->
         <div class="map w100">
@@ -321,7 +324,8 @@ $event_query = new WP_Query($fuga);
         </div>
         <!-- 子ども食堂とは -->
         <div class="childcafe w100">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiriup.png" alt="波" class="onigiriup" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiriup.png" alt="波"
+                class="onigiriup" />
             <!-- <svg class="childcafetop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                 <path fill="#D7F794" fill-opacity="1"
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -344,7 +348,8 @@ $event_query = new WP_Query($fuga);
                     <a href="<?php echo home_url('/concept'); ?>" class="btn_item01">もっと見る</a>
                 </div>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiribottom.png" alt="波" class="onigiribottom" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiribottom.png" alt="波"
+                class="onigiribottom" />
         </div>
         <!-- 支援したい方へ -->
         <div class="surporters w100">
@@ -376,7 +381,8 @@ $event_query = new WP_Query($fuga);
         </div>
         <!-- リンク集 -->
         <div class="link w100">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/linktop.png" alt="波" class="link_wave" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/linktop.png" alt="波"
+                class="link_wave" />
             <!-- <svg class="linktop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                 <path fill="#fdffb0" fill-opacity="1"
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -417,7 +423,8 @@ $event_query = new WP_Query($fuga);
                     </a>
                 </div>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/linkbottom.png" alt="波" class="link_wave" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/linkbottom.png" alt="波"
+                class="link_wave" />
         </div>
 
 
@@ -454,7 +461,8 @@ $event_query = new WP_Query($fuga);
         </div>
         <!-- お問い合わせ -->
         <div class="contact w100">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contacttop.png" alt="波" class="contact_wave" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contacttop.png" alt="波"
+                class="contact_wave" />
             <!-- <svg class="contacttop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                 <path fill="#d7f794" fill-opacity="1"
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -464,7 +472,8 @@ $event_query = new WP_Query($fuga);
                 <h2 class="title">お問い合わせ</h2>
                 <a href="<?php echo home_url('/contact'); ?>" class="btn_item01">お問い合わせはこちら</a>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contactbottom.png" alt="波" class="contact_wave" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contactbottom.png" alt="波"
+                class="contact_wave" />
         </div>
         <!-- 活動風景 -->
         <div class="activity w100">
