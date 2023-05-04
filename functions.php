@@ -59,7 +59,7 @@ function add_my_files() {
 
     //TOPページのみ出力
     if (is_front_page()) {
-        wp_enqueue_style('index',get_template_directory_uri() . '/assets/css/index.css',array('my-common')
+        wp_enqueue_style('front-page',get_template_directory_uri() . '/assets/css/front-page.css',array('my-common')
         );
         //index.jsの読み込み
         wp_enqueue_script('index',get_template_directory_uri().'/assets/js/index.js',array('header'),'1.0',true);
