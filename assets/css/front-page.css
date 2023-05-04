@@ -5,7 +5,7 @@ body {
     overflow: hidden;
 }
 
-.main_index {
+.main {
     top: 0;
 }
 
@@ -97,12 +97,7 @@ html {
     overflow-y: scroll;
 }
 
-.title {
-    text-align: center;
-}
-
 .section_inner {
-    text-align: center;
     margin: 0 auto;
     width: 100%;
 }

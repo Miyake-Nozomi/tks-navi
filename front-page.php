@@ -179,7 +179,7 @@ $event_query = new WP_Query($fuga);
 
 ?>
 
-<main class="main_index">
+<main class="main">
     <div class="main_inner">
         <!-- headerがposition fixedなのでheader分の余白調整のためblock -->
         <div class="block"></div>
@@ -228,7 +228,11 @@ $event_query = new WP_Query($fuga);
                         ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
                     </p>
                 </div>
-                <a href="<?php echo home_url('/about'); ?>" class="btn_item01">もっと見る</a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/about'); ?>">
+                        もっと見る
+                    </a>
+                </div>
             </div>
         </section>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbowbottom.png" alt="#"

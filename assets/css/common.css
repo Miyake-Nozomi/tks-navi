@@ -30,7 +30,7 @@ body {
     display: flex;
 }
 
-main {
+.main {
     position: relative;
     top: 100px;
     /* 追加 */
@@ -66,45 +66,7 @@ main {
     background-color: rgba(255, 212, 102, 0.8);
 }
 
-/* 新しいボタンここまで */
-
-/* .btn_item {
-    display: inline-block;
-    padding: 10px 15px;
-    ボタン本体の色
-    background-color: #ffd466;
-    border-radius: 10px;
-    font-weight: bolder;
-    文字色
-    color: black;
-    文字の影
-    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.44), 1px 1px 1px #4a0a11;
-    text-align: center;
-    margin: 0 auto;
-} */
-
-/* .btn_item a:hover {
-    background-position: right center;
-    background-size: 200% auto;
-    -webkit-animation: pulse 2s infinite;
-    animation: shad26 1.5s infinite;
-}
-
-@keyframes shad26 {
-    0% {
-        box-shadow: 0 0 0 0 #ffb700;
-    }
-    70% {
-        box-shadow: 0 0 0 10px rgb(39 172 217 / 0%);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);
-    }
-} */
-
-/* ボタンのエフェクトここまで */
 /* spanで画面幅により改行 */
-
 .sp {
     display: inline-block;
 }
@@ -115,21 +77,14 @@ main {
 
     font-size: 24px;
     font-weight: 500;
-    /* 追加margin auto  */
     margin: 70px auto 0;
     text-align: center;
     text-decoration-line: underline;
     text-decoration-color: #008000;
     text-decoration-style: dotted;
     text-decoration-thickness: 0.2em;
-    /* text-decoration: underline dotted 5px #008000;
-    -webkit-text-decoration: underline dotted 5px #008000; */
     text-underline-offset: 10px;
 }
-
-/* .title {
-    -webkit-text-decoration: underline dotted 5px #008000;
-} */
 
 /* h3 */
 .subtitle {
@@ -141,10 +96,9 @@ main {
 /* pのラップ */
 .text {
     font-size: 16px;
-    margin: 0 auto;
+    margin: 50px auto 0;
     width: 280px;
-    /* 追加 */
-    margin-bottom: 20px;
+    text-align: left;
 }
 
 /* ボタン */
