@@ -22,6 +22,7 @@
                     こども食堂は、子どもたちの健やかな成長を支援するために、全国各地で展開されています。
                 </p>
             </div>
+            <div class="curry"></div>
             </div>
             <!-- <div class="btn"> -->
             <div class="btn_item">
