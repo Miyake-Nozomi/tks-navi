@@ -34,7 +34,7 @@ if (is_tax('area')) {
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <div class="body_inner">
+    <!-- <div class="body_inner"> -->
         <!-- トップページへ戻るボタン -->
         <div class="toppage_btn">
             <a href="<?php
