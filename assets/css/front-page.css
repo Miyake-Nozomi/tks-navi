@@ -159,17 +159,78 @@ html {
     } */
 }
 
-/* このサイトについて */
-.about {
+/* 子ども食堂とは */
+.concept {
     background-color: #d7f794;
     padding-top: 70px;
 }
+
+.concept_title {
+    margin: 0 auto;
+}
+
+.onigiri_inner {
+    padding-bottom: 80px;
+}
+
+.with_onigiri {
+    position: relative;
+}
+
+.onigiri {
+    position: absolute;
+    width: 99px;
+    height: 95px;
+    bottom: 3px;
+    bottom: -120px;
+    left: -100px;
+    z-index: 1;
+    animation: korogari 6s linear infinite alternate;
+}
+
+.onigiri_small {
+    position: absolute;
+    width: 49px;
+    height: 45px;
+    bottom: 0;
+    left: -120px;
+    bottom: -120px;
+    left: -140px;
+    z-index: 1;
+    animation: korogari_small 6s linear infinite alternate;
+}
+
+.with_onigiri {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes korogari {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 105vw;
+        transform: rotate(1120deg);
+    }
+}
+@keyframes korogari_small {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 100vw;
+        transform: rotate(1120deg);
+    }
+}
+
+/* このサイトについて */
 
 .niji {
     position: relative;
 }
 
-.about .btn_item01 {
+.about {
     position: relative;
     z-index: 10;
 }
@@ -184,121 +245,10 @@ html {
 }
 
 @media (min-width: 770px) {
-    .about .text {
-        width: 590px;
-        text-align: left;
-    }
     .rainbow {
         width: 650px;
         height: 650px;
         top: -300px;
-    }
-}
-
-/* 開催情報 */
-
-.info .text_box {
-    width: 80%;
-    line-height: 60px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 1);
-    margin: 0 auto;
-    padding: 110px 0 80px 0;
-    border: 3px solid #ffb700;
-    border-radius: 35px;
-    position: relative;
-    overflow: hidden;
-}
-
-.info_icon::before {
-    content: "";
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-image: url(../images/index/rice.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    /* margin-right: 5px; */
-}
-
-.info .section_inner {
-    position: relative;
-}
-
-.calender {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 70%;
-    top: -10px;
-    animation: calender 5s linear infinite normal;
-    opacity: 1;
-    z-index: 10;
-}
-
-.flug {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: -10%;
-    left: 0;
-    opacity: 0.7;
-    transform: rotate(-30deg);
-}
-@keyframes calender {
-    0%,
-    50%,
-    100% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(15deg);
-    }
-    75% {
-        transform: rotate(-15deg);
-    }
-}
-
-.text_box p {
-    text-decoration: underline dotted 3px orange;
-    text-underline-offset: 8px;
-}
-
-@media (min-width: 770px) {
-    .info .text_box {
-        max-width: 633px;
-    }
-
-    .text_box {
-        font-size: 18px;
-    }
-
-    .info_icon::before {
-        content: "";
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-image: url(../images/index/rice.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        vertical-align: middle;
-    }
-
-    .pudding {
-        width: 170px;
-        height: 170px;
-        top: 50%;
-        left: 5%;
-    }
-    .info .btn_item01 {
-        margin-bottom: 30px;
-    }
-    .calender {
-        width: 300px;
-        height: 300px;
-        left: 75%;
-        top: 10px;
     }
 }
 
@@ -653,76 +603,14 @@ hr {
     }
 }
 
-/* 子ども食堂とは */
-.onigiri_inner {
-    padding-bottom: 80px;
-}
-
-.childcafe {
-    background-color: #d7f794;
-}
-
-.with_onigiri {
-    position: relative;
-}
-
-.onigiri {
-    position: absolute;
-    width: 99px;
-    height: 95px;
-    bottom: 3px;
-    bottom: -120px;
-    left: -100px;
-    z-index: 1;
-    animation: korogari 6s linear infinite alternate;
-}
-
-.onigiri_small {
-    position: absolute;
-    width: 49px;
-    height: 45px;
-    bottom: 0;
-    left: -120px;
-    bottom: -120px;
-    left: -140px;
-    z-index: 1;
-    animation: korogari_small 6s linear infinite alternate;
-}
-
-.with_onigiri .btn_item01 {
-    position: relative;
-    z-index: 2;
-}
-
-@media (min-width: 770px) {
-    .with_onigiri .text {
-        width: 590px;
-        text-align: left;
-    }
-}
-@keyframes korogari {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        left: 105vw;
-        transform: rotate(1120deg);
-    }
-}
-@keyframes korogari_small {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        left: 100vw;
-        transform: rotate(1120deg);
-    }
-}
-
 /* 支援したい方へ */
 
 .shien_box {
     position: relative;
+}
+
+.childcafe {
+    background-color: #d7f794;
 }
 
 .mobile_pic {
@@ -856,130 +744,6 @@ hr {
     } */
 }
 
-/* お知らせ */
-
-.notice .section_inner {
-    position: relative;
-}
-
-.noticeimg {
-    display: none;
-}
-
-.notice_suzume {
-    position: absolute;
-    width: 25px;
-    height: 35px;
-    top: 60px;
-    left: 20%;
-    animation: suzumemove 10s linear infinite normal;
-}
-
-.notice .news {
-    width: 80%;
-    padding: 20px 20px 100px 20px;
-    text-align: left;
-    background-color: white;
-    margin: 0 auto;
-    border: 3px solid #ffb700;
-    border-radius: 35px;
-    position: relative;
-    overflow: hidden;
-}
-
-.sun {
-    position: absolute;
-    width: 200%;
-    height: 300px;
-    opacity: 70%;
-    bottom: -200px;
-    left: -50%;
-}
-
-@keyframes suzumemove {
-    0%,
-    100% {
-        transform: scale(1, 1);
-    }
-    49% {
-        transform: scale(1, 1);
-    }
-    50% {
-        left: 70%;
-        transform: scale(-1, 1);
-    }
-    60% {
-    }
-    99% {
-        left: 20%;
-        transform: scale(-1, 1);
-    }
-}
-
-@media (min-width: 770px) {
-    .notice .news {
-        width: 633px;
-        padding: 40px 40px 100px 40px;
-    }
-    .notice .btn_item01,
-    .btn_item001 {
-        margin-bottom: 30px;
-    }
-
-    .notice_suzume {
-        width: 35px;
-        height: 45px;
-        top: 80px;
-        left: 30%;
-    }
-    @keyframes suzumemove {
-        0%,
-        100% {
-            transform: scale(1, 1);
-        }
-        49% {
-            transform: scale(1, 1);
-        }
-        50% {
-            left: 65%;
-            transform: scale(-1, 1);
-        }
-        60% {
-        }
-        99% {
-            left: 30%;
-            transform: scale(-1, 1);
-        }
-    }
-    .sun {
-        left: -290px;
-    }
-}
-@media (min-width: 1024px) {
-    .noticeimg {
-        display: block;
-        position: absolute;
-        width: 350px;
-        height: 350px;
-        top: 80px;
-        left: -8%;
-    }
-}
-@media (min-width: 1150px) {
-    .noticeimg {
-        width: 400px;
-        height: 400px;
-        /* left: ; */
-    }
-}
-@media (min-width: 1250px) {
-    .noticeimg {
-        width: 400px;
-        height: 400px;
-        left: 0;
-    }
-}
-
 /* お問い合わせ */
 .contact {
     background-color: #d7f794;
@@ -1043,7 +807,7 @@ hr {
 }
 
 /* 波の設定 */
-.about_wave {
+.concept_wave {
     width: 100%;
     height: 80px;
     background-color: #fff8e6;

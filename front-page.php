@@ -217,9 +217,9 @@ $event_query = new WP_Query($fuga);
             </h2>
         </section>
         <!-- こども食堂とは -->
-        <section class="about w100">
-            <div class="section_inner niji_re">
-                <div class="title">
+        <section class="concept">
+            <div class="section_inner onigiri_inner">
+                <div class="title concept_title">
                     <h2>こども食堂とは</h2>
                 </div>
                 <div class="with_onigiri">
@@ -239,10 +239,10 @@ $event_query = new WP_Query($fuga);
             </div>
         </section>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbowbottom.png" alt="#"
-            class="about_wave" />
+            class="concept_wave" />
 
         <!-- このサイトについて -->
-        <section class="info w100">
+        <section>
             <!-- <svg class="infotop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                 <path fill="#FFF8E6" fill-opacity="1"
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -339,7 +339,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <div class="section_inner onigiri_inner">
+            <div class="section_inner">
                 <h2 class="title">支援したい方へ</h2>
                 <div class="shien_box">
                     <div class="text">
