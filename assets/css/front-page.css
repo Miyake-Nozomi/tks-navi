@@ -148,12 +148,6 @@ html {
         position: absolute;
     }
 
-    /* headerのためのbloc */
-    .block {
-        height: 80px;
-        width: 100%;
-    }
-
     /* .hbg_submit {
         width: 28.5px;
     } */
