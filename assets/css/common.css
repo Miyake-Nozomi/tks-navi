@@ -769,6 +769,8 @@ body {
         display: block;
         margin: 15px 0;
         margin-left: 20px;
+        line-height: 1.8;
+        font-family: "Zen Maru Gothic", sans-serif;
     }
 
     .breadcrumb a:hover {
