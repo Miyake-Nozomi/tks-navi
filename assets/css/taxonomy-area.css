@@ -137,9 +137,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 915px) {
     .tab {
         margin-top: 70px;
     }
@@ -174,8 +175,7 @@ main {
         width: 300px;
         height: 100%;
         min-height: 300px;
-        margin: 0;
-        margin-top: 50px;
+        margin-top: 20px;
         /* margin: 50px 50px 0 50px; */
     }
 
@@ -197,20 +197,23 @@ main {
         margin-top: 0px;
     }
 
+    /* 4/14追加　１列になったときに中央寄せする */
+    @media (min-width: 915px) {
+        .area_item {
+            justify-content: start;
+        }
+    }
+
     /* カード */
     .area_item {
         flex-direction: row;
         max-width: 750px;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 10px;
+        justify-content: space-evenly;
     }
 }
-/* 4/14追加　１列になったときに中央寄せする */
-@media (min-width: 940px) {
-    .area_item {
-        justify-content: start;
-    }
-}
+
 /***********************
     検索結果一覧img
  **********************/
