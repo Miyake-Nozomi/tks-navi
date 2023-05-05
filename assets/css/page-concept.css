@@ -46,7 +46,7 @@
         box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);
     } } */
 
-
+/* 
 @media screen and (min-width: 770px) {
     .qbtn {
         margin-top: 50px;
@@ -60,21 +60,14 @@
         margin-top: 70px;
         margin-bottom: 40px;
     } */
-}
-.textbox {
-    position: relative;
-    /* overflow: hidden; */
-}
 
-.curry {
-    position: absolute;
+
+.textbox {
     background-image: url(//assets/images/child/curry.png);
-    width: 50%;
-    height: 55%;
-    right: 0px;
-    top: 30%;
-    z-index: -1;
-    opacity: 30%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
 }
 
 
