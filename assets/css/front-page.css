@@ -310,11 +310,11 @@ html {
     font-weight: 900;
 }
 .slick-next {
-    display: none;
+    right: -25px;
 }
 
 .slick-prev {
-    display: none;
+    left: -25px;
 }
 /* スリック矢印ここまで */
 
