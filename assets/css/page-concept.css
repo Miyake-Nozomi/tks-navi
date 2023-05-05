@@ -60,14 +60,22 @@
         margin-top: 70px;
         margin-bottom: 40px;
     } */
+.textbox{
+    position: relative;
+    margin: 0 5%;
+    width: 90%;
+}
 
-
-.textbox {
-    background-image: url(//assets/images/child/curry.png);
-    background-size: 40%;
+.curry {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    background-image: url(../images/child/curry.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 100% 100%;
-
+    opacity: 0.25;
 }
 
 
