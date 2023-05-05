@@ -3,12 +3,12 @@
 
         <nav class="footer_container with_girl">
             <?php
-            $hoge = array(
+            $fuga = array(
             'menu' => 'footer-navigation',  //管理画面で作成したメニューの名前
             'menu_class' => 'footer_nav flex', //メニューを構成するulタグのクラス名
             'container' => false, //<ul>タグを囲んでいる<div>タグを削除
             );
-            wp_nav_menu($hoge);
+            wp_nav_menu($fuga);
             ?>
             <!-- footer_nav end -->
             <div class="footer_copyright">
