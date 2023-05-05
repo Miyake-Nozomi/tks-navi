@@ -50,6 +50,10 @@ body {
 
 /* ボタンのエフェクト */
 
+/* .btn_item {
+    display: inline-block;
+} */
+
 .btn_item {
     width: 180px;
     padding: 15px 30px;
