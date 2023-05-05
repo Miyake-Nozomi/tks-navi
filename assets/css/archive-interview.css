@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.text {
+    padding: 0 10%;
+}
+
 .pickup_text {
     text-align: left;
 }
@@ -13,6 +17,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .intro p + p {
@@ -22,11 +27,6 @@
 .left {
     text-align: left;
     margin-bottom: 0;
-}
-
-.text {
-    width: 90%;
-    margin: 0 auto;
 }
 
 .intro {
@@ -54,9 +54,9 @@
 
     .pickup_item {
         max-width: 1024px;
-        margin: 80px auto 80px;
+        margin: 70px auto 0px;
         align-content: space-between;
-        gap: 20px;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
     .pickup_item:after {

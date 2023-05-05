@@ -71,6 +71,7 @@
 ?>
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <div class="pickup_title">
             <h2 class="title">
