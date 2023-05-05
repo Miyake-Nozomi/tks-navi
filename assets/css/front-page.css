@@ -159,17 +159,74 @@ html {
     } */
 }
 
-/* このサイトについて */
-.about {
+/* 子ども食堂とは */
+.concept {
     background-color: #d7f794;
     padding-top: 70px;
 }
 
-.niji {
+.concept_title {
+    margin: 0 auto;
+}
+
+.onigiri_inner {
+    padding-bottom: 80px;
+}
+
+.concept_text {
+    position: relative;
+    z-index: 2;
+}
+
+.onigiri {
+    position: absolute;
+    width: 99px;
+    height: 95px;
+    bottom: 3px;
+    bottom: -120px;
+    left: -100px;
+    z-index: 1;
+    animation: korogari 6s linear infinite alternate;
+}
+
+.onigiri_small {
+    position: absolute;
+    width: 49px;
+    height: 45px;
+    bottom: 0;
+    left: -120px;
+    bottom: -120px;
+    left: -140px;
+    z-index: 1;
+    animation: korogari_small 6s linear infinite alternate;
+}
+
+@keyframes korogari {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 105vw;
+        transform: rotate(1120deg);
+    }
+}
+@keyframes korogari_small {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 100vw;
+        transform: rotate(1120deg);
+    }
+}
+
+/* このサイトについて */
+
+.rainbow_inner {
     position: relative;
 }
 
-.about .btn_item01 {
+.about {
     position: relative;
     z-index: 10;
 }
@@ -178,127 +235,19 @@ html {
     width: 320px;
     height: 300px;
     position: absolute;
-    left: -7%;
-    top: -60px;
+    left: 0;
+    right: 0;
+    top: -30%;
+    margin: auto;
     opacity: 20%;
+    z-index: -1;
 }
 
 @media (min-width: 770px) {
-    .about .text {
-        width: 590px;
-        text-align: left;
-    }
     .rainbow {
         width: 650px;
         height: 650px;
         top: -300px;
-    }
-}
-
-/* 開催情報 */
-
-.info .text_box {
-    width: 80%;
-    line-height: 60px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 1);
-    margin: 0 auto;
-    padding: 110px 0 80px 0;
-    border: 3px solid #ffb700;
-    border-radius: 35px;
-    position: relative;
-    overflow: hidden;
-}
-
-.info_icon::before {
-    content: "";
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-image: url(../images/index/rice.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    /* margin-right: 5px; */
-}
-
-.info .section_inner {
-    position: relative;
-}
-
-.calender {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 70%;
-    top: -10px;
-    animation: calender 5s linear infinite normal;
-    opacity: 1;
-    z-index: 10;
-}
-
-.flug {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: -10%;
-    left: 0;
-    opacity: 0.7;
-    transform: rotate(-30deg);
-}
-@keyframes calender {
-    0%,
-    50%,
-    100% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(15deg);
-    }
-    75% {
-        transform: rotate(-15deg);
-    }
-}
-
-.text_box p {
-    text-decoration: underline dotted 3px orange;
-    text-underline-offset: 8px;
-}
-
-@media (min-width: 770px) {
-    .info .text_box {
-        max-width: 633px;
-    }
-
-    .text_box {
-        font-size: 18px;
-    }
-
-    .info_icon::before {
-        content: "";
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-image: url(../images/index/rice.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        vertical-align: middle;
-    }
-
-    .pudding {
-        width: 170px;
-        height: 170px;
-        top: 50%;
-        left: 5%;
-    }
-    .info .btn_item01 {
-        margin-bottom: 30px;
-    }
-    .calender {
-        width: 300px;
-        height: 300px;
-        left: 75%;
-        top: 10px;
     }
 }
 
@@ -309,7 +258,6 @@ html {
 
 .taleft {
     position: relative;
-    text-align: left;
     text-decoration: none;
     width: 286px;
     z-index: 10;
@@ -325,57 +273,28 @@ html {
 }
 
 @media (min-width: 770px) {
+    .interviews_section_inner {
+        padding: 0;
+    }
     .taleft {
         width: 435px;
     }
     .crayon {
         top: 80px;
-        width: 400px;
+        width: 470px;
     }
 }
 
 /* pickupスライドショー */
 .pickup_slide li {
-    /* background-color: white;
-    width: 255px;
-    height: 380px; */
-    /* border-radius: 5px;
-    border: solid 1px #665a3d;
-    box-shadow: 3px 3px 3px #999; */
     position: relative;
-    /* padding: 10px;
-    padding-bottom: 30px; */
     overflow: visible;
 }
 
 .pickup_slide {
     position: relative;
-    /* width: 300px;
-    margin: 0 auto; */
+    margin-top: 50px;
 }
-
-/* .orangetabs {
-    position: absolute;
-    left: 85px;
-    top: -35px;
-    z-index: 10;
-} */
-
-/* .orangetab {
-    width: 150px;
-    height: 80px;
-}
-
-.orange1,
-.orange2 {
-    display: none;
-} */
-
-/* .pickup_slider {
-    width: 255px;
-    height: 380px;
-    margin: 0 auto;
-} */
 
 /* スリック矢印 */
 .slick-prev:before {
@@ -390,8 +309,12 @@ html {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
+.slick-next {
+    right: 0px;
+}
+
 .slick-prev {
-    left: -35px;
+    left: 0px;
 }
 /* スリック矢印ここまで */
 
@@ -407,84 +330,28 @@ html {
     /* margin: 0 auto; */
 }
 
-.index_flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.index_item_card {
-    width: 300px;
-    height: 400px;
-    background-color: white;
-    padding: 16px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 4px 7px -3px rgba(24, 24, 24, 0.5);
-}
-
-.index_item_card_title {
-    font-weight: bolder;
-}
-
 hr {
     width: 100%;
 }
 
-.index_text {
-    text-align: initial;
+.pickup_slider {
+    justify-content: space-between;
 }
 
 @media (min-width: 770px) {
-    .pickup_slider {
-        max-width: 1020px;
-        width: 100%;
-        /* height: 380px; */
-        height: 440px;
-        margin: 0 auto;
-    }
-
     .pickup_slide {
-        width: 100%;
+        margin-top: 70px;
     }
 
-    .index_item_card {
-        display: inline-block;
-        transition: 0.3s;
-    }
-    .index_item_card:hover {
-        opacity: 0.8;
-        transform: translateY(5px);
-        box-shadow: 0 0 0 #333;
-    }
-
-    .orangetabs {
-        width: 90%;
-        left: 5%;
-        top: -50px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .orange1,
-    .orange2 {
-        display: block;
-    }
-
-    .orangetab {
-        width: 200px;
-        height: 80px;
-    }
-    .pickup_slide li {
+    /* .pickup_slide li {
         margin: 0 15px;
-    }
+    } */
 
     /* .pickup_slider img {
         width: 280px;
         height: 200px;
     } */
-    .interviews .btn_item01 {
+    .interviews {
         margin-bottom: 30px;
     }
     .slick-prev:before {
@@ -496,12 +363,6 @@ hr {
     }
 }
 
-@media (min-width: 1100px) {
-    .orangetabs {
-        width: 60%;
-        left: 20%;
-    }
-}
 /* MAP */
 .map .section_inner {
     position: relative;
@@ -653,76 +514,14 @@ hr {
     }
 }
 
-/* 子ども食堂とは */
-.onigiri_inner {
-    padding-bottom: 80px;
-}
-
-.childcafe {
-    background-color: #d7f794;
-}
-
-.with_onigiri {
-    position: relative;
-}
-
-.onigiri {
-    position: absolute;
-    width: 99px;
-    height: 95px;
-    bottom: 3px;
-    bottom: -120px;
-    left: -100px;
-    z-index: 1;
-    animation: korogari 6s linear infinite alternate;
-}
-
-.onigiri_small {
-    position: absolute;
-    width: 49px;
-    height: 45px;
-    bottom: 0;
-    left: -120px;
-    bottom: -120px;
-    left: -140px;
-    z-index: 1;
-    animation: korogari_small 6s linear infinite alternate;
-}
-
-.with_onigiri .btn_item01 {
-    position: relative;
-    z-index: 2;
-}
-
-@media (min-width: 770px) {
-    .with_onigiri .text {
-        width: 590px;
-        text-align: left;
-    }
-}
-@keyframes korogari {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        left: 105vw;
-        transform: rotate(1120deg);
-    }
-}
-@keyframes korogari_small {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        left: 100vw;
-        transform: rotate(1120deg);
-    }
-}
-
 /* 支援したい方へ */
 
 .shien_box {
     position: relative;
+}
+
+.childcafe {
+    background-color: #d7f794;
 }
 
 .mobile_pic {
@@ -856,130 +655,6 @@ hr {
     } */
 }
 
-/* お知らせ */
-
-.notice .section_inner {
-    position: relative;
-}
-
-.noticeimg {
-    display: none;
-}
-
-.notice_suzume {
-    position: absolute;
-    width: 25px;
-    height: 35px;
-    top: 60px;
-    left: 20%;
-    animation: suzumemove 10s linear infinite normal;
-}
-
-.notice .news {
-    width: 80%;
-    padding: 20px 20px 100px 20px;
-    text-align: left;
-    background-color: white;
-    margin: 0 auto;
-    border: 3px solid #ffb700;
-    border-radius: 35px;
-    position: relative;
-    overflow: hidden;
-}
-
-.sun {
-    position: absolute;
-    width: 200%;
-    height: 300px;
-    opacity: 70%;
-    bottom: -200px;
-    left: -50%;
-}
-
-@keyframes suzumemove {
-    0%,
-    100% {
-        transform: scale(1, 1);
-    }
-    49% {
-        transform: scale(1, 1);
-    }
-    50% {
-        left: 70%;
-        transform: scale(-1, 1);
-    }
-    60% {
-    }
-    99% {
-        left: 20%;
-        transform: scale(-1, 1);
-    }
-}
-
-@media (min-width: 770px) {
-    .notice .news {
-        width: 633px;
-        padding: 40px 40px 100px 40px;
-    }
-    .notice .btn_item01,
-    .btn_item001 {
-        margin-bottom: 30px;
-    }
-
-    .notice_suzume {
-        width: 35px;
-        height: 45px;
-        top: 80px;
-        left: 30%;
-    }
-    @keyframes suzumemove {
-        0%,
-        100% {
-            transform: scale(1, 1);
-        }
-        49% {
-            transform: scale(1, 1);
-        }
-        50% {
-            left: 65%;
-            transform: scale(-1, 1);
-        }
-        60% {
-        }
-        99% {
-            left: 30%;
-            transform: scale(-1, 1);
-        }
-    }
-    .sun {
-        left: -290px;
-    }
-}
-@media (min-width: 1024px) {
-    .noticeimg {
-        display: block;
-        position: absolute;
-        width: 350px;
-        height: 350px;
-        top: 80px;
-        left: -8%;
-    }
-}
-@media (min-width: 1150px) {
-    .noticeimg {
-        width: 400px;
-        height: 400px;
-        /* left: ; */
-    }
-}
-@media (min-width: 1250px) {
-    .noticeimg {
-        width: 400px;
-        height: 400px;
-        left: 0;
-    }
-}
-
 /* お問い合わせ */
 .contact {
     background-color: #d7f794;
@@ -1043,7 +718,7 @@ hr {
 }
 
 /* 波の設定 */
-.about_wave {
+.concept_wave {
     width: 100%;
     height: 80px;
     background-color: #fff8e6;

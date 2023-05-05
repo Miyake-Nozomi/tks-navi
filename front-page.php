@@ -217,12 +217,12 @@ $event_query = new WP_Query($fuga);
             </h2>
         </section>
         <!-- こども食堂とは -->
-        <section class="about w100">
-            <div class="section_inner niji_re">
-                <div class="title">
+        <section class="concept">
+            <div class="section_inner onigiri_inner">
+                <div class="title concept_title">
                     <h2>こども食堂とは</h2>
                 </div>
-                <div class="with_onigiri">
+                <div class="concept_text">
                     <div class="text">
                         <p>
                             こども食堂と聞くと、”貧困層のための場所”や、”こどもや子育て世代向けのもの”といったイメージを抱く方も多いと思います。実際はそうではなく、こどもの為の場であることはもちろんですが、地域の人や大人、様々な世代の人が集まって、一緒にごはんを食べて交流できる場です。地域とのつながりや、多世代交流をする地域コミュニティとしての役割も担っています。
@@ -239,38 +239,37 @@ $event_query = new WP_Query($fuga);
             </div>
         </section>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbowbottom.png" alt="#"
-            class="about_wave" />
+            class="concept_wave" />
 
         <!-- このサイトについて -->
-        <section class="info w100">
+        <section>
             <!-- <svg class="infotop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                 <path fill="#FFF8E6" fill-opacity="1"
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
             <div class="section_inner">
-                <div class="section_inner niji_re">
-                    <h2 class="title">このサイトについて</h2>
-                    <div class="text niji">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbow.png" alt="虹"
-                            class="rainbow">
-                        <p>
-                            徳島県には、こども食堂がたくさんあります。
-                            ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
-                        </p>
-                    </div>
-
-                    <a href="<?php echo home_url('/about'); ?>">
-                        <div class="btn_item">
-                            もっと見る
-                        </div>
-                    </a>
-
+                <h2 class="title">このサイトについて</h2>
+                <div class="text rainbow_inner">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbow.png" alt="虹"
+                        class="rainbow">
+                    <p>
+                        徳島県には、こども食堂がたくさんあります。
+                        ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
+                    </p>
                 </div>
+
+                <a href="<?php echo home_url('/about'); ?>" class="">
+                    <div class="btn_item">
+                        もっと見る
+                    </div>
+                </a>
+
+
             </div>
         </section>
         <!-- Pick Upインタビュー一覧 -->
-        <section class="interviews w100">
+        <section class="interviews">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/interviewtop.png" alt="波"
                 class="interview" />
             <!-- <svg class="interviewtop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
@@ -278,7 +277,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <div class="section_inner">
+            <div class="section_inner interviews_section_inner">
                 <div class="title taleft">
                     <h2>
                         特集記事 <br />
@@ -339,7 +338,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <div class="section_inner onigiri_inner">
+            <div class="section_inner">
                 <h2 class="title">支援したい方へ</h2>
                 <div class="shien_box">
                     <div class="text">

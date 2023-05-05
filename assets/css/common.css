@@ -50,6 +50,10 @@ body {
 
 /* ボタンのエフェクト */
 
+/* .btn_item {
+    display: inline-block;
+} */
+
 .btn_item {
     width: 180px;
     padding: 15px 30px;
@@ -99,7 +103,6 @@ body {
 .text {
     font-size: 16px;
     margin: 50px auto 0;
-    width: 280px;
     text-align: left;
 }
 
@@ -155,10 +158,6 @@ body {
 
     .detail_img {
         margin: 25px;
-    }
-
-    .text {
-        width: 70%;
     }
 
     .btn_item {
@@ -351,9 +350,7 @@ body {
         width: 200px;
         height: 50px;
     }
-    .title {
-        margin-bottom: 75px;
-    }
+
     h3 {
         margin-bottom: 40px;
     }
@@ -390,7 +387,6 @@ body {
     .menu_pc {
         display: block;
     }
-
 
     .menu_pc_ul {
         gap: 10px;
@@ -541,7 +537,7 @@ body {
 
 .footer_inner {
     width: 100%;
-    padding:  0 10%;
+    padding: 0 10%;
 }
 
 .footer_banner {
@@ -608,7 +604,7 @@ body {
         flex-direction: row;
         margin: 0 auto;
     }
-/* 
+    /* 
     .footer_nav_title_concept {
         flex-grow: 1;
         margin: 0 45px;
