@@ -296,5 +296,5 @@ $service_array = get_field('service');
         <?php wp_reset_postdata(); ?>
     </div>
 </main>
-</div>
+
 <?php get_footer(); ?>

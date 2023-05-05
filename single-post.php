@@ -26,6 +26,6 @@ $cat = $cat[0];
         </div>
     </div>
 </main>
-</div>
+
 
 <?php get_footer(); ?>

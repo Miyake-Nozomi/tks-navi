@@ -101,6 +101,5 @@
         <?php original_pagenation(); ?>
     </div>
 </main>
-</div>
 
 <?php get_footer(); ?>

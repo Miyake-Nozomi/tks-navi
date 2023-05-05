@@ -117,7 +117,6 @@ $the_query = new WP_Query($args);
 
     </div>
 </main>
-</div>
 <!-- 参加食堂一覧 終了-->
 
 <?php get_footer(); ?>

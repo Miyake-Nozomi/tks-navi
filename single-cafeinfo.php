@@ -616,5 +616,4 @@ $the_query = new WP_Query($args);
         <?php endif; ?>
     </div>
 </main>
-</div>
 <?php get_footer(); ?>

@@ -11,6 +11,5 @@
         <!-- 全体への問い合わせ 終了-->
     </div>
 </main>
-</div>
 
 <?php get_footer(); ?>

@@ -70,7 +70,7 @@
         </section>
     </div>
 </main>
-</div>
+
 <!-- リンクエリア終了 -->
 
 <?php get_footer(); ?>

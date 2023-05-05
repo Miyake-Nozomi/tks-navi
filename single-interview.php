@@ -80,6 +80,6 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
         </div>
     </div>
 </main>
-</div>
+
 
 <?php get_footer(); ?>

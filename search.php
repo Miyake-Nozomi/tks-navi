@@ -218,7 +218,7 @@ new WP_Query($wp_query);
         </div>
     </div>
 </main>
-</div>
+
 
 
 

@@ -53,5 +53,5 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/onigiri.png" alt="背景のおにぎり" class="about_img onigiri" />
     </div>
 </main>
-</div>
+
 <?php get_footer(); ?>

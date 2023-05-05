@@ -446,7 +446,7 @@ $the_query = new WP_Query($args);
 
     </div>
 </main>
-</div>
+
 
 
 <?php get_footer(); ?>
