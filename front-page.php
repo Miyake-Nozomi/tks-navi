@@ -249,24 +249,23 @@ $event_query = new WP_Query($fuga);
                 </path>
             </svg> -->
             <div class="section_inner">
-                <div class="section_inner niji_re">
-                    <h2 class="title">このサイトについて</h2>
-                    <div class="text niji">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbow.png" alt="虹"
-                            class="rainbow">
-                        <p>
-                            徳島県には、こども食堂がたくさんあります。
-                            ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
-                        </p>
-                    </div>
-
-                    <a href="<?php echo home_url('/about'); ?>">
-                        <div class="btn_item">
-                            もっと見る
-                        </div>
-                    </a>
-
+                <h2 class="title">このサイトについて</h2>
+                <div class="text rainbow_inner">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbow.png" alt="虹"
+                        class="rainbow">
+                    <p>
+                        徳島県には、こども食堂がたくさんあります。
+                        ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
+                    </p>
                 </div>
+
+                <a href="<?php echo home_url('/about'); ?>">
+                    <div class="btn_item">
+                        もっと見る
+                    </div>
+                </a>
+
+
             </div>
         </section>
         <!-- Pick Upインタビュー一覧 -->

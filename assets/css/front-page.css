@@ -226,7 +226,7 @@ html {
 
 /* このサイトについて */
 
-.niji {
+.rainbow_inner {
     position: relative;
 }
 
@@ -239,9 +239,12 @@ html {
     width: 320px;
     height: 300px;
     position: absolute;
-    left: -7%;
-    top: -60px;
+    left: 0;
+    right: 0;
+    top: -30%;
+    margin: auto;
     opacity: 20%;
+    z-index: -1;
 }
 
 @media (min-width: 770px) {
