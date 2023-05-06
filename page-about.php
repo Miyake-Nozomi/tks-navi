@@ -3,6 +3,12 @@
     <div class="main_inner">
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">このサイトについて</h2>
+        <p>このサイトは、"徳島県に住む全ての人にとって、役立つ情報を提供したい！"という熱い想いを持った「徳島こども食堂ナビ」管理運営委員会のメンバーが、ボランティアで管理運営しています。<br>
+
+サイトのサーバー代や、保守管理の費用をご支援いただけますと大変嬉しいです。<br>
+このサイトに意義を感じてくださった方は、是非ご支援をお願いします！<br>
+<a href="<?php echo home_url('/contact/'); ?>">【お問い合わせ】</a>からご連絡ください。
+</p>
         <h3 class="subtitle">このサイトの使い方</h3>
         <div class="text">
             <p class="text_title">開催情報について</p>
