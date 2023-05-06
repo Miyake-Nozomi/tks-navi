@@ -664,17 +664,17 @@ hr {
     } */
 }
 
-/* お問い合わせ */
+/* 活動の様子 */
+
 .contact {
     background-color: #d7f794;
+    padding-bottom: 70px;
 }
 
 .contact .btn_item01,
 .btn_item001 {
     margin: 10px auto 30px;
 }
-
-/* 活動の様子 */
 
 .activity_slide {
     margin: 0 auto;
@@ -724,6 +724,11 @@ hr {
         font-size: 18px;
         top: 6px;
     }
+}
+
+/* footermargin削除 */
+.footer {
+    margin-top: 0px;
 }
 
 /* 波の設定 */
