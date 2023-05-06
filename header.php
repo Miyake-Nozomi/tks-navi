@@ -71,7 +71,7 @@ if (is_tax('area')) {
                 <?php
                         $args = array(
                         'menu' => 'global-navigation',  //管理画面で作成したメニューの名前
-                        'menu_class' => 'menu_pc_ul header_flex', //メニューを構成するulタグのクラス名
+                        'menu_class' => 'menu_pc_ul flex', //メニューを構成するulタグのクラス名
                         'container' => false, //<ul>タグを囲んでいる<div>タグを削除
                         );
                         wp_nav_menu($args);
