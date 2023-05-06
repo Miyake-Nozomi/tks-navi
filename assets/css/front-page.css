@@ -280,14 +280,19 @@ html {
 }
 
 /* pickupスライドショー */
-.pickup_slide li {
+
+/* .pickup_slide li {
     position: relative;
     overflow: visible;
-}
+} */
 
 .pickup_slide {
-    position: relative;
-    margin-top: 50px;
+    /* position: relative;
+    margin-top: 50px; */
+    /* max-width: 1024px; */
+    width: 66.7vw;
+    height: 405px;
+    margin: 0 auto;
 }
 
 /* スリック矢印 */
@@ -304,11 +309,11 @@ html {
     font-weight: 900;
 }
 .slick-next {
-    right: -25px;
+    left: 100.5%;
 }
 
 .slick-prev {
-    left: -25px;
+    left: calc(-0.5% - 30.5px);
 }
 /* スリック矢印ここまで */
 
@@ -324,12 +329,22 @@ html {
     /* margin: 0 auto; */
 }
 
+.item_card {
+    margin-bottom: 5px;
+}
+
 hr {
     width: 100%;
 }
 
 .pickup_slider {
     justify-content: space-between;
+}
+
+.slick-slide.slick-active {
+    /* height: 405px; */
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 770px) {
