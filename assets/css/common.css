@@ -193,6 +193,10 @@ body {
     justify-content: space-between;
 }
 
+.header_flex {
+    display: flex;
+}
+
 .header_logo {
     width: 79px;
 }
