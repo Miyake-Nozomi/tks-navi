@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.text a {
+.link {
     margin: 20px 0;
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -9,7 +9,7 @@
     text-underline-offset: 5px;
 }
 
-.text a:hover {
+.link:hover {
     color: #f8b600;
     text-decoration: underline;
     text-decoration-style: dotted;
