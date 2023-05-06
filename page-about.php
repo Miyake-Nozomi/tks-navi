@@ -62,8 +62,10 @@
                 <p><a href="<?php echo home_url('/link/care'); ?>">【子育て支援関連】</a></p>
                 <p><a href="<?php echo home_url('/link/third'); ?>">【こどもの居場所関連】</a></p>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/onigiri.png" alt="背景のおにぎり"
-                class="about_img onigiri" />
+            <div class="onigiri">
+            </div>
+            <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/about/onigiri.png" alt="背景のおにぎり"
+                class="about_img onigiri" /> -->
         </section>
     </div>
 </main>

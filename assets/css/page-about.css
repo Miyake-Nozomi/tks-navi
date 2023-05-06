@@ -46,7 +46,24 @@
     position: relative;
 }
 
-.about_img {
+.onigiri {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    background-image: url(../images/about/onigiri.png);
+}
+
+.onigiri {
+    top: 150px;
+    left: 0px;
+}
+
+/* .about_img {
     position: absolute;
 }
 
@@ -54,11 +71,13 @@
     width: 40%;
     top: 90px;
     opacity: 25%;
-}
+} */
 
 @media screen and (min-width: 770px) {
     .onigiri {
-        top: 55px;
-        left: -85px;
+        top: 150px;
+        left: -100px;
+        width: 350px;
+        height: 200px;
     }
 }
