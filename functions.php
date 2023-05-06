@@ -172,6 +172,12 @@ function add_my_files() {
             );
         }
 
+            // page-abminのみ出力
+    if (is_page('admin')) {
+        wp_enqueue_style('page-admin', get_template_directory_uri() . '/assets/css/page-admin.css', array('my-common')
+        );
+    }
+
     // 404のみ出力
     if (is_404()) {
         wp_enqueue_style('404', get_template_directory_uri() . '/assets/css/404.css', array('my-common')
