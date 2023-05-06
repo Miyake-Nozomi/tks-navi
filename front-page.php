@@ -332,8 +332,8 @@ $event_query = new WP_Query($fuga);
                 <div class="shien_box">
                     <div class="text">
                         <p>
-                            こども食堂は、ほとんどがボランティアスタッフで運営されています。
-                            行政等からの助成金等がもらえる場合もありますが、それでは間に合わない事も多いです。
+                            こども食堂は、ほとんどがボランティアスタッフよって運営されています。
+                            行政等からの助成金がもらえる場合もありますが、それでは間に合わないことも多いです。
                             自分にできることから、支援してみませんか？
                             一言に”支援”と言っても、いくつかの方法があります。
                         </p>
@@ -400,38 +400,15 @@ $event_query = new WP_Query($fuga);
             </svg> -->
             <div class="section_inner">
                 <h2 class="title link_title">食堂運営者の方へ</h2>
-                <div class="link_flex">
-                    <a href="<?php echo home_url('/link/cafe'); ?>" class="link_cover">
-                        <div class="link_item">
-                            <div class="btn_item01 link_sample">こども食堂関連</div>
-                            <div class="link_text">
-                                <p>
-                                    こども食堂関連のNPO法人や、徳島県ホームページのリンク集です。
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="<?php echo home_url('/link/care'); ?>" class="link_cover">
-                        <div class="link_item">
-                            <div class="btn_item_link  link_sample02">子育て支援関連</div>
-                            <div class="link_text">
-                                <p>
-                                    子育て支援に繋がる団体のWEBサイトやInstagramのリンク集です。
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="<?php echo home_url('/link/third'); ?>" class="link_cover">
-                        <div class="link_item">
-                            <div class="btn_item_link btntest">こどもの居場所関連</div>
-                            <div class="link_text">
-                                <p>
-                                    家と学校以外の、第3の居場所になるような団体のリンク集です。
-                                </p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="text">
+                    <p>
+                    「このサイトに関するお問い合わせはこちらから！<br>
+                    ※各こども食堂へのお問い合わせは、それぞれの食堂詳細ページの連絡先へ個別にお問い合わせください。
+                </p>
                 </div>
+                <a href="<?php echo home_url('/admin/'); ?>">
+                    <div class="btn_item">もっと見る</div>
+                </a>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/linkbottom.png" alt="波" class="link_wave" />
         </section>
@@ -448,6 +425,12 @@ $event_query = new WP_Query($fuga);
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/noticeimg.png" alt="お知らせ画像" class="noticeimg" />
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/suzume.png" alt="すずめ" class="notice_suzume" />
                 <h2 class="title">お問い合わせ</h2>
+                <div class="text">
+                    <p>
+                    「このサイトに関するお問い合わせはこちらから！<br>
+                    ※各こども食堂へのお問い合わせは、それぞれの食堂詳細ページの連絡先へ個別にお問い合わせください。
+                </p>
+                </div>
                 <a href="<?php echo home_url('/contact'); ?>">
                     <div class="btn_item">お問い合わせはこちら</div>
                 </a>
