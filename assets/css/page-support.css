@@ -1,4 +1,10 @@
 @charset "utf-8";
+.support_inner {
+    border-radius: 15px;
+    background-color: #fffbf1;
+    border: 2px solid #ffdf8c;
+    padding: 12px 15px 15px;
+}
 
 /***********************
         タブ
@@ -7,7 +13,7 @@
 .tab {
     max-width: 980px;
     height: 75px;
-    margin: 0 auto;
+    margin: 50px auto 0;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
@@ -52,7 +58,7 @@
  **************************/
 .support_content {
     max-width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .support_supplies,
@@ -60,7 +66,8 @@
 .support_help {
     /* max-width: 650px; */
     /* width: 280px; */
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
     height: auto;
     margin: 0 auto;
     padding: 35px;
@@ -115,7 +122,7 @@
 .support_supplies p,
 .support_money p,
 .support_help p {
-    width: 195px;
+    /* width: 195px; */
     margin: 20px auto;
     text-align: left;
 }
@@ -134,7 +141,7 @@
 
 /* ボタン */
 
-.btn_item {
+.support_btn_item {
     width: 100%;
     text-align: center;
     margin-top: 50px;
@@ -150,10 +157,26 @@
     color: black;
 }
 
-.btn_item a:hover {
+.btn01 a:hover {
     padding: 15px 40px;
     transform: translateY(-5px);
     background-color: #fdffb0;
+}
+
+.btn02 a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f7dd94;
+    transition: 0.3s;
+    border-radius: 20px;
+    transform: translateY(0);
+    color: black;
+}
+
+.btn02 a:hover {
+    padding: 15px 40px;
+    transform: translateY(-5px);
+    background-color: #f7dd94;
 }
 
 .btn03 a {
@@ -190,13 +213,6 @@
         background-color: #fff462;
     }
 
-    .support_supplies,
-    .support_money,
-    .support_help {
-        /* width: 100%; */
-        margin-top: 85px;
-    }
-
     .support_btn {
         width: 30%;
         height: 100px;
@@ -211,7 +227,7 @@
     .support_supplies p,
     .support_money p,
     .support_help p {
-        width: 570px;
+        width: 580px;
     }
 
     .btn_center {
