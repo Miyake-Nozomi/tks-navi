@@ -2,74 +2,74 @@
 <?php
 $this_terms = get_the_terms($post->ID,'area');
 
-$event_id = get_field('event_id');
-$cafeinfo_id = get_field('id', $event_id);
+// $event_id = get_field('event_id');
+$cafeinfo_id = get_field('id');
 
-$service_array = get_field('service', $event_id);
+$service_array = get_field('service');
 
 
-if (empty(get_field('address_2',$event_id))) {
+if (empty(get_field('address_2'))) {
     $events = array(
-'開催住所' => ['〒'. get_field('postcode',$event_id),get_field('address',$event_id)],
-'会場' => get_field('place_name',$event_id),
-'参加条件' => get_field('conditions',$event_id),
+'開催住所' => ['〒'. get_field('postcode'),get_field('address')],
+'会場' => get_field('place_name'),
+'参加条件' => get_field('conditions'),
 );
 }else{
 $events = array(
-'開催住所' => ['〒'. get_field('postcode',$event_id),get_field('address',$event_id)],
-'開催住所2' => ['〒'. get_field('postcode_2',$event_id),get_field('address_2',$event_id)],
-'会場' => get_field('place_name',$event_id),
-'参加条件' => get_field('conditions',$event_id),
+'開催住所' => ['〒'. get_field('postcode'),get_field('address')],
+'開催住所2' => ['〒'. get_field('postcode_2'),get_field('address_2')],
+'会場' => get_field('place_name'),
+'参加条件' => get_field('conditions'),
 );
 }
 
-if (!empty(get_field('date',$event_id))) {
-    $date = get_field('date',$event_id);
+if (!empty(get_field('date'))) {
+    $date = get_field('date');
     $event_day[] = $date;
 }
 
-if (!empty(get_field('time',$event_id))) {
-    $time = get_field('time',$event_id);
+if (!empty(get_field('time'))) {
+    $time = get_field('time');
     $event_day[] = $time;
 }
 
 if (!empty($event_day)) {
-    $time = get_field('time',$event_id);
+    $time = get_field('time');
     $events['開催日時・頻度'] = $event_day;
 }
 
 
-$child_price = get_field('child_price',$event_id);
+$child_price = get_field('child_price');
 if ($child_price == '0') {
     $child_price = '無料';
 } else{
     $child_price = $child_price.'円';
 }
 
-if (!empty(get_field('child_price_info',$event_id))) {
-    $child_price = $child_price.'【'.get_field('child_price_info',$event_id).'】';
+if (!empty(get_field('child_price_info'))) {
+    $child_price = $child_price.'【'.get_field('child_price_info').'】';
 }
 
 $price = array('こども '.$child_price);
 
 
-if (!is_null(get_field('adult_price',$event_id))) {
-    $adult_price = get_field('adult_price',$event_id);
+if (!is_null(get_field('adult_price'))) {
+    $adult_price = get_field('adult_price');
     if ($adult_price == '0') {
         $adult_price = '無料';
     } else{
         $adult_price = $adult_price.'円';
     }
-    if (!empty(get_field('adult_price_info',$event_id))) {
-    $adult_price = $adult_price.'【'.get_field('adult_price_info',$event_id).'】';
+    if (!empty(get_field('adult_price_info'))) {
+    $adult_price = $adult_price.'【'.get_field('adult_price_info').'】';
     }
     $price[] = 'おとな '.$adult_price;
 }
 
-if (!empty(get_field('any',$event_id))) {
+if (!empty(get_field('any'))) {
     $any = '募金制';
-    if (!empty(get_field('any_info',$event_id))) {
-    $any = $any.'【'.get_field('any_info',$event_id).'】';
+    if (!empty(get_field('any_info'))) {
+    $any = $any.'【'.get_field('any_info').'】';
     $price = $any;
 }
 }
@@ -77,44 +77,39 @@ if (!empty(get_field('any',$event_id))) {
 $events['参加料金'] = $price;
 
 
-if (!empty(get_field('person',$event_id))) {
-    $person = get_field('person',$event_id);
+if (!empty(get_field('person'))) {
+    $person = get_field('person');
     foreach ($person as $value) {
 
 
         if ($value == '誰でも行ける') {
-            if (!empty(get_field('everyone',$event_id))) {
-                $value = $value. '【' . get_field('everyone',$event_id). '】';
-            }
-            $person_info[] = $value;
-        }elseif ($value == 'こどもは保護者同伴') {
-            if (!empty(get_field('accompanied',$event_id))) {
-                $value = $value. '【' . get_field('accompanied',$event_id). '】';
+            if (!empty(get_field('everyone'))) {
+                $value = $value. '【' . get_field('everyone'). '】';
             }
             $person_info[] = $value;
         }elseif ($value == 'こどもだけで行ける') {
-            if (!empty(get_field('child_only',$event_id))) {
-                $value = $value. '【' . get_field('child_only',$event_id). '】';
+            if (!empty(get_field('child_only'))) {
+                $value = $value. '【' . get_field('child_only'). '】';
             }
             $person_info[] = $value;
         }elseif ($value == '大人だけで行ける') {
-            if (!empty(get_field('adult_only',$event_id))) {
-                $value = $value. '【' . get_field('adult_only',$event_id). '】';
+            if (!empty(get_field('adult_only'))) {
+                $value = $value. '【' . get_field('adult_only'). '】';
             }
             $person_info[] = $value;
         }elseif ($value == '大人は保護者だけ') {
-            if (!empty(get_field('guardian_only',$event_id))) {
-                $value = $value. '【' . get_field('guardian_only',$event_id). '】';
+            if (!empty(get_field('guardian_only'))) {
+                $value = $value. '【' . get_field('guardian_only'). '】';
             }
             $person_info[] = $value;
         }elseif ($value == '地域の方だけ') {
-            if (!empty(get_field('local_only',$event_id))) {
-                $value = $value. '【' . get_field('local_only',$event_id). '】';
+            if (!empty(get_field('local_only'))) {
+                $value = $value. '【' . get_field('local_only'). '】';
             }
             $person_info[] = $value;
         }elseif ($value == '会員登録制') {
-            if (!empty(get_field('member',$event_id))) {
-                $value = $value. '【' . get_field('member',$event_id). '】';
+            if (!empty(get_field('member'))) {
+                $value = $value. '【' . get_field('member'). '】';
             }
             $person_info[] = $value;
         }
@@ -122,46 +117,46 @@ if (!empty(get_field('person',$event_id))) {
     $events['参加対象'] = $person_info;
 }
 
-if (!empty(get_field('main_age',$event_id))) {
-    $main_age =get_field('main_age',$event_id);
+if (!empty(get_field('main_age'))) {
+    $main_age =get_field('main_age');
     $events['参加者の主な年代'] = $main_age;
 }
 
-if (!empty(get_field('scale',$event_id))) {
-    $scale =get_field('scale',$event_id);
+if (!empty(get_field('scale'))) {
+    $scale =get_field('scale');
     $events['開催規模'] = $scale;
 }
 
-if (!empty(get_field('offer',$event_id))) {
-    $offer = get_field('offer',$event_id);
+if (!empty(get_field('offer'))) {
+    $offer = get_field('offer');
     $events['食事スタイル'] = $offer;
 }
 
-if (!empty(get_field('reserve',$event_id))) {
-$reserve = get_field('reserve',$event_id);
+if (!empty(get_field('reserve'))) {
+$reserve = get_field('reserve');
 if ($reserve == '1') {
     $reserve = '必要あり';
 } else{
     $reserve = '必要なし';
 }
 
-if (!empty(get_field('reserve_info',$event_id))) {
-$reserve = $reserve. '【' . get_field('reserve_info',$event_id). '】';
+if (!empty(get_field('reserve_info'))) {
+$reserve = $reserve. '【' . get_field('reserve_info'). '】';
 }
 
 $events['事前予約'] = $reserve;
 }
 
-if (!empty(get_field('parking',$event_id))) {
-$parking = get_field('parking',$event_id)[0];
+if (!empty(get_field('parking'))) {
+$parking = get_field('parking')[0];
 if ($parking == '有り') {
     $parking = 'あり';
 } else{
     $parking = 'なし';
 }
 
-if (!empty(get_field('parking_info',$event_id))) {
-$parking = $parking. ' 【' . get_field('parking_info',$event_id). '】';
+if (!empty(get_field('parking_info'))) {
+$parking = $parking. ' 【' . get_field('parking_info'). '】';
 }
 
 $events['駐車場'] = $parking;
@@ -262,7 +257,7 @@ if (get_field('recruitment')=== true) {
 
 $pics = array(get_field('pic1'),get_field('pic2'),get_field('pic3'),get_field('pic4'),get_field('pic5'),get_field('pic6'),get_field('pic7'),get_field('pic8'),get_field('pic9'),get_field('pic10'));
 
-$license = get_field('license',$event_id);
+$license = get_field('license');
 $license = explode(",", $license);
 
 $args = array(
@@ -323,8 +318,7 @@ $the_query = new WP_Query($args);
                         <?php if(!empty($eye_catching)): ?>
                         <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
                         <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
                         <?php endif; ?>
                         <div class="underimg text cafeinfo_flex flex">
                             <p class="address">
@@ -348,14 +342,12 @@ $the_query = new WP_Query($args);
                         </div>
                         <?php if (!empty(get_field('interview_id'))) : ?>
                         <div class="btn_item">
-                            <a
-                                href="<?php echo home_url('/interview/' . get_field('interview_id')); ?>"><?php echo get_field('name').'の特集記事'; ?></a>
+                            <a href="<?php echo home_url('/interview/' . get_field('interview_id')); ?>"><?php echo get_field('name').'の特集記事'; ?></a>
                         </div>
                         <?php endif; ?>
                         <?php if (!empty(get_field('interview_id_2'))) : ?>
                         <div class="btn_item">
-                            <a
-                                href="<?php echo home_url('/interview/' . get_field('interview_id_2')); ?>"><?php echo get_field('name').'の特集記事2'; ?></a>
+                            <a href="<?php echo home_url('/interview/' . get_field('interview_id_2')); ?>"><?php echo get_field('name').'の特集記事2'; ?></a>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -363,15 +355,12 @@ $the_query = new WP_Query($args);
             </div>
             <!-- スクロール -->
             <div class="scroll"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama01.png" alt="シャボン玉"
-                class="shingle-cafeinfo_img shabondama01" />
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama02.png" alt="シャボン玉"
-                class="shingle-cafeinfo_img shabondama02" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama01.png" alt="シャボン玉" class="shingle-cafeinfo_img shabondama01" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama02.png" alt="シャボン玉" class="shingle-cafeinfo_img shabondama02" />
         </div>
         <div class="beige color">
             <!-- <<<<<<< HEAD  -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigetop.png" alt="波"
-                class="wave_img btop" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigetop.png" alt="波" class="wave_img btop" />
             <!-- <svg class="beigetop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                         <path
                             fill="#f7dd94"
@@ -383,8 +372,7 @@ $the_query = new WP_Query($args);
             <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigetop.png" alt="波"
                 class="wave_img btop" /> -->
             <svg class="beigetop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#f7dd94" fill-opacity="1"
-                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                <path fill="#f7dd94" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
             <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
@@ -415,8 +403,7 @@ $the_query = new WP_Query($args);
                 <?php endif; ?>
                 <?php endforeach; ?>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigebottom.png" alt="波"
-                class="wave_img bbottom" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigebottom.png" alt="波" class="wave_img bbottom" />
         </div>
         <div class="green color">
             <!-- <<<<<<< HEAD  -->
@@ -425,8 +412,7 @@ $the_query = new WP_Query($args);
                 </svg> -->
             <!-- ======= -->
             <svg class="greentop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#d7f794" fill-opacity="1"
-                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                <path fill="#d7f794" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
             <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
@@ -524,8 +510,7 @@ $the_query = new WP_Query($args);
             </div>
             <!-- スクロール -->
             <div class="scroll"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/greenbottmo.png" alt="波"
-                class="wave_img gbottom" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/greenbottmo.png" alt="波" class="wave_img gbottom" />
         </div>
         <div class="bgcolor color">
             <!-- <<<<<<< HEAD  -->
@@ -534,8 +519,7 @@ $the_query = new WP_Query($args);
                 </svg> -->
             <!-- ======= -->
             <svg class="bgtop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#fff8e6" fill-opacity="1"
-                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                <path fill="#fff8e6" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
             <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
@@ -565,7 +549,7 @@ $the_query = new WP_Query($args);
                     </div>
                     <div class="addressmap">
                         <h3 class="beige_categorytitle beige_access">アクセス</h3>
-                        <?php the_field('place_map',$event_id); ?>
+                        <?php the_field('map'); ?>
                     </div>
                 </div>
                 <h3 class="subtitle_ulineorange">開催情報</h3>
