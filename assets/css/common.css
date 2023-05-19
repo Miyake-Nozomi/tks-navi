@@ -181,8 +181,9 @@ body {
     font-family: "Zen Maru Gothic", sans-serif;
     position: fixed;
     top: 0;
+    background-color: #fff8e6;
     /* #fff8e6の透過率80% */
-    background-color: #fff8e6cc;
+    /* background-color: #fff8e6cc; */
 }
 
 .header_inner {
