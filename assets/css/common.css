@@ -181,6 +181,8 @@ body {
     font-family: "Zen Maru Gothic", sans-serif;
     position: fixed;
     top: 0;
+    /* #fff8e6の透過率80% */
+    background-color: #fff8e6cc;
 }
 
 .header_inner {
@@ -188,7 +190,7 @@ body {
     height: 90px;
     z-index: 999;
     padding: 0 3%;
-    background-color: #fff8e6;
+    /* background-color: #fff8e6; */
     align-items: center;
     justify-content: space-between;
 }
@@ -371,15 +373,15 @@ body {
 @media (min-width: 1000px) {
     /* ヘッダー */
     .header {
-        background-color: #fff8e6;
-        height: 104px;
+        /* height: 104px; */
+        height: 90px;
         position: fixed;
     }
     .header_inner {
         max-width: 1024px;
         inset: 0;
         margin: 0 auto;
-        height: 104px;
+        /* height: 104px; */
     }
 
     /* モバイル版メニュー消去 */
@@ -614,7 +616,7 @@ body {
         flex-direction: row;
         margin: 0 auto;
     }
-    /* 
+    /*
     .footer_nav_title_concept {
         flex-grow: 1;
         margin: 0 45px;

@@ -108,7 +108,8 @@ html {
 
 .kv_slider img {
     width: 100vw;
-    height: 93vh;
+    /* height: 93vh; */
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -287,12 +288,10 @@ html {
 } */
 
 .pickup_slide {
-    /* position: relative;
-    margin-top: 50px; */
-    /* max-width: 1024px; */
-    width: 66.7vw;
+    max-width: 1024px;
+    /* width: 66.7vw; */
     height: 405px;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 /* スリック矢印 */
@@ -301,19 +300,23 @@ html {
     color: orange;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    display: none;
 }
 .slick-next:before {
     content: "\f0a9";
     color: orange;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    display: none;
 }
 .slick-next {
     left: 100.5%;
+    display: none;
 }
 
 .slick-prev {
     left: calc(-0.5% - 30.5px);
+    display: none;
 }
 /* スリック矢印ここまで */
 
@@ -360,15 +363,23 @@ hr {
         width: 280px;
         height: 200px;
     } */
-    .interviews {
+    /* .interviews {
         margin-bottom: 30px;
-    }
+    } */
     .slick-prev:before {
         content: "\f0a8";
         font-size: 30px;
     }
     .slick-next:before {
         font-size: 30px;
+    }
+
+    .slick-next {
+        display: block;
+    }
+
+    .slick-prev {
+        display: block;
     }
 }
 
