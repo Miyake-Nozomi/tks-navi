@@ -30,9 +30,9 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
                     <?php echo the_field('organizer'); ?>
                 </nobr>
             </h2>
-            <div class="area_inner area_flex">
-                <div>
-                    <div class="area_flex pickupimg">
+            <div class="area_inner">
+                <div class="pickup">
+                    <div class="flex pickupimg">
                         <div class="pickup_top_img">
                             <div class="pickup_single_img">
                                 <?php
@@ -59,6 +59,7 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
                         <?php the_field('message'); ?>
                     </div>
                 </div>
+                <!-- インタビュー項目一覧 -->
                 <div class="area_east">
                     <h3 class="area_title">インタビュー項目一覧</h3>
                     <ul class="area_list_wrap">
@@ -72,7 +73,7 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
                     </ul>
                 </div>
             </div>
-            <!-- インタビュー項目一覧 -->
+
 
             <div class="btn_item">
                 <a href="<?php echo home_url('/cafeinfo/' . get_field('id')); ?>">食堂紹介へ</a>
