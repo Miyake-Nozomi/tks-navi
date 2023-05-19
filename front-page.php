@@ -322,8 +322,10 @@ $event_query = new WP_Query($fuga);
             </svg>
             <div class="section_inner">
                 <h2 class="title">エリアからこども食堂をさがす</h2>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/map_serch.png" alt="虫眼鏡"
-                    class="serch_map_img" />
+                <div class="serch_map_img_inner">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/map_serch.png" alt="虫眼鏡"
+                        class="serch_map_img" />
+                </div>
                 <div class="map_pic">
                     <a href="<?php echo home_url('/area/east'); ?>" class="serch_btn north">東部</a>
                     <a href="<?php echo home_url('/area/south'); ?>" class="serch_btn south">南部</a>
@@ -361,10 +363,10 @@ $event_query = new WP_Query($fuga);
                         </p>
                     </div>
                     <img class="mobile_pic"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_mobile.png"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_man.png"
                         alt="野菜を収穫した人" />
                     <img class="pc_pic"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_pc.png"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_woman.png"
                         alt="野菜を収穫した人">
                 </div>
                 <a href="<?php echo home_url('/support'); ?>">
@@ -389,7 +391,7 @@ $event_query = new WP_Query($fuga);
                 <div class="link_flex">
                     <a href="<?php echo home_url('/link/cafe'); ?>" class="link_cover">
                         <div class="link_item">
-                            <div class="btn_item01 link_sample">こども食堂関連</div>
+                            <div class="btn_item_link link_sample">こども食堂関連</div>
                             <div class="link_text">
                                 <p>
                                     こども食堂関連のNPO法人や、徳島県ホームページのリンク集です。
@@ -460,10 +462,6 @@ $event_query = new WP_Query($fuga);
                 <path d="M0,0 v5 q25,-2 50,0 t50,0  v-5 Z" fill="#fdffb0"></path>
             </svg>
             <div class="section_inner">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/noticeimg.png" alt="お知らせ画像"
-                    class="noticeimg" />
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/suzume.png" alt="すずめ"
-                    class="notice_suzume" />
                 <h2 class="title">お問い合わせ</h2>
                 <div class="text">
                     <p>
