@@ -230,6 +230,7 @@ $the_query = new WP_Query($args);
 ?>
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">条件からさがす</h2>
         <?php //echo $check; ?>
@@ -257,9 +258,7 @@ $the_query = new WP_Query($args);
                                 </label>
                                 <?php foreach ($east as $town) :  ?>
                                 <label for="<?php echo $town->slug; ?>">
-                                    <input type="checkbox" id="<?php echo $town->slug; ?>" name="area[]"
-                                        value="<?php echo $town->slug; ?>"
-                                        class="east_list" /><?php echo $town->name; ?>
+                                    <input type="checkbox" id="<?php echo $town->slug; ?>" name="area[]" value="<?php echo $town->slug; ?>" class="east_list" /><?php echo $town->name; ?>
                                 </label>
                                 <?php endforeach; ?>
                             </div>
@@ -274,9 +273,7 @@ $the_query = new WP_Query($args);
                                 </label>
                                 <?php foreach ($south as $town) :  ?>
                                 <label for="<?php echo $town->slug; ?>">
-                                    <input type="checkbox" id="<?php echo $town->slug; ?>" name="area[]"
-                                        value="<?php echo $town->slug; ?>"
-                                        class="south_list" /><?php echo $town->name; ?>
+                                    <input type="checkbox" id="<?php echo $town->slug; ?>" name="area[]" value="<?php echo $town->slug; ?>" class="south_list" /><?php echo $town->name; ?>
                                 </label>
                                 <?php endforeach; ?>
                             </div>
@@ -290,9 +287,7 @@ $the_query = new WP_Query($args);
                                 </label>
                                 <?php foreach ($west as $town) :  ?>
                                 <label for="<?php echo $town->slug; ?>">
-                                    <input type="checkbox" id="<?php echo $town->slug; ?>" name="area[]"
-                                        value="<?php echo $town->slug; ?>"
-                                        class="west_list" /><?php echo $town->name; ?>
+                                    <input type="checkbox" id="<?php echo $town->slug; ?>" name="area[]" value="<?php echo $town->slug; ?>" class="west_list" /><?php echo $town->name; ?>
                                 </label>
                                 <?php endforeach; ?>
                             </div>
@@ -374,8 +369,7 @@ $the_query = new WP_Query($args);
                 <?php else:?>
                 <div class="not_found_inner ">
                     <p>お探しのこども食堂が見つかりませんでした。</p>
-                    <img src="<?php echo get_template_directory_uri();?>/assets/images/index/notfind.png" alt=""
-                        class="not_found_img" />
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/index/notfind.png" alt="" class="not_found_img" />
                 </div>
                 <?php endif;?>
                 <?php wp_reset_postdata(); ?>

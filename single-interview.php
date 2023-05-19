@@ -20,6 +20,7 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
 
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <div class="pickup_single">
             <h2 class="pickup_title_1 pickup_title">
@@ -29,9 +30,9 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
                     <?php echo the_field('organizer'); ?>
                 </nobr>
             </h2>
-            <div class="area_inner area_flex">
-                <div>
-                    <div class="area_flex pickupimg">
+            <div class="area_inner">
+                <div class="pickup">
+                    <div class="flex pickupimg">
                         <div class="pickup_top_img">
                             <div class="pickup_single_img">
                                 <?php
@@ -41,8 +42,7 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
                                 <?php if(!empty($eye_catching)): ?>
                                 <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
                                 <?php else: ?>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png"
-                                    alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
                                 <?php endif; ?>
                             </div>
                             <div class="underimg text cafeinfo_flex flex">
@@ -59,6 +59,7 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
                         <?php the_field('message'); ?>
                     </div>
                 </div>
+                <!-- インタビュー項目一覧 -->
                 <div class="area_east">
                     <h3 class="area_title">インタビュー項目一覧</h3>
                     <ul class="area_list_wrap">
@@ -72,7 +73,7 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
                     </ul>
                 </div>
             </div>
-            <!-- インタビュー項目一覧 -->
+
 
             <div class="btn_item">
                 <a href="<?php echo home_url('/cafeinfo/' . get_field('id')); ?>">食堂紹介へ</a>
