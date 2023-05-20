@@ -251,11 +251,9 @@ $event_query = new WP_Query($fuga);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
-            <div class="section_inner">
+            <div class="section_inner rainbow_inner">
                 <h2 class="title">このサイトについて</h2>
-                <div class="text rainbow_inner">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbow.png" alt="虹"
-                        class="rainbow">
+                <div class="text">
                     <p>
                         徳島県には、こども食堂がたくさんあります。
                         ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
@@ -267,8 +265,8 @@ $event_query = new WP_Query($fuga);
                         もっと見る
                     </div>
                 </a>
-
-
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/rainbow.png" alt="虹"
+                    class="rainbow">
             </div>
         </section>
         <!-- Pick Upインタビュー一覧 -->
@@ -321,7 +319,9 @@ $event_query = new WP_Query($fuga);
                 <path d="M0,0 v5 q25,-2 50,0 t50,0  v-5 Z" fill="#fdffb0"></path>
             </svg>
             <div class="section_inner">
-                <h2 class="title">エリアからこども食堂をさがす</h2>
+                <h2 class="title">
+                    エリアから </br> こども食堂をさがす
+                </h2>
                 <div class="serch_map_img_inner">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/map_serch.png" alt="虫眼鏡"
                         class="serch_map_img" />
