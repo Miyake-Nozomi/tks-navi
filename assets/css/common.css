@@ -176,6 +176,7 @@ body {
 
 .header {
     width: 100%;
+    height: 90px;
     line-height: 1.7;
     z-index: 999;
     font-family: "Zen Maru Gothic", sans-serif;
@@ -190,7 +191,7 @@ body {
     width: 100%;
     height: 90px;
     z-index: 999;
-    padding: 0 3%;
+    padding: 0 20px;
     /* background-color: #fff8e6; */
     align-items: center;
     justify-content: space-between;
@@ -375,7 +376,7 @@ body {
     /* ヘッダー */
     .header {
         /* height: 104px; */
-        height: 90px;
+        /* height: 90px; */
         position: fixed;
     }
     .header_inner {
@@ -401,10 +402,10 @@ body {
     }
 
     .menu_pc_ul {
-        gap: 10px;
-        height: 104px;
-        align-items: center;
-        margin-left: 20px;
+        /* gap: 10px; */
+        /* height: 104px; */
+        /* align-items: center; */
+        /* margin-left: 20px; */
     }
 
     /* ナビゲーション */
