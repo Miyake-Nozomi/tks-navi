@@ -202,11 +202,11 @@ body {
 }
 
 .header_logo {
-    width: 79px;
+    /* width: 79px; */
 }
 
 .header_logo img {
-    width: 100%;
+    height: 60px;
 }
 
 /* hamburgerメニュー */
@@ -406,6 +406,8 @@ body {
         /* height: 104px; */
         /* align-items: center; */
         /* margin-left: 20px; */
+        justify-content: space-between;
+        align-items: center;
     }
 
     /* ナビゲーション */
@@ -535,8 +537,8 @@ body {
 
     .btn_header_search_pc {
         display: block;
-        height: 45px;
-        margin: 27px 0;
+        /* height: 45px; */
+        /* margin: 27px 0; */
     }
 }
 
