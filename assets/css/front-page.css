@@ -103,12 +103,12 @@ html {
 
 .kv_slider {
     width: 100vw;
-    height: 93vh;
+    height: calc(100vh - 90px);
 }
 
 .kv_slider img {
     width: 100vw;
-    height: 93vh;
+    height: calc(100vh - 90px);
     /* height: 100vh; */
     object-fit: cover;
 }

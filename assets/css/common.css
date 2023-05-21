@@ -198,7 +198,7 @@ body {
 }
 
 .header_flex {
-    display: flex;
+    display: none;
 }
 
 .header_logo {
@@ -206,7 +206,7 @@ body {
 }
 
 .header_logo img {
-    height: 60px;
+    width: 160px;
 }
 
 /* hamburgerメニュー */
@@ -251,7 +251,7 @@ body {
 }
 
 .btn_header_search_pc {
-    display: none;
+    /* display: none; */
 }
 
 /* メニュー画面 */
@@ -268,7 +268,7 @@ body {
 }
 
 .menu img {
-    width: 90px;
+    /* width: 90px; */
     height: 80px;
 }
 
@@ -332,17 +332,22 @@ body {
 .hbg_form {
     background-color: white;
     border-radius: 2px;
-    margin-right: 5px;
-    width: 40vw;
+    /* margin-right: 5px; */
+    /* width: 40vw; */
+    margin: 0 10px;
+    width: 90%;
 }
 
 .hbg_search {
-    position: relative;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
 }
 
 .hbg_submit {
-    background-image: url(../images/serch.svg);
+    background: url(../images/serch.svg) no-repeat center center / auto 100%;
     width: 16px;
+    margin-right: 10px;
 }
 
 /* PC版nav消去 */
@@ -414,23 +419,37 @@ body {
 
     .btn_header_search_pc {
         border-radius: 5px;
-        padding: 7px;
+        /* padding: 7px; */
         background-color: #d7f794;
-        position: relative;
+        /* position: relative; */
+    }
+
+    .btn_header_search_pc {
+        /* display: block; */
+        /* height: 45px; */
+        /* margin: 27px 0; */
+        width: 160px;
+        height: 45px;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .hbg_form {
-        width: 140px;
-        font-size: 15px;
-        margin-right: 40px;
+        /* width: 140px; */
+        font-size: 16px;
+        /* margin-right: 40px; */
+        width: 110px;
+        margin: 10px;
     }
 
     .hbg_submit_pc {
         background: url(../images/serch.svg) no-repeat center center / auto 100%;
-        width: 27px;
-        position: absolute;
-        right: 10px;
-        top: 11px;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        /* position: absolute; */
+        /* right: 10px; */
+        /* top: 11px; */
     }
 
     .btn_header_pc_1 {
@@ -535,10 +554,8 @@ body {
         text-underline-offset: 3px;
     }
 
-    .btn_header_search_pc {
-        display: block;
-        /* height: 45px; */
-        /* margin: 27px 0; */
+    .header_flex {
+        display: flex;
     }
 }
 

@@ -75,38 +75,38 @@ if (is_tax('area')) {
                         ?>
             </nav>
             <!-- PC版キーワード -->
-            <form class="btn_header_search_pc" action="<?php echo home_url('/'); ?>" method="get">
+            <form class="btn_header_search_pc header_flex" action="<?php echo home_url('/'); ?>" method="get">
                 <input type="hidden" name="search_type" value="keywords" />
-                <input class="hbg_form" size="20" type="search" name="s" maxlength="20" value="<?php the_search_query(); ?>" placeholder="キーワードを入力" id="" />
+                <input class="hbg_form" size="20" type="search" name="s" maxlength="20" value="<?php the_search_query(); ?>" placeholder="キーワード" id="" />
                 <input class="hbg_submit_pc" type="submit" value="" />
             </form>
         </div>
         <nav class="menu">
             <ul>
                 <li>
-                    <a class="a_menu" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="ホームボタン" /></a>
+                    <a class="a_menu" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_1.png" alt="ホームボタン" /></a>
                 </li>
                 <li class="btn_header">
-                    <a href="<?php echo home_url('/concept'); ?>">こども食堂とは</a>
+                    <a href="<?php echo home_url('/concept/'); ?>">こども食堂とは</a>
                 </li>
                 <li class="btn_header">
-                    <a href="<?php echo home_url('/area/east'); ?>">エリアからさがす</a>
+                    <a href="<?php echo home_url('/interview/'); ?>">特集記事</a>
                 </li>
                 <li class="btn_header">
-                    <a href="<?php echo home_url('/find'); ?>">条件からさがす</a>
+                    <a href="<?php echo home_url('/area/east/'); ?>">エリアからさがす</a>
                 </li>
                 <li class="btn_header">
-                    <a href="<?php echo home_url('/support'); ?>">支援したい方へ</a>
+                    <a href="<?php echo home_url('/find/'); ?>">条件からさがす</a>
                 </li>
                 <li class="btn_header">
-                    <a href="<?php echo home_url('/interview'); ?>">特集記事</a>
+                    <a href="<?php echo home_url('/support/'); ?>">支援したい方へ</a>
                 </li>
                 <li class="btn_header">
-                    <a href="<?php echo home_url('/event'); ?>">開催情報</a>
+                    <a href="<?php echo home_url('/admin/'); ?>">食堂支援者の方へ</a>
                 </li>
                 <!-- 検索機能 -->
                 <li class="btn_header menu_search">
-                    <form class="hbg_search" action="<?php echo home_url('/'); ?>" method="get">
+                    <form class="hbg_search flex" action="<?php echo home_url('/'); ?>" method="get">
                         <input type="hidden" name="search_type" value="keywords" />
                         <input class="hbg_form" size="20" type="search" name="s" maxlength="20" value="<?php the_search_query(); ?>" placeholder="キーワードを入力" />
                         <input class="hbg_submit fas" type="submit" value="" />
