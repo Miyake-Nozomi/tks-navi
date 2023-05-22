@@ -6,7 +6,7 @@
         <section class="section_inner admin_inner">
             <h2 class="title">食堂運営者の方へ</h2>
             <p class="text">
-                「徳島こども食堂ナビ」では、徳島県下で活動されている、こども食堂さんであれば、所属に関わらずどこでも<span class="fontweight">無料で情報掲載が可能</span>です。
+                「徳島こども食堂ナビ」では、徳島県下で活動されている、こども食堂さんであれば、所属に関わらず<span class="fontweight">無料で情報掲載が可能</span>です。
             </p>
             <p class="text">
             <p class="highlight fontweight ">このサイトの目的</p>
