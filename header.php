@@ -102,7 +102,7 @@ if (is_tax('area')) {
                     <a href="<?php echo home_url('/support/'); ?>">支援したい方へ</a>
                 </li>
                 <li class="btn_header">
-                    <a href="<?php echo home_url('/admin/'); ?>">食堂支援者の方へ</a>
+                    <a href="<?php echo home_url('/admin/'); ?>">食堂運営者の方へ</a>
                 </li>
                 <!-- 検索機能 -->
                 <li class="btn_header menu_search">
