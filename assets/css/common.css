@@ -637,21 +637,24 @@ body {
         flex-direction: row;
         margin: 0 auto;
     }
-    /*
+
     .footer_nav_title_concept {
-        flex-grow: 1;
-        margin: 0 45px;
+        width: calc(100% / 3);
+        /* flex-grow: 1; */
+        /* margin: 0 45px; */
     }
 
     .footer_nav_title_taxonomy_area {
-        flex-grow: 1;
-        margin: 0 45px;
+        width: calc(100% / 3);
+        /* flex-grow: 1; */
+        /* margin: 0 45px; */
     }
 
     .footer_nav_title_other {
-        flex-grow: 1;
-        margin: 0 45px;
-    } */
+        width: calc(100% / 3);
+        /* flex-grow: 1; */
+        /* margin: 0 45px; */
+    }
 
     .footer_nav_title_concept p {
         margin-top: 30px;
