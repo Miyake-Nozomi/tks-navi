@@ -223,7 +223,7 @@ $event_query = new WP_Query($fuga);
                     <h2>こども食堂とは</h2>
                 </div>
                 <div class="concept_text">
-                    <div class="text concept_border">
+                    <div class="text text_border">
                         <p>
                             こども食堂と聞くと、”貧困層のための場所”や、”こどもや子育て世代向けのもの”といったイメージを抱く方も多いと思います。実際はそうではなく、こどもの為の場であることはもちろんですが、地域の人や大人、様々な世代の人が集まって、一緒にごはんを食べて交流できる場です。地域とのつながりや、多世代交流をする地域コミュニティとしての役割も担っています。
                         </p>
@@ -253,14 +253,18 @@ $event_query = new WP_Query($fuga);
             </svg>
             <div class="section_inner rainbow_inner">
                 <h2 class="title">このサイトについて</h2>
-                <div class="text">
-                    <p>
-                        徳島県には、こども食堂がたくさんあります。
-                        ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
-                    </p>
+                <div class="about_box">
+                    <div class="logo_act">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_act.png" alt="ロゴ">
+                    </div>
+                    <div class="text about_text">
+                        <p>
+                            徳島県には、こども食堂がたくさんあります。<br>
+                            ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
+                        </p>
+                    </div>
                 </div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/logo_act.png" alt="ロゴ"
-                    class="logo_act">
+
 
                 <a href="<?php echo home_url('/about'); ?>" class="">
                     <div class="btn_item">
@@ -356,7 +360,7 @@ $event_query = new WP_Query($fuga);
             <div class="section_inner">
                 <h2 class="title">支援したい方へ</h2>
                 <div class="shien_box">
-                    <div class="text">
+                    <div class="text shien_text text_border">
                         <p>
                             こども食堂は、ほとんどがボランティアスタッフよって運営されています。
                             行政等からの助成金がもらえる場合もありますが、それでは間に合わないことも多いです。
@@ -364,12 +368,14 @@ $event_query = new WP_Query($fuga);
                             一言に”支援”と言っても、いくつかの方法があります。
                         </p>
                     </div>
-                    <img class="mobile_pic"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_man.png"
-                        alt="野菜を収穫した人" />
-                    <img class="pc_pic"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_woman.png"
-                        alt="野菜を収穫した人">
+                    <div class="shien_act">
+                        <img class="pc_pic yasai_woman"
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_woman.png"
+                            alt="野菜を収穫した人">
+                        <img class="mobile_pic yasai_man"
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_man.png"
+                            alt="野菜を収穫した人" />
+                    </div>
                 </div>
                 <a href="<?php echo home_url('/support'); ?>">
                     <div class="btn_item">もっと見る</div>
