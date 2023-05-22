@@ -172,6 +172,13 @@ html {
     z-index: 2;
 }
 
+.concept_border {
+    padding: 30px;
+    border: 5px solid #f7dd94;
+    border-radius: 30px;
+    background-color: #fffbf0;
+}
+
 .onigiri {
     position: absolute;
     width: 99px;
@@ -243,9 +250,9 @@ html {
     position: absolute;
     left: 0;
     right: 0;
-    top: -10%;
+    top: 0px;
     margin: auto;
-    opacity: 30%;
+    opacity: 10%;
     z-index: -1;
 }
 
