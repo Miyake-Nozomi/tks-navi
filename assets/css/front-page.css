@@ -653,6 +653,7 @@ hr {
     } */
     .shien_box {
         display: flex;
+        margin-top: 70px;
     }
 
     .shien_act {
@@ -679,6 +680,10 @@ hr {
 
 /* リンク集 */
 
+.link_inner {
+    padding: 0px;
+}
+
 .link {
     background-color: #fdffb0;
 }
@@ -695,8 +700,10 @@ hr {
     width: 80%;
     margin: 0 auto 20px auto;
     padding: 0 30px 30px 30px;
-    border: 1.5px solid orange;
-    background-color: #fff8e6;
+    border: 5px solid #f7dd94;
+    /* border: 1.5px solid orange; */
+    background-color: white;
+    /* background-color: #FEF4D9; */
     border-radius: 10px;
 }
 
@@ -769,6 +776,19 @@ hr {
         justify-content: space-between;
         align-items: center;
     } */
+}
+
+/* お問い合わせ */
+.contact_brid_inner {
+    position: relative;
+}
+.contact_brid {
+    position: absolute;
+    width: 100px;
+    bottom: 80px;
+    left: 70%;
+    z-index: -1;
+    opacity: 30%;
 }
 
 /* 活動の様子 */

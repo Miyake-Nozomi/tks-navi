@@ -394,7 +394,7 @@ $event_query = new WP_Query($fuga);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
-            <div class="section_inner">
+            <div class="section_inner link_inner">
                 <h2 class="title link_title">リンク集</h2>
                 <div class="link_flex">
                     <a href="<?php echo home_url('/link/cafe'); ?>" class="link_cover">
@@ -469,7 +469,7 @@ $event_query = new WP_Query($fuga);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,-2 50,0 t50,0  v-5 Z" fill="#fdffb0"></path>
             </svg>
-            <div class="section_inner">
+            <div class="section_inner contact_brid_inner">
                 <h2 class="title">お問い合わせ</h2>
                 <div class="text">
                     <p>
@@ -477,6 +477,9 @@ $event_query = new WP_Query($fuga);
                         ※各こども食堂へのお問い合わせは、それぞれの食堂詳細ページの連絡先へ個別にお問い合わせください。
                     </p>
                 </div>
+                <img class="contact_brid"
+                    src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contact_karugamo.png"
+                    alt="野菜を収穫した人" />
                 <a href="<?php echo home_url('/contact'); ?>">
                     <div class="btn_item">お問い合わせはこちら</div>
                 </a>
