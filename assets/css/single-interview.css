@@ -149,7 +149,6 @@
         width: 10;
         margin-top: 70px;
         gap: 20px;
-        position: relative;
     }
 
     .pickup {
@@ -167,13 +166,13 @@
         /* width: 90%; */
         width: 300px;
         /* height: auto; */
-        height: 100%;
+        /* height: 100%; */
         border-radius: 10px;
         margin: 0 auto;
         padding: 25px 20px;
         background-color: #fdffb0;
         position: fixed;
-        top: 400px;
+        top: 150px;
         left: calc(100% - 320px);
     }
 
