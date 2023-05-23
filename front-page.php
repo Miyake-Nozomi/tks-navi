@@ -225,13 +225,11 @@ $event_query = new WP_Query($fuga);
                 <div class="concept_text">
                     <div class="text text_border">
                         <p>
-                            こども食堂と聞くと、”貧困層のための場所”や、”こどもや子育て世代向けのもの”といったイメージを抱く方も多いと思います。実際はそうではなく、こどもの為の場であることはもちろんですが、地域の人や大人、様々な世代の人が集まって、一緒にごはんを食べて交流できる場です。地域とのつながりや、多世代交流をする地域コミュニティとしての役割も担っています。
+                            こども食堂と聞くと、”貧困層のための場所”や、”こどもや子育て世代向けのもの”といったイメージを抱く方も多いと思います。実際はそうではなく、こどものための場であることはもちろんですが、地域の人や大人、様々な世代の人が集まって、一緒にごはんを食べて交流できる場です。地域とのつながりや、多世代交流をする地域コミュニティとしての役割も担っています。
                         </p>
                     </div>
-                    <img class="onigiri"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png" alt="おにぎり" />
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png"
-                        class="onigiri_small" aria-hidden="true" />
+                    <img class="onigiri" src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png" alt="おにぎり" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png" class="onigiri_small" aria-hidden="true" />
                     <a href="<?php echo home_url('/concept'); ?>">
                         <div class="btn_item">もっと見る</div>
                     </a>
@@ -247,8 +245,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
             <div class="section_inner rainbow_inner">
@@ -260,7 +257,7 @@ $event_query = new WP_Query($fuga);
                     <div class="text about_text">
                         <p>
                             徳島県には、こども食堂がたくさんあります。<br>
-                            ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂を探して行ってみてください！
+                            ”こども食堂って何なの？という人”や、”こども食堂へ行ってみたい人・手伝いたい人・支援したい人”へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂をさがして行ってみてください！
                         </p>
                     </div>
                 </div>
@@ -283,8 +280,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
             <div class="section_inner interviews_section_inner">
@@ -293,8 +289,7 @@ $event_query = new WP_Query($fuga);
                         特集記事 <br />
                         Pick upインタビュー一覧
                     </h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/pink_marker.png"
-                        alt="マーカー" class="crayon" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/pink_marker.png" alt="マーカー" class="crayon" />
                 </div>
                 <div class="pickup_slide">
                     <ul class="pickup_slider flex">
@@ -320,8 +315,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,-2 50,0 t50,0  v-5 Z" fill="#fdffb0"></path>
             </svg>
             <div class="section_inner">
@@ -329,16 +323,13 @@ $event_query = new WP_Query($fuga);
                     エリアから </br> こども食堂をさがす
                 </h2>
                 <div class="serch_map_img_inner">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/map_serch.png" alt="虫眼鏡"
-                        class="serch_map_img" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/map_serch.png" alt="虫眼鏡" class="serch_map_img" />
                 </div>
                 <div class="map_pic">
                     <a href="<?php echo home_url('/area/east'); ?>" class="serch_btn north">東部</a>
                     <a href="<?php echo home_url('/area/south'); ?>" class="serch_btn south">南部</a>
                     <a href="<?php echo home_url('/area/west'); ?>" class="serch_btn west">西部</a>
-                    <img class="pic"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/tokushima_map.png"
-                        alt="地図" />
+                    <img class="pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/index/tokushima_map.png" alt="地図" />
                 </div>
                 <a href="<?php echo home_url('/find'); ?>">
                     <div class="btn_item">条件からさがす</div>
@@ -353,8 +344,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
             <div class="section_inner">
@@ -369,12 +359,8 @@ $event_query = new WP_Query($fuga);
                         </p>
                     </div>
                     <div class="shien_act">
-                        <img class="pc_pic yasai_woman"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_woman.png"
-                            alt="野菜を収穫した人">
-                        <img class="mobile_pic yasai_man"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_man.png"
-                            alt="野菜を収穫した人" />
+                        <img class="pc_pic yasai_woman" src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_woman.png" alt="野菜を収穫した人">
+                        <img class="mobile_pic yasai_man" src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_man.png" alt="野菜を収穫した人" />
                     </div>
                 </div>
                 <a href="<?php echo home_url('/support'); ?>">
@@ -390,8 +376,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
             <div class="section_inner link_inner">
@@ -438,8 +423,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
             <div class="section_inner">
@@ -465,8 +449,7 @@ $event_query = new WP_Query($fuga);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,-2 50,0 t50,0  v-5 Z" fill="#fdffb0"></path>
             </svg>
             <div class="section_inner contact_brid_inner">
@@ -477,9 +460,7 @@ $event_query = new WP_Query($fuga);
                         ※各こども食堂へのお問い合わせは、それぞれの食堂詳細ページの連絡先へ個別にお問い合わせください。
                     </p>
                 </div>
-                <img class="contact_brid"
-                    src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contact_karugamo.png"
-                    alt="野菜を収穫した人" />
+                <img class="contact_brid" src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contact_karugamo.png" alt="野菜を収穫した人" />
                 <a href="<?php echo home_url('/contact'); ?>">
                     <div class="btn_item">お問い合わせはこちら</div>
                 </a>
@@ -488,8 +469,7 @@ $event_query = new WP_Query($fuga);
         <!-- 活動のようす -->
         <section class="contact w100">
             <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/contacttop.png" alt="波" class="contact_wave" /> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
             <div class="section_inner">
@@ -514,28 +494,22 @@ $event_query = new WP_Query($fuga);
                         ?>
                         <?php //if (is_null($pic)) : ?>
                         <!-- <img src="<?php //echo $pic; ?>" alt="<?php //echo $pic_alt; ?>" /> -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kawashima_egaosyokudo_party_06.JPG"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kawashima_egaosyokudo_party_06.JPG" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kitajima_kodomosyokudo_party_01.jpg"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kitajima_kodomosyokudo_party_01.jpg" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kodomonosyokudominasyokudo_party_04.jpg"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kodomonosyokudominasyokudo_party_04.jpg" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/manaka_shokudou_party_04.jpg"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/manaka_shokudou_party_04.jpg" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/nikonikokodomosyokudo_food_01.jpg"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/nikonikokodomosyokudo_food_01.jpg" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/pokapoka_shokudou_party_01.png"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/pokapoka_shokudou_party_01.png" alt="">
                     </div>
                     <?php //endif;?>
                     <?php //endif; ?>
