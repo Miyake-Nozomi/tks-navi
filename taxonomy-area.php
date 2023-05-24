@@ -52,9 +52,9 @@
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title result_title"><?php echo $area->name.'こども食堂一覧'; ?></h2>
-        <p class="text_look text">
+        <h3 class="text_look text subtitle">
             エリアを選んでさがしてみよう！
-        </p>
+        </h3>
 
 
         <!-- 地域別タブ -->
