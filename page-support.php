@@ -52,7 +52,7 @@
             </div>
             <div class="support_help tab-c panel">
                 <h3 class="subtitle support_subtitle03">
-                    こども食堂のボランティアスタッフとして手伝う
+                    ボランティアスタッフとして手伝う
                 </h3>
                 <p>
                     スタッフを募集している食堂はこちらのページから条件を絞り込んで検索できます！
