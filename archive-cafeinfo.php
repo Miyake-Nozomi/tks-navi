@@ -10,6 +10,7 @@
 
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">こども食堂一覧</h2>
         <?php

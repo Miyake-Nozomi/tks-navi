@@ -5,13 +5,14 @@
     height: 55px;
     padding: 13px 0;
     text-align: center;
-    background-color: #f7dd94;
+    /* background-color: #f7dd94; */
     border-radius: 10px;
     margin: 0 auto;
 }
 
 .east {
     background-color: #f7dd94;
+    margin-top: 70px;
 }
 
 .south {
