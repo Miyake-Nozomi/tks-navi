@@ -52,13 +52,16 @@
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title result_title"><?php echo $area->name.'こども食堂一覧'; ?></h2>
+        <p class="text_look text">
+            エリアを選んでさがしてみよう！
+        </p>
+
 
         <!-- 地域別タブ -->
         <ul class="tab area_flex">
             <li class="tab_east tab_js east"><a class="tab_hover01" href="<?php echo home_url('/area/east'); ?>">東部</a>
             </li>
-            <li class="tab_south tab_js south"><a class="tab_hover02"
-                    href="<?php echo home_url('/area/south'); ?>">南部</a>
+            <li class="tab_south tab_js south"><a class="tab_hover02" href="<?php echo home_url('/area/south'); ?>">南部</a>
             </li>
             <li class="tab_west tab_js west"><a class="tab_hover03" href="<?php echo home_url('/area/west'); ?>">西部</a>
             </li>

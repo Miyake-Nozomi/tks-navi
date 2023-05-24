@@ -735,6 +735,19 @@ body {
 }
 
 /***********************
+    下層ページ解説文
+ **********************/
+
+.text_look {
+    max-width: 1024px;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #fffbf1;
+    border: 2px solid #ffdf8c;
+    padding: 12px 15px 15px;
+}
+
+/***********************
     ページナビ
  **********************/
 
