@@ -326,10 +326,14 @@ html {
     z-index: -1;
 }
 
+.interviews_section_inner {
+    padding: 0;
+}
+
 @media (min-width: 770px) {
-    .interviews_section_inner {
+    /* .interviews_section_inner {
         padding: 0;
-    }
+    } */
     .taleft {
         width: 435px;
     }
@@ -359,23 +363,21 @@ html {
     color: orange;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    display: none;
 }
 .slick-next:before {
     content: "\f0a9";
     color: orange;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    display: none;
 }
 .slick-next {
     left: 100.5%;
-    display: none;
+    position: absolute;
 }
 
 .slick-prev {
-    left: calc(-0.5% - 30.5px);
-    display: none;
+    left: calc(-0.5% - 20px);
+    position: absolute;
 }
 /* スリック矢印ここまで */
 
@@ -400,13 +402,10 @@ hr {
 }
 
 .pickup_slider {
-    justify-content: space-between;
-}
-
-.slick-slide.slick-active {
-    /* height: 405px; */
-    display: flex;
-    justify-content: center;
+    /* justify-content: space-between; */
+    width: 310px;
+    margin: 0 auto;
+    position: relative;
 }
 
 @media (min-width: 770px) {
@@ -433,12 +432,25 @@ hr {
         font-size: 30px;
     }
 
-    .slick-next {
-        display: block;
+    .pickup_slider {
+        justify-content: space-between;
+        width: 660px;
+    }
+
+    .slick-slide.slick-active {
+        display: flex;
+        justify-content: center;
     }
 
     .slick-prev {
-        display: block;
+        left: calc(-0.5% - 30.5px);
+        position: absolute;
+    }
+}
+
+@media (min-width: 1190px) {
+    .pickup_slider {
+        width: 990px;
     }
 }
 

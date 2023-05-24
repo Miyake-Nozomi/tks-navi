@@ -63,6 +63,9 @@ function add_my_files() {
         );
         //index.jsの読み込み
         wp_enqueue_script('index',get_template_directory_uri().'/assets/js/index.js',array('header'),'1.0',true);
+
+        //index.jsの読み込み
+        wp_enqueue_script('my_slick',get_template_directory_uri().'/assets/slick/js/my_slick.js',array('slick-min'),'1.0',true);
     }
 
     //taxonomy-areaページのみ出力
