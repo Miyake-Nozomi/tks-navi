@@ -80,9 +80,9 @@
             </h2>
             <div class="text">
                 <div class="intro">
-                    <p class="subtitle left">
+                    <!-- <p class="subtitle left">
                         Pick upインタビューとは
-                    </p>
+                    </p> -->
                     <p>
                         Pick up
                         インタビューは、こども食堂を運営している方に、熱い想いや、こども食堂の特色、おすすめポイントなどを取材した特集記事です！ぜひお読みください！
@@ -104,8 +104,7 @@
                     <?php if(!empty($eye_catching)): ?>
                     <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
                     <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png"
-                        alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
                     <?php endif; ?>
                     <p class="item_card_title">
                         <?php the_field('title'); ?>
