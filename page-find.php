@@ -233,18 +233,13 @@ $the_query = new WP_Query($args);
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">条件からさがす</h2>
-        <?php //echo $check; ?>
-        <?php //echo $empty_check; ?>
-        <?php //print_r($learning_support); ?>
-        <?php //echo $volunteer; ?>
-        <?php //echo $free; ?>
-        <?php //print_r($hoge); ?>
-        <?php //print_r($args); ?>
-        <?php //print_r($cafeinfo_ids); ?>
+        <h3 class="text_look text subtitle">
+            チェックしてさがしてみよう！
+        </h3>
+
 
         <form action="<?php echo home_url('/find'); ?>" method="get" class="search_form">
             <section class="form">
-                <h3 class="subtitle">チェックしてさがしてみよう！</h3>
                 <div class="form_wrap">
                     <!-- エリア検索欄 -->
                     <div class="form_item">
