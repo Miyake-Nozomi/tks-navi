@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php
     $args = array(
-        'post_type' => 'sponsorship',
+        'post_type' => 'sponsor',
         'paged' => get_query_var('paged'), //何ページ目の情報を表示すれば良いか
         'orderby' => 'menu_order',
         'order' => ' ASC',
