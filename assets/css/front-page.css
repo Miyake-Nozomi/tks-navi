@@ -821,6 +821,23 @@ hr {
     opacity: 30%;
 }
 
+/* 食堂運営者の方へ */
+.support_pepole {
+    display: none;
+}
+
+@media (min-width: 770px) {
+    .support_pepole {
+        display: block;
+        width: 180px;
+    }
+    .support_box {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
 /* 活動の様子 */
 
 .contact {

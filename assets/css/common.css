@@ -55,11 +55,12 @@ body {
 
 /* ボタンのエフェクト */
 
-/* .btn_item {
-    display: inline-block;
-} */
-
 .btn_item {
+    text-align: center;
+    margin: 50px auto 0px;
+}
+
+.btn_item a {
     width: 180px;
     padding: 15px 30px;
     background-color: rgba(255, 212, 102, 1);
@@ -67,7 +68,7 @@ body {
     border-radius: 20px;
     transform: translateY(0);
     color: black;
-    margin: 50px auto 0;
+    display: inline-block;
     text-align: center;
 }
 

@@ -232,9 +232,11 @@ $event_query = new WP_Query($fuga);
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png" alt="おにぎり" />
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png"
                         class="onigiri_small" aria-hidden="true" />
-                    <a href="<?php echo home_url('/concept'); ?>">
-                        <div class="btn_item">もっと見る</div>
-                    </a>
+                    <div class="btn_item">
+                        <a href="<?php echo home_url('/concept'); ?>">
+                            もっと見る
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -266,11 +268,11 @@ $event_query = new WP_Query($fuga);
                 </div>
 
 
-                <a href="<?php echo home_url('/about'); ?>" class="">
-                    <div class="btn_item">
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/about'); ?>" class="">
                         もっと見る
-                    </div>
-                </a>
+                    </a>
+                </div>
                 <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/rainbow.png" alt="虹" -->
                 <!-- class="rainbow"> -->
             </div>
@@ -289,12 +291,10 @@ $event_query = new WP_Query($fuga);
             </svg>
             <div class="section_inner interviews_section_inner">
                 <div class="title taleft">
-                    <h2>
+                    <h2 class="title">
                         特集記事 <br />
                         Pick upインタビュー
                     </h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/pink_marker.png"
-                        alt="マーカー" class="crayon" />
                 </div>
                 <div class="pickup_slide">
                     <ul class="pickup_slider flex">
@@ -307,9 +307,11 @@ $event_query = new WP_Query($fuga);
                         <?php wp_reset_postdata(); ?>
                     </ul>
                 </div>
-                <a href="<?php echo home_url('/interview'); ?>">
-                    <div class="btn_item">もっと見る</div>
-                </a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/interview'); ?>">
+                        もっと見る
+                    </a>
+                </div>
             </div>
             <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/interviewbottom.png" alt="波" class="interview" /> -->
         </section>
@@ -340,9 +342,11 @@ $event_query = new WP_Query($fuga);
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/index/tokushima_map.png"
                         alt="地図" />
                 </div>
-                <a href="<?php echo home_url('/find'); ?>">
-                    <div class="btn_item">条件からさがす</div>
-                </a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/find'); ?>">
+                        条件からさがす
+                    </a>
+                </div>
             </div>
         </section>
         <!-- 支援したい方へ -->
@@ -377,9 +381,11 @@ $event_query = new WP_Query($fuga);
                             alt="野菜を収穫した人" />
                     </div>
                 </div>
-                <a href="<?php echo home_url('/support'); ?>">
-                    <div class="btn_item">もっと見る</div>
-                </a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/support'); ?>">
+                        もっと見る
+                    </a>
+                </div>
             </div>
             <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/onigiribottom.png" alt="波" class="onigiribottom" /> -->
         </section>
@@ -444,15 +450,22 @@ $event_query = new WP_Query($fuga);
             </svg>
             <div class="section_inner">
                 <h2 class="title link_title">食堂運営者の方へ</h2>
-                <div class="text">
-                    <p>
-                        「徳島こども食堂ナビ」では、徳島県下で活動されている、こども食堂さんであれば、所属に関わらず無料で情報掲載が可能です。<br>
-                        食堂運営者の方は、もっと見るから、詳細をご一読ください。
-                    </p>
+                <div class="support_box">
+                    <img class="support_pepole"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/suporter_pepole.png"
+                        alt="男女二人" />
+                    <div class="text text_border">
+                        <p>
+                            「徳島こども食堂ナビ」では、徳島県下で活動されている、こども食堂さんであれば、所属に関わらず無料で情報掲載が可能です。
+                            食堂運営者の方は、もっと見るから、詳細をご一読ください。
+                        </p>
+                    </div>
                 </div>
-                <a href="<?php echo home_url('/admin/'); ?>">
-                    <div class="btn_item">もっと見る</div>
-                </a>
+                <div class="btn_item">
+                    <a href=" <?php echo home_url('/admin/'); ?>">
+                        もっと見る
+                    </a>
+                </div>
             </div>
             <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/linkbottom.png" alt="波" class="link_wave" /> -->
         </section>
@@ -480,9 +493,11 @@ $event_query = new WP_Query($fuga);
                 <img class="contact_brid"
                     src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contact_karugamo.png"
                     alt="野菜を収穫した人" />
-                <a href="<?php echo home_url('/contact'); ?>">
-                    <div class="btn_item">お問い合わせはこちら</div>
-                </a>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/contact'); ?>">
+                        お問い合わせはこちら
+                    </a>
+                </div>
             </div>
         </section>
         <!-- 活動のようす -->
