@@ -18,15 +18,6 @@ body {
     width: 100%;
 }
 
-.btn_item_link {
-    display: inline-block;
-    padding: 15px 30px;
-    transition: 0.3s;
-    border-radius: 20px;
-    color: black;
-    margin-top: 30px;
-}
-
 /* 波 */
 /* .svgwave {
     position: relative;
@@ -704,51 +695,61 @@ hr {
 
 /* リンク集 */
 
-.link_inner {
-    padding: 0px;
-}
-
 .link {
     background-color: #fdffb0;
 }
-
-/* .link_title {
-    margin-bottom: 50px;
-} */
 
 .link_cover {
     display: block;
 }
 
 .link_item {
-    width: 80%;
-    margin: 0 auto 20px auto;
     padding: 0 30px 30px 30px;
-    border: 5px solid #f7dd94;
-    /* border: 1.5px solid orange; */
     background-color: white;
-    /* background-color: #FEF4D9; */
     border-radius: 10px;
 }
 
-.link_sample {
+.link_child {
+    border: 5px solid #f7dd94;
+}
+
+.link_sportchild {
+    border: 5px solid #d7f794;
+}
+
+.link_childspace {
+    border: 5px solid #fdffb0;
+}
+
+.link_btn_child {
     background-color: #f7dd94;
 }
 
-.link_sample02 {
+.link_btn_sportchild {
     background-color: #d7f794;
 }
 
-.btntest {
+.link_btn_childspace {
     background-color: #fdffb0;
 }
 
-.link_sample,
-.link_sample02,
-.btntest {
-    width: 90%;
+.link_btn_child,
+.link_btn_sportchild,
+.link_btn_childspace {
     margin: 0;
     margin-top: 30px;
+}
+
+.btn_item_link {
+    padding: 15px 30px;
+    transition: 0.3s;
+    border-radius: 20px;
+    color: black;
+}
+
+.link_item .btn_item_link {
+    text-align: center;
+    margin: 30px auto 0;
 }
 
 .link_text {
@@ -764,9 +765,14 @@ hr {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 @media (min-width: 900px) {
+    .link_inner {
+        padding: 0px;
+    }
+
     .link_flex {
         width: 100%;
         margin: 70px auto 0;
