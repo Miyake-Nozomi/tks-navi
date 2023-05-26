@@ -299,6 +299,7 @@ $the_query = new WP_Query($args);
 
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <!-- ページトップ -->
         <?php if (have_posts()) : ?>
         <?php while(have_posts()) : ?>
@@ -318,7 +319,8 @@ $the_query = new WP_Query($args);
                         <?php if(!empty($eye_catching)): ?>
                         <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
                         <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png"
+                            alt="">
                         <?php endif; ?>
                         <div class="underimg text cafeinfo_flex flex">
                             <p class="address">
@@ -341,13 +343,15 @@ $the_query = new WP_Query($args);
                             </div>
                         </div>
                         <?php if (!empty(get_field('interview_id'))) : ?>
-                        <div class="btn_item">
-                            <a href="<?php echo home_url('/interview/' . get_field('interview_id')); ?>"><?php echo get_field('name').'の特集記事'; ?></a>
+                        <div class="btn_item single_btn_itme">
+                            <a
+                                href="<?php echo home_url('/interview/' . get_field('interview_id')); ?>"><?php echo get_field('name').'の特集記事'; ?></a>
                         </div>
                         <?php endif; ?>
                         <?php if (!empty(get_field('interview_id_2'))) : ?>
                         <div class="btn_item">
-                            <a href="<?php echo home_url('/interview/' . get_field('interview_id_2')); ?>"><?php echo get_field('name').'の特集記事2'; ?></a>
+                            <a
+                                href="<?php echo home_url('/interview/' . get_field('interview_id_2')); ?>"><?php echo get_field('name').'の特集記事2'; ?></a>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -355,12 +359,15 @@ $the_query = new WP_Query($args);
             </div>
             <!-- スクロール -->
             <div class="scroll"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama01.png" alt="シャボン玉" class="shingle-cafeinfo_img shabondama01" />
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama02.png" alt="シャボン玉" class="shingle-cafeinfo_img shabondama02" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama01.png" alt="シャボン玉"
+                class="shingle-cafeinfo_img shabondama01" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama02.png" alt="シャボン玉"
+                class="shingle-cafeinfo_img shabondama02" />
         </div>
         <div class="beige color">
             <!-- <<<<<<< HEAD  -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigetop.png" alt="波" class="wave_img btop" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigetop.png" alt="波"
+                class="wave_img btop" />
             <!-- <svg class="beigetop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                         <path
                             fill="#f7dd94"
@@ -372,7 +379,8 @@ $the_query = new WP_Query($args);
             <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigetop.png" alt="波"
                 class="wave_img btop" /> -->
             <svg class="beigetop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#f7dd94" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                <path fill="#f7dd94" fill-opacity="1"
+                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
             <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
@@ -403,7 +411,8 @@ $the_query = new WP_Query($args);
                 <?php endif; ?>
                 <?php endforeach; ?>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigebottom.png" alt="波" class="wave_img bbottom" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigebottom.png" alt="波"
+                class="wave_img bbottom" />
         </div>
         <div class="green color">
             <!-- <<<<<<< HEAD  -->
@@ -412,7 +421,8 @@ $the_query = new WP_Query($args);
                 </svg> -->
             <!-- ======= -->
             <svg class="greentop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#d7f794" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                <path fill="#d7f794" fill-opacity="1"
+                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
             <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
@@ -510,7 +520,8 @@ $the_query = new WP_Query($args);
             </div>
             <!-- スクロール -->
             <div class="scroll"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/greenbottmo.png" alt="波" class="wave_img gbottom" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/greenbottmo.png" alt="波"
+                class="wave_img gbottom" />
         </div>
         <div class="bgcolor color">
             <!-- <<<<<<< HEAD  -->
@@ -519,7 +530,8 @@ $the_query = new WP_Query($args);
                 </svg> -->
             <!-- ======= -->
             <svg class="bgtop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#fff8e6" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                <path fill="#fff8e6" fill-opacity="1"
+                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
             <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->

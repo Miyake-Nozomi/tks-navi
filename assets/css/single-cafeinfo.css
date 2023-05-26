@@ -102,6 +102,10 @@
         max-width: 387px;
         min-width: 387px;
     }
+
+    .single_btn_itme {
+        width: 210px;
+    }
 }
 
 /* 黄色の背景 */
