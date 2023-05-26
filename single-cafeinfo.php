@@ -319,8 +319,7 @@ $the_query = new WP_Query($args);
                         <?php if(!empty($eye_catching)): ?>
                         <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
                         <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
                         <?php endif; ?>
                         <div class="underimg text cafeinfo_flex flex">
                             <p class="address">
@@ -344,14 +343,12 @@ $the_query = new WP_Query($args);
                         </div>
                         <?php if (!empty(get_field('interview_id'))) : ?>
                         <div class="btn_item single_btn_itme">
-                            <a
-                                href="<?php echo home_url('/interview/' . get_field('interview_id')); ?>"><?php echo get_field('name').'の特集記事'; ?></a>
+                            <a href="<?php echo home_url('/interview/' . get_field('interview_id')); ?>"><?php echo get_field('name').'の特集記事'; ?></a>
                         </div>
                         <?php endif; ?>
                         <?php if (!empty(get_field('interview_id_2'))) : ?>
                         <div class="btn_item">
-                            <a
-                                href="<?php echo home_url('/interview/' . get_field('interview_id_2')); ?>"><?php echo get_field('name').'の特集記事2'; ?></a>
+                            <a href="<?php echo home_url('/interview/' . get_field('interview_id_2')); ?>"><?php echo get_field('name').'の特集記事2'; ?></a>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -359,15 +356,12 @@ $the_query = new WP_Query($args);
             </div>
             <!-- スクロール -->
             <div class="scroll"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama01.png" alt="シャボン玉"
-                class="shingle-cafeinfo_img shabondama01" />
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama02.png" alt="シャボン玉"
-                class="shingle-cafeinfo_img shabondama02" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama01.png" alt="シャボン玉" class="shingle-cafeinfo_img shabondama01" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shabondama02.png" alt="シャボン玉" class="shingle-cafeinfo_img shabondama02" />
         </div>
         <div class="beige color">
             <!-- <<<<<<< HEAD  -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigetop.png" alt="波"
-                class="wave_img btop" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigetop.png" alt="波" class="wave_img btop" />
             <!-- <svg class="beigetop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                         <path
                             fill="#f7dd94"
@@ -379,8 +373,7 @@ $the_query = new WP_Query($args);
             <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigetop.png" alt="波"
                 class="wave_img btop" /> -->
             <svg class="beigetop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#f7dd94" fill-opacity="1"
-                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                <path fill="#f7dd94" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
             <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
@@ -388,228 +381,240 @@ $the_query = new WP_Query($args);
                 <h3 class="beige_categorytitle beige_basic">
                     基本情報
                 </h3>
-                <?php foreach( $events as $key => $event): ?>
-                <?php if (!empty($event)) : ?>
-                <div class="detail_item">
-                    <h4 class="subtitle">
-                        <?php echo $key; ?>
-                    </h4>
-                    <?php if (!is_array($event)) : ?>
-                    <p class="subtitle_text">
-                        <?php echo $event; ?>
-                    </p>
-                    <?php else: ?>
-                    <div>
-                        <?php foreach( $event as $value): ?>
-                        <p class=" subtitle_text">
+                <table class="event_table">
+                    <?php foreach( $events as $key => $event): ?>
+                    <tr>
+                        <?php if (!empty($event)) : ?>
+                        <td class="subtitle">
+                            <?php echo $key; ?>
+                        </td>
+                        <?php if (!is_array($event)) : ?>
+                        <td class="subtitle_text">
+                            <?php echo $event; ?>
+                        </td>
+                        <?php else: ?>
+                        <td class="subtitle_text">
+                            <?php foreach( $event as $value): ?>
+                            <p class=" subtitle_text">
                             <?php echo $value; ?>
                         </p>
-                        <?php endforeach; ?>
-                    </div>
-                    <?php endif; ?>
-                </div>
-                <?php endif; ?>
-                <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        </td>
+                        <?php endif; ?>
+                        <?php endif; ?>
+                    </tr>
+                    <?php endforeach; ?>
+                </table>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigebottom.png" alt="波" class="wave_img bbottom" />
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigebottom.png" alt="波"
-                class="wave_img bbottom" />
-        </div>
-        <div class="green color">
-            <!-- <<<<<<< HEAD  -->
-            <!-- <svg class="greentop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
+            <div class="green color">
+                <!-- <<<<<<< HEAD  -->
+                <!-- <svg class="greentop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                 <path fill="#d7f794" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                 </svg> -->
-            <!-- ======= -->
-            <svg class="greentop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#d7f794" fill-opacity="1"
-                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
-            <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
-            <div class="green_inner m1024">
-                <h3 class="beige_categorytitle beige_address">
+                <!-- ======= -->
+                <svg class="greentop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
+                    <path fill="#d7f794" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+                <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
+                <div class="green_inner m1024">
+                    <h3 class="beige_categorytitle beige_address">
                     連絡先・SNSなど
                 </h3>
-                <div class="detail_item">
-                    <h4 class="subtitle">連絡先</h4>
-                    <div>
-                        <?php if (!empty($tel)) : ?>
-                        <p class="subtitle_text">
+                    <table class="event_table">
+                        <tr>
+                            <td class="subtitle">
+                                <h4 class="subtitle">連絡先</h4>
+                            </td>
+                            <td class="subtitle">
+                                <?php if (!empty($tel)) : ?>
+                                <p class="subtitle_text">
                             電話番号:<br />
                             <?php echo $tel; ?>
                         </p>
-                        <?php endif; ?>
-                        <?php if (!empty($email)) : ?>
-                        <p class=" subtitle_text">
+                                <?php endif; ?>
+                                <?php if (!empty($email)) : ?>
+                                <p class=" subtitle_text">
                             メールアドレス:<br />
                             <?php echo $email; ?>
                         </p>
-                        <?php endif; ?>
-                        <?php if (!empty($line_id)) : ?>
-                        <p class="subtitle_text">
+                                <?php endif; ?>
+                                <?php if (!empty($line_id)) : ?>
+                                <p class="subtitle_text">
                             LINE: <br />
                             <?php echo $line_id; ?>
                         </p>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+
+                        <?php if (!empty($line_qr)) : ?>
+                        <tr>
+                            <td class="subtitle">
+                                <h4 class="subtitle">LINE QRコード</h4>
+                            </td>
+                            <td class="subtitle">
+                                <img src="<?php echo $line_qr; ?>" alt="LINEQRコード" class="qrcode" />
+                                <?php if (!empty($line_url)) : ?>
+                                <p class="subtitle_text"><?php echo $line_url; ?></p>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
                         <?php endif; ?>
-                    </div>
-                </div>
-                <?php if (!empty($line_qr)) : ?>
-                <div class=" detail_item">
-                    <h4 class="subtitle">LINE QRコード</h4>
-                    <div class="sns_items">
-                        <img src="<?php echo $line_qr; ?>" alt="LINEQRコード" class="qrcode" />
-                        <?php if (!empty($line_url)) : ?>
-                        <p class="subtitle_text"><?php echo $line_url; ?></p>
+                        <?php if (!empty($instagram) || !empty($facebook)) : ?>
+                        <tr>
+                            <td class="subtitle">
+                                <h4 class="subtitle">SNS</h4>
+                            </td>
+                            <td class="subtitle">
+                                <?php if (!empty($instagram)): ?>
+                                <p class="subtitle_text">
+                                    <?php echo $instagram; ?>
+                                </p>
+                                <?php endif; ?>
+                                <?php if (!empty($facebook)): ?>
+                                <p class=" subtitle_text">
+                                    <?php echo $facebook; ?>
+                                </p>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
                         <?php endif; ?>
-                    </div>
-                </div>
-                <?php endif; ?>
-                <?php if (!empty($instagram) || !empty($facebook)) : ?>
-                <div class=" detail_item">
-                    <h4 class="subtitle">SNS</h4>
-                    <div class="sns_items">
-                        <?php if (!empty($instagram)): ?>
-                        <p class="subtitle_text">
-                            <?php echo $instagram; ?>
-                        </p>
+                        <?php if (!empty($site_url)): ?>
+                        <tr>
+                            <td class="subtitle">
+                                <h4 class="subtitle">公式WEBサイト</h4>
+                            </td>
+                            <td class="subtitle">
+                                <p class="subtitle_text"><?php echo $site_url; ?></p>
+                            </td>
+                        </tr>
                         <?php endif; ?>
-                        <?php if (!empty($facebook)): ?>
-                        <p class=" subtitle_text">
-                            <?php echo $facebook; ?>
-                        </p>
+                        <?php if (!empty($amapro)): ?>
+                        <tr>
+                            <td class="subtitle">
+                                <h4 class="subtitle">
+                                    Amazonみんなで <br> 応援プログラム
+                                </h4>
+                            </td>
+                            <td class="subtitle">
+                                <?php echo $amapro; ?>
+                            </td>
+                        </tr>
                         <?php endif; ?>
-                    </div>
-                </div>
-                <?php endif; ?>
-                <?php if (!empty($site_url)): ?>
-                <div class="detail_item">
-                    <h4 class="subtitle">公式WEBサイト</h4>
-                    <div class="sns_items">
-                        <p class="subtitle_text"><?php echo $site_url; ?></p>
-                    </div>
-                </div>
-                <?php endif; ?>
-                <?php if (!empty($amapro)): ?>
-                <div class=" detail_item">
-                    <h4 class="subtitle">
-                        Amazonみんなで <br> 応援プログラム
-                    </h4>
-                    <div class="sns_items subtitle_text">
-                        <?php echo $amapro; ?>
-                    </div>
-                </div>
-                <?php endif; ?>
-                <?php if (!empty($volunteer)): ?>
-                <div class="detail_item">
-                    <h4 class="subtitle">
+                        <?php if (!empty($volunteer)): ?>
+                        <tr>
+                            <td class="subtitle">
+                                <h4 class="subtitle">
                         ボランティア募集
                     </h4>
-                    <div class="subtitle_text">
-                        <?php echo $volunteer; ?>
-                        <?php if (!empty($volunteer_info)): ?>
-                        <p><?php echo $volunteer_info; ?></p>
-                        <?php endif; ?>
-                    </div>
-                </div>
-                <p class="volunteer">
+                            </td>
+                            <td class="subtitle">
+                                <?php echo $volunteer; ?>
+                                <?php if (!empty($volunteer_info)): ?>
+                                <p><?php echo $volunteer_info; ?></p>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="volunteer">
                     <span class="volunteer_text">
                         ボランティア募集中
                     </span>
                 </p>
-                <?php endif; ?>
+                    <?php endif; ?>
+                </div>
+                <!-- スクロール -->
+                <div class="scroll"></div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/greenbottmo.png" alt="波" class="wave_img gbottom" />
             </div>
-            <!-- スクロール -->
-            <div class="scroll"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/greenbottmo.png" alt="波"
-                class="wave_img gbottom" />
-        </div>
-        <div class="bgcolor color">
-            <!-- <<<<<<< HEAD  -->
-            <!-- <svg class="bgtop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
+            <div class="bgcolor color">
+                <!-- <<<<<<< HEAD  -->
+                <!-- <svg class="bgtop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
                 <path fill="#fff8e6" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                 </svg> -->
-            <!-- ======= -->
-            <svg class="bgtop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#fff8e6" fill-opacity="1"
-                    d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
-            <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
-            <div class="bgcolor_inner m1024">
-                <div class="bgcolor_flex">
-                    <div class="others">
-                        <h3 class="beige_categorytitle beige_other">
+                <!-- ======= -->
+                <svg class="bgtop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
+                    <path fill="#fff8e6" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+                <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
+                <div class="bgcolor_inner m1024">
+                    <div class="bgcolor_flex">
+                        <div class="others">
+                            <h3 class="beige_categorytitle beige_other">
                             取り扱いのあるもの
                         </h3>
-                        <div class="others_item">
-                            <?php foreach($service_array as $service): ?>
-                            <?php if ($service == 'その他資格者') : ?>
-                            <?php if (!empty($license[0])): ?>
-                            <?php foreach( $license as $value): ?>
-                            <p>
+                            <div class="others_item">
+                                <?php foreach($service_array as $service): ?>
+                                <?php if ($service == 'その他資格者') : ?>
+                                <?php if (!empty($license[0])): ?>
+                                <?php foreach( $license as $value): ?>
+                                <p>
                                 <?php echo $value; ?>
                             </p>
-                            <?php endforeach; ?>
-                            <?php endif; ?>
-                            <?php else: ?>
-                            <p>
+                                <?php endforeach; ?>
+                                <?php endif; ?>
+                                <?php else: ?>
+                                <p>
                                 <?php echo $service; ?>
                             </p>
-                            <?php endif; ?>
-                            <?php endforeach; ?>
+                                <?php endif; ?>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                        <div class="addressmap">
+                            <h3 class="beige_categorytitle beige_access">アクセス</h3>
+                            <?php the_field('map'); ?>
                         </div>
                     </div>
-                    <div class="addressmap">
-                        <h3 class="beige_categorytitle beige_access">アクセス</h3>
-                        <?php the_field('map'); ?>
-                    </div>
-                </div>
-                <h3 class="subtitle_ulineorange">開催情報</h3>
-                <div class="bgcolor_news">
-                    <div class="text_box">
-                        <?php if ($the_query->have_posts()) : ?>
-                        <?php while($the_query->have_posts()) : ?>
-                        <?php $the_query->the_post(); ?>
-                        <p>
+                    <h3 class="subtitle_ulineorange">開催情報</h3>
+                    <div class="bgcolor_news">
+                        <div class="text_box">
+                            <?php if ($the_query->have_posts()) : ?>
+                            <?php while($the_query->have_posts()) : ?>
+                            <?php $the_query->the_post(); ?>
+                            <p>
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_title(); ?>
                             </a>
                         </p>
-                        <?php endwhile; ?>
-                        <?php else: ?>
-                        <p>
+                            <?php endwhile; ?>
+                            <?php else: ?>
+                            <p>
                             直近の開催情報は、各食堂のSNS等をご覧ください。
                         </p>
-                        <?php endif; ?>
-                        <?php wp_reset_postdata(); ?>
+                            <?php endif; ?>
+                            <?php wp_reset_postdata(); ?>
+                        </div>
                     </div>
-                </div>
-                <?php if (!empty($pics)) :?>
-                <h3 class="subtitle_ulineorange">活動の様子</h3>
-                <ul class="ac_slide">
-                    <?php foreach( $pics as $pic): ?>
-                    <?php if (!empty($pic)) :?>
-                    <li>
-                        <?php
+                    <?php if (!empty($pics)) :?>
+                    <h3 class="subtitle_ulineorange">活動の様子</h3>
+                    <ul class="ac_slide">
+                        <?php foreach( $pics as $pic): ?>
+                        <?php if (!empty($pic)) :?>
+                        <li>
+                            <?php
                         $pic_id = attachment_url_to_postid( $pic );
                         $pic_alt = get_post_meta(  $pic_id, '_wp_attachment_image_alt', true );
                     ?>
-                        <img src="<?php echo $pic; ?>" alt="<?php echo $pic_alt; ?>" />
-                    </li>
+                            <img src="<?php echo $pic; ?>" alt="<?php echo $pic_alt; ?>" />
+                        </li>
+                        <?php endif; ?>
+                        <?php endforeach; ?>
+                    </ul>
                     <?php endif; ?>
-                    <?php endforeach; ?>
-                </ul>
-                <?php endif; ?>
-                <?php if (!empty(get_field('video'))) :?>
-                <video controls>
-                    <source src="<?php the_field('video') ?>" type="video/mp4">
-                </video>
-                <?php endif; ?>
+                    <?php if (!empty(get_field('video'))) :?>
+                    <video controls>
+                        <source src="<?php the_field('video') ?>" type="video/mp4">
+                    </video>
+                    <?php endif; ?>
+                </div>
+                <!-- メインインナー終わり -->
             </div>
-            <!-- メインインナー終わり -->
+            <?php endwhile; ?>
+            <?php endif; ?>
         </div>
-        <?php endwhile; ?>
-        <?php endif; ?>
-    </div>
 </main>
 <?php get_footer(); ?>
