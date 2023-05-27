@@ -194,6 +194,13 @@ function add_my_files() {
         wp_enqueue_script('page-search',get_template_directory_uri().'/assets/js/page-search.js',array('tab'),'1.0',true);
     }
 
+        // 協賛団体リンク集ページのみ出力
+    if (is_page('sponsorship')) {
+        wp_enqueue_style('sponsorship', get_template_directory_uri() . '/assets/css/page-sponsorship.css', array('my-common')
+        );
+    }
+
+
     // event一覧のみ出力
     if (is_post_type_archive('event')) {
         wp_enqueue_style('archive-event', get_template_directory_uri() . '/assets/css/archive-event.css', array('my-common')
