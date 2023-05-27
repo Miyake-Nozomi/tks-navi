@@ -238,6 +238,34 @@ $event_query = new WP_Query($fuga);
                         </a>
                     </div>
                 </div>
+                <div class="circle_orange">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#F7DD94"
+                            d="M55,-49.9C70.9,-39.1,83.1,-19.6,82,-1.1C80.9,17.4,66.5,34.8,50.6,48.9C34.8,63,17.4,73.9,-2.7,76.6C-22.9,79.4,-45.7,74,-58.3,59.9C-70.9,45.7,-73.1,22.9,-70.9,2.2C-68.7,-18.5,-62.1,-37,-49.5,-47.7C-37,-58.4,-18.5,-61.3,0.5,-61.9C19.6,-62.4,39.1,-60.6,55,-49.9Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
+                <div class="circle_yellow">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FDFFB0"
+                            d="M49.2,-57.4C65.2,-45.3,80.6,-31.1,84.4,-14.2C88.2,2.8,80.6,22.4,69.8,39.5C59,56.5,45,70.8,28.2,76.5C11.5,82.1,-8.1,79.1,-27.7,73.2C-47.3,67.3,-66.9,58.6,-77.1,43.4C-87.3,28.1,-88.1,6.2,-83.1,-13.4C-78.2,-33,-67.5,-50.4,-52.7,-62.7C-37.9,-75.1,-18.9,-82.4,-1.2,-81.1C16.6,-79.7,33.3,-69.6,49.2,-57.4Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
+                <div class="circle_green">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#B9F731"
+                            d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
+                <div class="circle_green_two">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#B9F731"
+                            d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
             </div>
         </section>
         <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/rainbowbottom.png" alt="#" class="concept_wave" /> -->
@@ -253,7 +281,7 @@ $event_query = new WP_Query($fuga);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
-            <div class="section_inner rainbow_inner">
+            <div class="section_inner pd10">
                 <h2 class="title">このサイトについて</h2>
                 <div class="about_box">
                     <div class="logo_act">
@@ -482,7 +510,7 @@ $event_query = new WP_Query($fuga);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,-2 50,0 t50,0  v-5 Z" fill="#fdffb0"></path>
             </svg>
-            <div class="section_inner contact_brid_inner">
+            <div class="section_inner contact_circle_inner">
                 <h2 class="title">お問い合わせ</h2>
                 <div class="text">
                     <p>
@@ -490,13 +518,38 @@ $event_query = new WP_Query($fuga);
                         ※各こども食堂へのお問い合わせは、それぞれの食堂詳細ページの連絡先へ個別にお問い合わせください。
                     </p>
                 </div>
-                <img class="contact_brid"
-                    src="<?php echo get_template_directory_uri(); ?>/assets/images/index/contact_karugamo.png"
-                    alt="野菜を収穫した人" />
                 <div class="btn_item">
                     <a href="<?php echo home_url('/contact'); ?>">
                         お問い合わせはこちら
                     </a>
+                </div>
+                <div class="circle_orange circle_zindex">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#F7DD94"
+                            d="M55,-49.9C70.9,-39.1,83.1,-19.6,82,-1.1C80.9,17.4,66.5,34.8,50.6,48.9C34.8,63,17.4,73.9,-2.7,76.6C-22.9,79.4,-45.7,74,-58.3,59.9C-70.9,45.7,-73.1,22.9,-70.9,2.2C-68.7,-18.5,-62.1,-37,-49.5,-47.7C-37,-58.4,-18.5,-61.3,0.5,-61.9C19.6,-62.4,39.1,-60.6,55,-49.9Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
+                <div class="circle_yellow circle_zindex">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FDFFB0"
+                            d="M49.2,-57.4C65.2,-45.3,80.6,-31.1,84.4,-14.2C88.2,2.8,80.6,22.4,69.8,39.5C59,56.5,45,70.8,28.2,76.5C11.5,82.1,-8.1,79.1,-27.7,73.2C-47.3,67.3,-66.9,58.6,-77.1,43.4C-87.3,28.1,-88.1,6.2,-83.1,-13.4C-78.2,-33,-67.5,-50.4,-52.7,-62.7C-37.9,-75.1,-18.9,-82.4,-1.2,-81.1C16.6,-79.7,33.3,-69.6,49.2,-57.4Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
+                <div class="circle_green">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D7F794"
+                            d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
+                <div class="circle_green_two">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D7F794"
+                            d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z"
+                            transform="translate(100 100)" />
+                    </svg>
                 </div>
             </div>
         </section>

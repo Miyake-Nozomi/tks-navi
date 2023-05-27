@@ -156,6 +156,7 @@ html {
 
 .onigiri_inner {
     padding-bottom: 80px;
+    position: relative;
 }
 
 .concept_text {
@@ -224,6 +225,60 @@ html {
     }
 }
 
+.circle_orange {
+    width: 260px;
+    position: absolute;
+    bottom: 80px;
+    left: -60px;
+    opacity: 80%;
+}
+
+.circle_yellow {
+    width: 240px;
+    position: absolute;
+    top: 10px;
+    left: 70%;
+    opacity: 70%;
+}
+
+.circle_green {
+    display: none;
+}
+.circle_green_two {
+    display: none;
+}
+
+@media (min-width: 770px) {
+    .circle_orange {
+        width: 300px;
+        bottom: 10px;
+        left: -10px;
+    }
+
+    .circle_yellow {
+        width: 300px;
+        top: -50px;
+        left: 700px;
+    }
+
+    .circle_green {
+        display: block;
+        width: 250px;
+        position: absolute;
+        top: 0px;
+        left: -250px;
+        opacity: 70%;
+    }
+
+    .circle_green_two {
+        display: block;
+        width: 250px;
+        position: absolute;
+        bottom: 0px;
+        left: 1000px;
+        opacity: 70%;
+    }
+}
 /* このサイトについて */
 
 /* .rainbow_inner {
@@ -276,11 +331,10 @@ html {
 }
 
 @media (min-width: 770px) {
-    /* .rainbow {
-        width: 450px;
-        height: 450px;
-        top: -60px;
-    } */
+    .pd10 {
+        padding: 0px 10px;
+    }
+
     .about_box {
         display: flex;
         margin-top: 70px;
@@ -808,19 +862,6 @@ hr {
     } */
 }
 
-/* お問い合わせ */
-.contact_brid_inner {
-    position: relative;
-}
-.contact_brid {
-    position: absolute;
-    width: 100px;
-    bottom: 80px;
-    left: 70%;
-    z-index: -1;
-    opacity: 30%;
-}
-
 /* 食堂運営者の方へ */
 .support_pepole {
     display: none;
@@ -836,6 +877,26 @@ hr {
         align-items: flex-start;
         gap: 20px;
     }
+}
+
+/* お問い合わせ */
+.contact_brid_inner {
+    position: relative;
+}
+.contact_brid {
+    position: absolute;
+    width: 100px;
+    bottom: 80px;
+    left: 70%;
+    z-index: -1;
+    opacity: 30%;
+}
+.contact_circle_inner {
+    position: relative;
+}
+
+.circle_zindex {
+    z-index: -1;
 }
 
 /* 活動の様子 */
