@@ -11,6 +11,7 @@ $the_query = new WP_Query($args);
 
 <main>
     <div class="main_inner relative">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">おしらせ一覧</h2>
         <div class="news_flex">

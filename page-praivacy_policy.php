@@ -2,6 +2,7 @@
 
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">プライバシーポリシー・免責事項</h2>
         <div class="text">

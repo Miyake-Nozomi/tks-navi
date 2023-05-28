@@ -2,6 +2,7 @@
 
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">Amazonみんなで応援プログラムとは</h2>
         <div class="text">
@@ -25,10 +26,8 @@
 
         <div class="btn_item"><a href="<?php echo home_url('/programlist'); ?>">参加食堂一覧へ</a></div>
 
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon/vegetable.png" alt="背景の野菜"
-            class="amazon_img vegetable" />
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon/family.png" alt="背景の親子"
-            class="amazon_img family" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon/vegetable.png" alt="背景の野菜" class="amazon_img vegetable" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon/family.png" alt="背景の親子" class="amazon_img family" />
     </div>
 </main>
 
