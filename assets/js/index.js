@@ -31,7 +31,7 @@ $(".kv_slider").slick({
 // }
 
 $(".pickup_slider").slick({
-    autoplay: false, // 自動再生
+    autoplay: true, // 自動再生
     autoplaySpeed: 4000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
     infinite: true, // 無限スライド
     slidesToShow: 3,
@@ -48,7 +48,7 @@ $(".pickup_slider").slick({
             },
         },
         {
-            breakpoint: 1000,
+            breakpoint: 1090,
             settings: {
                 arrows: true,
                 autoplaySpeed: 4000,
