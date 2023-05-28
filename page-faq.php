@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">FAQ</h2>
         <div class="faq">
@@ -11,7 +12,7 @@
                 </p>
                 <p>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
-                    小規模のご支援を頂ける場合は、各こども食堂紹介ページから支援したいこども食堂にご連絡ください。
+                    ご支援を頂ける場合は、各こども食堂紹介ページから支援したいこども食堂にご連絡ください。
                     お問い合わせは<a href="./page-contact.html">コチラ</a>
                 </p>
             </div>

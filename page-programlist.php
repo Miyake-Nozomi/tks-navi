@@ -33,7 +33,7 @@ $the_query = new WP_Query($args);
 <!-- 参加食堂一覧 -->
 <main>
     <div class="main_inner">
-
+        <div class="block"></div>
         <h2 class="title">参加こども食堂一覧</h2>
         <div class="amazon_item">
             <?php if ($the_query->have_posts()) : ?>
@@ -49,8 +49,7 @@ $the_query = new WP_Query($args);
                     <?php if(!empty($eye_catching)): ?>
                     <img src="<?php the_field('eye_catching'); ?>" alt="">
                     <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png"
-                        alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
                     <?php endif; ?>
 
                     <p class="item_card_title"><?php the_field('name'); ?></p>

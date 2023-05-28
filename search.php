@@ -94,6 +94,7 @@ new WP_Query($wp_query);
 
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <div class="search_inner">
             <?php //print_r($args) ;?>
@@ -116,8 +117,7 @@ new WP_Query($wp_query);
                         <?php if(!empty($eye_catching)): ?>
                         <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
                         <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
                         <?php endif; ?>
                         <p class="item_card_title">
                             <?php the_title(); ?>
@@ -205,9 +205,7 @@ new WP_Query($wp_query);
                         お手数ですが<a href="<?php echo home_url('/area/east'); ?>">【エリアからさがす】</a>や<a
                             href="<?php echo home_url('/find'); ?>">【条件からさがす】</a>より再度お求めのページをお探しください。
                     </p>
-                    <img class="not_found_img"
-                        src="<?php echo get_template_directory_uri();?>/assets/images/index/notfind.png" alt="404画像"
-                        class="not_found sp" />
+                    <img class="not_found_img" src="<?php echo get_template_directory_uri();?>/assets/images/index/notfind.png" alt="404画像" class="not_found sp" />
                 </div>
                 <?php endif; ?>
 

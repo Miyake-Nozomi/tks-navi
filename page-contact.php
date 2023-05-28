@@ -40,6 +40,7 @@
 
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">お問い合わせ</h2>
         <?php

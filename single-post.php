@@ -5,6 +5,7 @@ $cat = $cat[0];
 ?>
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <div class="news_title">
             <h2 class="title mb0"><?php the_title(); ?></h2>

@@ -6,6 +6,7 @@ $cat = $cat[0];
 
 <main>
     <div class="main_inner relative">
+        <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">
             <?php echo $cat->cat_name .'記事一覧'; ?>
