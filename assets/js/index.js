@@ -53,7 +53,7 @@ $(".pickup_slider").slick({
                 arrows: true,
                 autoplaySpeed: 4000,
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: false,
             },
