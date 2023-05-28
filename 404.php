@@ -2,6 +2,7 @@
 
 <main>
     <div class="main_inner">
+        <div class="block"></div>
         <h2 class="title404">404 NOT FOUND</h2>
         <h3 class="text404">
             お探しのページが見つかりませんでした。
