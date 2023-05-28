@@ -1,9 +1,10 @@
 @charset "utf-8";
 .support_inner {
-    border-radius: 15px;
+    border-radius: 30px;
     background-color: #fffbf1;
-    border: 2px solid #ffdf8c;
-    padding: 12px 15px 15px;
+    /* border: 5px solid #ffdf8c; */
+    border: 4px solid #ffdf8c;
+    padding: 30px;
 }
 
 /***********************
@@ -12,11 +13,12 @@
 
 .tab {
     max-width: 980px;
-    height: 75px;
+    /* height: 75px; */
     margin: 50px auto 0;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
     font-weight: 500;
+    line-height: 55px;
 }
 
 .tab_1,
@@ -25,8 +27,9 @@
     width: 100%;
     height: 55px;
     border-radius: 10px;
-    padding: 18px 0;
+    /* padding: 18px 0; */
     text-align: center;
+    vertical-align: middle;
 }
 
 .tab_1 {
@@ -57,22 +60,24 @@
     人的・物的・金銭的詳細
  **************************/
 .support_content {
-    max-width: 100%;
-    margin-top: 20px;
+    /* max-width: 100%;
+    margin-top: 20px; */
 }
 
 .support_supplies,
 .support_money,
 .support_help {
     /* max-width: 650px; */
+    max-width: 700px;
     /* width: 280px; */
     /* width: 80%; */
-    width: 100%;
+    /* width: 100%;
     height: auto;
-    margin: 0 auto;
-    padding: 35px;
+    margin: 0 auto; */
+    margin: 50px auto 0;
+    padding: 30px;
     border-radius: 10px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .support_supplies {
@@ -96,12 +101,15 @@
 .support_subtitle01,
 .support_subtitle02,
 .support_subtitle03 {
-    width: 90%;
-    height: auto;
+    /* width: 90%;
+    height: auto; */
     font-weight: 500;
-    padding-top: 8px;
+    /* padding-top: 8px; */
     border: dashed 2px white;
     margin: 0 auto;
+    width: fit-content;
+    line-height: normal;
+    padding: 0.8em 1em;
 }
 
 .support_subtitle01 {
@@ -123,20 +131,25 @@
 .support_money p,
 .support_help p {
     /* width: 195px; */
-    margin: 20px auto;
-    text-align: left;
+    /* margin: 20px auto; */
+    margin-top: 50px;
+    /* text-align: left; */
 }
 
 .support_btn {
-    width: 50%;
-    height: 60px;
-    padding: 13px;
+    /* width: 50%; */
+    width: fit-content;
+    /* height: 60px; */
+    height: auto;
+    /* padding: 13px; */
+    padding: 2em;
 }
 
 .font_awsome {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    /* margin-top: 10px; */
+    margin-top: 25px;
+    /* margin-bottom: 20px; */
 }
 
 /* ボタン */
@@ -144,7 +157,8 @@
 .support_btn_item {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 25px;
 }
 
 .btn01 a {
@@ -196,9 +210,30 @@
 }
 
 @media screen and (min-width: 770px) {
+    .support_supplies,
+    .support_money,
+    .support_help {
+        margin-top: 70px;
+        padding: 50px;
+    }
+
     .support_subtitle01,
     .support_subtitle02 {
-        width: 40%;
+        /* width: 40%; */
+    }
+
+    .support_supplies p,
+    .support_money p,
+    .support_help p {
+        margin-top: 70px;
+    }
+
+    .font_awsome {
+        margin-top: 35px;
+    }
+
+    .support_btn_item {
+        margin-top: 35px;
     }
 
     .tab_1:hover {
@@ -214,10 +249,10 @@
     }
 
     .support_btn {
-        width: 30%;
+        /* width: 30%;
         height: 100px;
         padding: 35px;
-        margin-top: 50px;
+        margin-top: 50px; */
     }
 
     .support_btn:hover {
@@ -227,14 +262,14 @@
     .support_supplies p,
     .support_money p,
     .support_help p {
-        width: 580px;
+        /* width: 580px; */
     }
 
     .btn_center {
-        width: 350px;
+        /* width: 350px; */
     }
 }
 
 .block {
-    display: inline-block;
+    /* display: inline-block; */
 }

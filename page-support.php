@@ -37,7 +37,10 @@
             </div>
             <div class="support_money tab-b panel">
                 <h3 class="subtitle support_subtitle02">
-                    金銭的に支援する
+                    <nobr>
+                    金銭的に<wbr>
+                    支援する
+                    </nobr>
                 </h3>
                 <p>
                     支援したいと思うこども食堂が決まっている方は、各こども食堂へ直接お問い合わせください。
@@ -52,7 +55,10 @@
             </div>
             <div class="support_help tab-c panel">
                 <h3 class="subtitle support_subtitle03">
-                    ボランティアスタッフとして手伝う
+                    <nobr>
+                    ボランティア<wbr>スタッフ<wbr>
+                    として手伝う
+                    </nobr>
                 </h3>
                 <p>
                     スタッフを募集している食堂はこちらのページから条件を絞り込んで検索できます！
@@ -65,11 +71,14 @@
                 </div>
             </div>
         </section>
-        <a href="<?php echo home_url('contact'); ?>">
-            <div class="btn support_btn">
-                お問い合わせはこちら
-            </div>
-        </a>
+        <div class="btn support_btn">
+            <a href="<?php echo home_url('contact'); ?>">
+                <nobr>
+                    お問い合わせは<wbr>
+                    こちら
+                </nobr>
+            </a>
+        </div>
     </div>
 </main>
 
