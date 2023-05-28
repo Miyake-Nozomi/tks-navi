@@ -12,7 +12,7 @@
                 <p>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
                     小規模のご支援を頂ける場合は、各こども食堂紹介ページから支援したいこども食堂にご連絡ください。
-                    徳島のこども食堂全体を支援したい場合は徳島こども食堂ネットワークにご連絡下さい。徳島こども食堂ネットワークへのお問い合わせは<a href="./page-contact.html">コチラ</a>
+                    お問い合わせは<a href="./page-contact.html">コチラ</a>
                 </p>
             </div>
             <div class="text">
