@@ -88,6 +88,9 @@ function add_my_files() {
         );
         //single-cafeinfo.jsの読み込み
         wp_enqueue_script('single-cafeinfo',get_template_directory_uri().'/assets/js/single-cafeinfo.js',array('header'),'1.0',true);
+
+        //no_spam_mail.jsの読み込み
+        wp_enqueue_script('no_spam_mail',get_template_directory_uri().'/assets/js/no_spam_mail.js',array('jquery'),'1.0',true);
     }
 
     //single-interviewページのみ出力
@@ -172,7 +175,7 @@ function add_my_files() {
             );
         }
 
-            // page-abminのみ出力
+        // page-abminのみ出力
     if (is_page('admin')) {
         wp_enqueue_style('page-admin', get_template_directory_uri() . '/assets/css/page-admin.css', array('my-common')
         );
@@ -207,7 +210,7 @@ function add_my_files() {
         );
     }
 
-        // event一覧のみ出力
+        // interview一覧のみ出力
     if (is_post_type_archive('interview')) {
         wp_enqueue_style('archive-interview', get_template_directory_uri() . '/assets/css/archive-interview.css', array('my-common')
         );
