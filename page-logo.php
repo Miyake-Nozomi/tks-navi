@@ -6,6 +6,9 @@
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <section class="concept section_inner">
             <h2 class="title">ロゴデザインについて</h2>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_1.png" alt="ロゴ">
+            </div>
             <div class="textbox">
                 <div class="text">
                     <p>
