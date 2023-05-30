@@ -218,15 +218,6 @@ if (!empty($volunteer)) {
 
 $the_query = new WP_Query($args);
 
-
-
-
-
-
-
-
-
-
 ?>
 <main>
     <div class="main_inner">
@@ -238,7 +229,8 @@ $the_query = new WP_Query($args);
         </h3>
 
 
-        <form action="<?php echo home_url('/find'); ?>" method="get" class="search_form">
+        <!-- <form action="<?php //echo home_url('/find'); ?>" method="get" class="search_form"> -->
+        <form class="search_form">
             <section class="form">
                 <div class="form_wrap">
                     <!-- エリア検索欄 -->

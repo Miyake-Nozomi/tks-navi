@@ -191,10 +191,10 @@ function add_my_files() {
     if (is_page('find')) {
         wp_enqueue_style('page-search', get_template_directory_uri() . '/assets/css/page-search.css', array('my-common')
         );
-        //tab.jsの読み込み
-        wp_enqueue_script('tab',get_template_directory_uri().'/assets/js/tab.js',array('header'),'1.0',true);
+        //find_ajax.jsの読み込み
+        wp_enqueue_script('find_ajax',get_template_directory_uri().'/assets/js/find_ajax.js',array('header'),'1.0',true);
         //page-search.jsの読み込み
-        wp_enqueue_script('page-search',get_template_directory_uri().'/assets/js/page-search.js',array('tab'),'1.0',true);
+        wp_enqueue_script('page-search',get_template_directory_uri().'/assets/js/page-search.js',array('find_ajax'),'1.0',true);
     }
 
         // 協賛団体リンク集ページのみ出力
