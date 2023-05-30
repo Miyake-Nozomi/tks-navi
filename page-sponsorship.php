@@ -14,17 +14,19 @@
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <h2 class="title">協賛団体リンク集</h2>
-        <section class="section_inner text_look">
-            <p class="support_inner text">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-            </p>
+        <section class="section_inner">
+            <div class="text text_color">
+                <p>
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+            </div>
         </section>
 
         <!-- 関連リンク -->
-        <section>
+        <section class="section_inner link_care">
             <h3>テキスト</h3>
             <div class="link_wrap">
                 <?php if ($the_query->have_posts()) : ?>
