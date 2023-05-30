@@ -203,6 +203,11 @@ function add_my_files() {
         );
     }
 
+        // ロゴページのみ出力
+            if (is_page('logo')) {
+                wp_enqueue_style('logo', get_template_directory_uri() . '/assets/css/page-logo.css', array('my-common')
+                );
+            }
 
     // event一覧のみ出力
     if (is_post_type_archive('event')) {
