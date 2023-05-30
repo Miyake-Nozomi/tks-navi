@@ -30,7 +30,7 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
                     <?php echo the_field('organizer'); ?>
                 </nobr>
             </h2>
-            <div class="area_inner">
+            <div class="area_inner flex">
                 <div class="pickup">
                     <div class="flex pickupimg">
                         <div class="pickup_top_img">
@@ -62,7 +62,7 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
                 <!-- インタビュー項目一覧 -->
                 <div class="area_east">
                     <h3 class="area_title">インタビュー項目一覧</h3>
-                    <ul class="area_list_wrap">
+                    <ul class="area_list_wrap flex">
                         <?php foreach ($heading as $inter) :  ?>
                         <li>
                             <a href="<?php echo '#'.$inter->slug;?>">

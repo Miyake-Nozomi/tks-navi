@@ -165,15 +165,15 @@
         /* max-width: 730px; */
         /* width: 90%; */
         width: 300px;
-        /* height: auto; */
+        height: fit-content;
         /* height: 100%; */
         border-radius: 10px;
         margin: 0 auto;
         padding: 25px 20px;
+        padding: 30px 35px;
         background-color: #fdffb0;
-        position: fixed;
-        top: 150px;
-        left: calc(100% - 320px);
+        position: sticky;
+        top: 120px;
     }
 
     .area_title {
@@ -189,9 +189,10 @@
     }
 
     .area_list_wrap {
-        width: 100%;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        /* width: 100%; */
+        flex-direction: column;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
     }
 
     /* flex-wrap最後の配置を整える */
@@ -206,7 +207,9 @@
     .area_list_wrap li {
         /* text-align: center;
 width: 50%; */
-        margin: 15px 0;
+        /* margin: 15px 0; */
+        margin-top: 15px;
+        text-align: left;
     }
 
     .area_list_wrap a:hover {
