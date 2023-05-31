@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="main_concept">
     <div class="main_inner">
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="rice"></div>
-            <div class="curry"></div>
+
             <!-- <div class="btn"> -->
             <div class="btn_item">
                 <a href="<?php echo home_url('/faq'); ?>">
@@ -36,6 +36,7 @@
 
         </section>
     </div>
+    <div class="curry"></div>
 </main>
 
 

@@ -60,6 +60,12 @@
         margin-top: 70px;
         margin-bottom: 40px;
     } */
+
+.main_concept {
+    position: relative;
+    overflow: hidden;
+}
+
 .concept {
     position: relative;
 }
@@ -86,10 +92,10 @@
     .curry {
         /* height: 150px;
         width: 150px; */
-        height: 500px;
-        width: 500px;
+        height: 400px;
+        width: 400px;
         position: absolute;
-        bottom: -20%;
+        bottom: -10%;
         left: 70%;
         background-image: url(../images/child/curry.png);
         background-size: contain;
