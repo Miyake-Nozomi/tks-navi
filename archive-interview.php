@@ -79,7 +79,7 @@
                 Pick upインタビュー　一覧
             </h2>
             <div class="text">
-                <div class="intro">
+                <div class="pickup_text_p">
                     <!-- <p class="subtitle left">
                         Pick upインタビューとは
                     </p> -->
@@ -104,7 +104,8 @@
                     <?php if(!empty($eye_catching)): ?>
                     <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
                     <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png"
+                        alt="">
                     <?php endif; ?>
                     <p class="item_card_title">
                         <?php the_field('title'); ?>

@@ -40,6 +40,14 @@
     padding: 0 10px;
 }
 
+.pickup_text_p {
+    border-radius: 30px;
+    background-color: #fffbf1;
+    /* border: 5px solid #ffdf8c; */
+    border: 4px solid #ffdf8c;
+    padding: 30px;
+}
+
 @media (min-width: 770px) {
     .pickup_flex {
         display: flex;
