@@ -1,4 +1,8 @@
 @charset "utf-8";
+.main_admin {
+    position: relative;
+    overflow: hidden;
+}
 
 .link {
     margin: 20px 0;
@@ -56,10 +60,10 @@
     }
 
     .vegetable {
-        width: 100%;
+        width: 300px;
         height: 300px;
         position: absolute;
-        bottom: -13%;
+        bottom: -55px;
         left: 80%;
         background-size: contain;
         background-repeat: no-repeat;

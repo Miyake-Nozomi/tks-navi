@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main>
+<main class="main_admin">
     <div class="main_inner">
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
@@ -26,8 +26,8 @@
                 このサイトは、完全ボランティアで運営しておりますので、レスポンスにお時間をいただきます。ご了承ください。
             </p>
             <div class="house"></div>
-            <div class="vegetable"></div>
         </section>
     </div>
+    <div class="vegetable"></div>
 </main>
 <?php get_footer(); ?>
