@@ -29,6 +29,10 @@
     text-align: left;
 }
 
+.news_flex {
+    margin-top: 50px;
+}
+
 /* カテゴリー一覧 */
 .category_title {
     font-size: 24px;
@@ -51,7 +55,7 @@
 }
 
 .bgcnone {
-    margin: 120px auto;
+    margin: 70px auto;
     background-color: white;
     border: 3px solid #ffdf8c;
     width: 265px;
@@ -90,6 +94,10 @@
 @media (min-width: 770px) {
     .main_inner {
         margin-bottom: 180px;
+    }
+
+    .news_flex {
+        margin-top: 70px;
     }
     /* カテゴリー一覧 */
     .bgcnone {
@@ -148,7 +156,7 @@
     .news_flex {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        gap: 50px;
     }
 
     .tcenter {
