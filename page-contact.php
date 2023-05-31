@@ -52,7 +52,7 @@
     //     }
         ?>
         <!-- 各子供食堂 -->
-        <section class="contact1">
+        <section class="section_inner contact1">
 
             <div class="text">
                 <h3 class="subtitle">
@@ -73,7 +73,7 @@
                     <p> なお、各こども食堂の開催日時等の運営状況や人員の都合により、返信までに時間がかかる場合があります。予めご了承ください。</p>
                 </ul>
             </div>
-            <div class="btn_item">
+            <div class="btn_item btn_contact">
                 <a href="<?php echo home_url('/cafeinfo'); ?>">各こども食堂一覧</a>
             </div>
         </section>

@@ -16,6 +16,7 @@
 .contact1,
 .contact2 {
     width: 100%;
+    padding: 0px;
 }
 
 .subtitle {
@@ -227,6 +228,13 @@
     border: 1px solid gray;
 }
 
+.btn_contact a {
+    width: 200px;
+}
+
+.btn_contact {
+    margin-bottom: 50px;
+}
 /* 送信確認画面CSS */
 .contact2 .subtitle02 {
     margin-top: 50px;
@@ -328,6 +336,10 @@
         transform: translateY(-5px);
         background-color: #fdffb0;
         opacity: 0.8;
+    }
+
+    .btn_contact {
+        margin-bottom: 70px;
     }
 
     /* 送信確認画面CSS */
