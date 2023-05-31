@@ -103,6 +103,10 @@
     border-radius: 70%;
 }
 
+.area_inner {
+    padding: 0 20px;
+}
+
 .area_east {
     display: none;
 }
@@ -152,7 +156,7 @@
     }
 
     .pickup {
-        width: calc(100% - 320px);
+        width: calc(100% - 300px);
     }
 
     .list_area {
@@ -178,9 +182,10 @@
 
     .area_title {
         text-align: center;
-        width: 210px;
-        height: 50px;
-        padding-top: 5px;
+        /* width: 210px;
+        height: 50px; */
+        /* padding-top: 5px; */
+        padding: 0.5em;
         background-color: #fff8e6;
         border-radius: 10px;
         margin: 0 auto;
