@@ -81,6 +81,10 @@ if (is_tax('area')) {
                 <input class="hbg_submit_pc" type="submit" value="" />
             </form>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 1.5" preserveAspectRatio="none" class="header_wave">
+            <path d="M0,0 v1 q5,1 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-1 Z" fill="#FFF8E6">
+            </path>
+        </svg>
         <nav class="menu">
             <ul>
                 <li>
@@ -115,9 +119,5 @@ if (is_tax('area')) {
                 <!-- 検索機能end -->
             </ul>
         </nav>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
-            <path d="M0,0 v1 q5,1 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-1 Z" fill="#FFF8E6">
-            </path>
-        </svg>
         <!-- hamburger中身end -->
     </header>

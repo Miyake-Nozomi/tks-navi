@@ -209,6 +209,10 @@ body {
     width: 160px;
 }
 
+.header_wave {
+    vertical-align: top;
+}
+
 /* hamburgerメニュー */
 
 .hamburger span {
