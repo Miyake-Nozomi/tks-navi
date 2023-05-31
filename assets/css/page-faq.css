@@ -5,7 +5,6 @@
 }
 
 .text {
-    width: 80%;
     padding: 20px;
     border-radius: 10px;
     background-color: #e9fcc1;
@@ -24,8 +23,8 @@
     text-align: left;
     text-decoration: underline;
     text-decoration-color: #c8f763;
-    text-decoration-thickness: 5px;
-    text-underline-offset: 10px;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
     /* text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 1px;
@@ -54,10 +53,19 @@
     text-underline-offset: 5px;
 }
 
+.btn_item_faq a {
+    width: 250px;
+    padding: 30px 30px;
+}
+
 @media screen and (min-width: 770px) {
     .text {
         width: 70%;
         padding: 30px;
+    }
+
+    .text p:nth-child(1) {
+        text-decoration-thickness: 5px;
     }
 }
 
