@@ -15,7 +15,8 @@ $(".menu a").on("click", function () {
 
 // トップボタンスクロールアニメーション
 $(".toppage_btn").on("click", function () {
-    $("window,html").animate({ scrollTop: 0 }, 550);
+    // $("window,html").animate({ scrollTop: 0 }, 550);
+    $("html,body").animate({ scrollTop: 0 }, 550);
 });
 
 // トップボタン非表示
