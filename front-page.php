@@ -281,7 +281,7 @@ $event_query = new WP_Query($fuga);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
-            <div class="section_inner pd10">
+            <div class="section_inner pd10 about_inner">
                 <h2 class="title">このサイトについて</h2>
                 <div class="about_box">
                     <div class="logo_act">
@@ -294,8 +294,20 @@ $event_query = new WP_Query($fuga);
                         </p>
                     </div>
                 </div>
-
-
+                <div class="circle_white">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FFFFFF"
+                            d="M48.1,-74.3C61.6,-66.1,71.4,-51.6,77.8,-36C84.2,-20.4,87.2,-3.7,84.1,11.5C81,26.6,71.6,40.3,60.4,51.2C49.2,62,36.1,70.1,21.5,75.4C6.9,80.7,-9.1,83.1,-22.6,78.5C-36,73.8,-46.9,61.9,-57.7,49.8C-68.5,37.7,-79.1,25.3,-82.8,10.8C-86.6,-3.7,-83.5,-20.2,-77.3,-35.8C-71,-51.5,-61.5,-66.2,-48.1,-74.5C-34.7,-82.8,-17.3,-84.6,0,-84.5C17.3,-84.5,34.6,-82.6,48.1,-74.3Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
+                <div class="circle_yellow_about">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FDFFB0"
+                            d="M48.1,-74.3C61.6,-66.1,71.4,-51.6,77.8,-36C84.2,-20.4,87.2,-3.7,84.1,11.5C81,26.6,71.6,40.3,60.4,51.2C49.2,62,36.1,70.1,21.5,75.4C6.9,80.7,-9.1,83.1,-22.6,78.5C-36,73.8,-46.9,61.9,-57.7,49.8C-68.5,37.7,-79.1,25.3,-82.8,10.8C-86.6,-3.7,-83.5,-20.2,-77.3,-35.8C-71,-51.5,-61.5,-66.2,-48.1,-74.5C-34.7,-82.8,-17.3,-84.6,0,-84.5C17.3,-84.5,34.6,-82.6,48.1,-74.3Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
                 <div class="btn_item">
                     <a href="<?php echo home_url('/about'); ?>" class="">
                         もっと見る

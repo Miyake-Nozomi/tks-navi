@@ -290,6 +290,10 @@ html {
     z-index: 10;
 }
 
+.about_inner {
+    position: relative;
+}
+
 /* .rainbow {
     width: 320px;
     height: 300px;
@@ -330,6 +334,14 @@ html {
     margin-top: 25px;
 }
 
+.circle_white {
+    display: none;
+}
+
+.circle_yellow_about {
+    display: none;
+}
+
 @media (min-width: 770px) {
     .pd10 {
         padding: 0px 10px;
@@ -347,6 +359,26 @@ html {
 
     .logo_act img {
         width: 280px;
+    }
+
+    .circle_white {
+        display: block;
+        width: 380px;
+        left: 40%;
+        position: absolute;
+        bottom: 45px;
+        opacity: 60%;
+        z-index: -1;
+    }
+
+    .circle_yellow_about {
+        display: block;
+        position: absolute;
+        z-index: -2;
+        width: 280px;
+        bottom: 45px;
+        left: 70%;
+        opacity: 60%;
     }
 }
 
