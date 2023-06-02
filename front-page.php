@@ -401,7 +401,7 @@ $event_query = new WP_Query($fuga);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
-            <div class="section_inner">
+            <div class="section_inner shien_inner">
                 <h2 class="title">支援したい方へ</h2>
                 <div class="shien_box">
                     <div class="text shien_text text_border">
@@ -426,6 +426,10 @@ $event_query = new WP_Query($fuga);
                         もっと見る
                     </a>
                 </div>
+                <div class="cabbage"></div>
+                <div class="cone"></div>
+                <div class="tomato"></div>
+                <div class="cauliflower"></div>
             </div>
             <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/onigiribottom.png" alt="波" class="onigiribottom" /> -->
         </section>

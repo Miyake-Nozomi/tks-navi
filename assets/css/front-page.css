@@ -748,6 +748,7 @@ hr {
     .shien_box {
         display: flex;
         margin-top: 70px;
+        z-index: 2;
     }
 
     .shien_act {
@@ -769,6 +770,61 @@ hr {
     }
     .surporters .btn_item01 {
         margin-bottom: 30px;
+    }
+
+    .shien_inner {
+        position: relative;
+    }
+
+    .cabbage {
+        height: 85%;
+        width: 85%;
+        position: absolute;
+        top: -120px;
+        left: -90px;
+        background-image: url(../images/cabbage.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.25;
+    }
+
+    .cone {
+        height: 80%;
+        width: 80%;
+        position: absolute;
+        bottom: -250px;
+        left: 60%;
+        background-image: url(../images/cone.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.25;
+        transform: rotate(45deg);
+    }
+
+    .tomato {
+        height: 65%;
+        width: 65%;
+        position: absolute;
+        bottom: -150px;
+        left: -25%;
+        background-image: url(../images/tomato.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.25;
+        transform: rotate(20deg);
+    }
+
+    .cauliflower {
+        height: 65%;
+        width: 65%;
+        position: absolute;
+        top: -210px;
+        left: 90%;
+        background-image: url(../images/cauliflower.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.25;
+        transform: rotate(-20deg);
     }
 }
 
