@@ -330,10 +330,6 @@ html {
     }
 }
 
-.about_text {
-    margin-top: 25px;
-}
-
 .circle_white {
     display: none;
 }
@@ -353,12 +349,13 @@ html {
         align-items: center;
     }
 
-    .about_text {
-        margin: 25px 30px;
-    }
-
     .logo_act img {
-        width: 280px;
+        z-index: -1;
+        width: 450px;
+        position: absolute;
+        opacity: 50%;
+        left: -150px;
+        top: 0px;
     }
 
     .circle_white {
@@ -944,19 +941,22 @@ hr {
 }
 
 /* 食堂運営者の方へ */
-.support_pepole {
-    display: none;
-}
 
 @media (min-width: 770px) {
-    .support_pepole {
-        display: block;
-        width: 180px;
+    .support_inner {
+        position: relative;
+        overflow: hidden;
     }
-    .support_box {
-        display: flex;
-        align-items: flex-start;
-        gap: 20px;
+    .support_pepole {
+        position: absolute;
+        width: 120px;
+        height: 160px;
+        left: 1px;
+        background-image: url(../images/index/suporter_pepole.png);
+        bottom: 1px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 

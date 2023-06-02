@@ -281,20 +281,18 @@ $event_query = new WP_Query($fuga);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
-            <div class="section_inner pd10 about_inner">
+            <div class="section_inner about_inner">
                 <h2 class="title">このサイトについて</h2>
-                <div class="about_box">
-                    <div class="logo_act">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_act.png" alt="ロゴ">
-                    </div>
-                    <div class="text about_text">
-                        <p>
-                            徳島県には、こども食堂がたくさんあります。<br>
-                            「こども食堂って何なの？という人」や「こども食堂へ行ってみたい人・手伝いたい人・支援したい人」へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂をさがして行ってみてください！
-                        </p>
-                    </div>
+                <div class="logo_act about_box">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_act.png" alt="ロゴ">
                 </div>
-                <div class="circle_white">
+                <div class="text text_border">
+                    <p>
+                        徳島県には、こども食堂がたくさんあります。<br>
+                        「こども食堂って何なの？という人」や「こども食堂へ行ってみたい人・手伝いたい人・支援したい人」へ分かりやすく情報をお届けする！をスローガンにこのサイトを作りました。ぜひ、自分の家の近くのこども食堂をさがして行ってみてください！
+                    </p>
+                </div>
+                <!-- <div class="circle_white">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#FFFFFF"
                             d="M48.1,-74.3C61.6,-66.1,71.4,-51.6,77.8,-36C84.2,-20.4,87.2,-3.7,84.1,11.5C81,26.6,71.6,40.3,60.4,51.2C49.2,62,36.1,70.1,21.5,75.4C6.9,80.7,-9.1,83.1,-22.6,78.5C-36,73.8,-46.9,61.9,-57.7,49.8C-68.5,37.7,-79.1,25.3,-82.8,10.8C-86.6,-3.7,-83.5,-20.2,-77.3,-35.8C-71,-51.5,-61.5,-66.2,-48.1,-74.5C-34.7,-82.8,-17.3,-84.6,0,-84.5C17.3,-84.5,34.6,-82.6,48.1,-74.3Z"
@@ -307,7 +305,7 @@ $event_query = new WP_Query($fuga);
                             d="M48.1,-74.3C61.6,-66.1,71.4,-51.6,77.8,-36C84.2,-20.4,87.2,-3.7,84.1,11.5C81,26.6,71.6,40.3,60.4,51.2C49.2,62,36.1,70.1,21.5,75.4C6.9,80.7,-9.1,83.1,-22.6,78.5C-36,73.8,-46.9,61.9,-57.7,49.8C-68.5,37.7,-79.1,25.3,-82.8,10.8C-86.6,-3.7,-83.5,-20.2,-77.3,-35.8C-71,-51.5,-61.5,-66.2,-48.1,-74.5C-34.7,-82.8,-17.3,-84.6,0,-84.5C17.3,-84.5,34.6,-82.6,48.1,-74.3Z"
                             transform="translate(100 100)" />
                     </svg>
-                </div>
+                </div> -->
                 <div class="btn_item">
                     <a href="<?php echo home_url('/about'); ?>" class="">
                         もっと見る
@@ -412,14 +410,14 @@ $event_query = new WP_Query($fuga);
                             一言に「支援」と言っても、いくつかの方法があります。
                         </p>
                     </div>
-                    <div class="shien_act">
+                    <!-- <div class="shien_act">
                         <img class="pc_pic yasai_woman"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_woman.png"
+                            src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/yasai_woman.png"
                             alt="野菜を収穫した人">
                         <img class="mobile_pic yasai_man"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/index/yasai_man.png"
+                            src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/yasai_man.png"
                             alt="野菜を収穫した人" />
-                    </div>
+                    </div> -->
                 </div>
                 <div class="btn_item">
                     <a href="<?php echo home_url('/support'); ?>">
@@ -492,24 +490,21 @@ $event_query = new WP_Query($fuga);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
-            <div class="section_inner">
+            <div class="section_inner support_inner">
                 <h2 class="title link_title">食堂運営者の方へ</h2>
-                <div class="support_box">
-                    <img class="support_pepole"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/suporter_pepole.png"
-                        alt="男女二人" />
-                    <div class="text text_border">
-                        <p>
-                            「徳島こども食堂ナビ」では、徳島県下で活動されている、こども食堂さんであれば、所属に関わらず無料で情報掲載が可能です。
-                            食堂運営者の方は、もっと見るから、詳細をご一読ください。
-                        </p>
-                    </div>
+                <div class="text text_border">
+                    <p>
+                        「徳島こども食堂ナビ」では、徳島県下で活動されている、こども食堂さんであれば、所属に関わらず無料で情報掲載が可能です。
+                        食堂運営者の方は、もっと見るから、詳細をご一読ください。
+                    </p>
                 </div>
+
                 <div class="btn_item">
                     <a href=" <?php echo home_url('/admin/'); ?>">
                         もっと見る
                     </a>
                 </div>
+                <div class="support_pepole"></div>
             </div>
             <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/linkbottom.png" alt="波" class="link_wave" /> -->
         </section>
@@ -528,7 +523,7 @@ $event_query = new WP_Query($fuga);
             </svg>
             <div class="section_inner contact_circle_inner">
                 <h2 class="title">お問い合わせ</h2>
-                <div class="text">
+                <div class="text text_border">
                     <p>
                         このサイトに関するお問い合わせはこちらから！<br>
                         ※各こども食堂へのお問い合わせは、それぞれの食堂詳細ページの連絡先へ個別にお問い合わせください。
@@ -578,7 +573,7 @@ $event_query = new WP_Query($fuga);
             </svg>
             <div class="section_inner">
                 <h2 class="title">活動の様子</h2>
-                <div class="text">
+                <div class="text text_border">
                     <p>
                         「徳島こども食堂ナビ」に掲載している、様々なこども食堂の活動の様子をスライドショーでご覧いただけます。
                     </p>
