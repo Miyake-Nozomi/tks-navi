@@ -230,7 +230,7 @@ $sponsor_query = new WP_Query($piyo);
         <section class="concept">
             <div class="section_inner onigiri_inner">
                 <div class="title concept_title">
-                    <h2>こども食堂とは</h2>
+                    <h2 class="title">こども食堂とは</h2>
                 </div>
                 <div class="concept_text">
                     <div class="text text_border">

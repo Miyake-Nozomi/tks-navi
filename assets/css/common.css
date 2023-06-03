@@ -46,6 +46,7 @@ body {
     margin: 0 auto;
     max-width: 1024px;
     padding: 0 10%;
+    text-align: center;
 }
 
 .block {
@@ -86,16 +87,19 @@ body {
 /* h2 */
 .title {
     /* 追加-このサイトについて,こども食堂とは */
-
+    /* width: fit-content; */
+    display: inline;
     font-size: 24px;
     font-weight: 500;
     margin: 70px auto 0;
-    text-align: center;
-    text-decoration-line: underline;
+    /* text-align: center; */
+    border-bottom: dotted 0.2em #008000;
+    /* border-bottom-offset: 10px; */
+    /* text-decoration-line: underline;
     text-decoration-color: #008000;
     text-decoration-style: dotted;
     text-decoration-thickness: 0.2em;
-    text-underline-offset: 10px;
+    text-underline-offset: 10px; */
 }
 
 /* pのラップ */
