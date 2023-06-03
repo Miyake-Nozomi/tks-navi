@@ -1049,10 +1049,40 @@ hr {
     }
 }
 
-/* footermargin削除 */
-.footer {
-    margin-top: 0px;
+/* 協賛団体リンク */
+.banner {
+    padding-top: 50px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
+
+.banner a {
+    display: inline-block;
+}
+
+.banner img {
+    width: 220px;
+    /* height: 60px; */
+    border-radius: 10px;
+    aspect-ratio: auto;
+}
+
+@media (min-width: 770px) {
+    .banner {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-left: 0;
+    }
+}
+
+/* footermargin削除 */
+/* .footer {
+    margin-top: 0px;
+} */
 
 /* 波の設定 */
 .concept_wave {

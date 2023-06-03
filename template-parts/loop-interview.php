@@ -3,7 +3,12 @@
         <div class="item_card">
             <?php $eye_catching = get_field('eye_catching');?>
             <?php if(!empty($eye_catching)): ?>
-            <img src="<?php the_field('eye_catching'); ?>" alt="">
+            <?php
+                $eye_catching = get_field('eye_catching');
+                $image_id = attachment_url_to_postid( $eye_catching );
+                $image_alt = get_post_meta(  $image_id, '_wp_attachment_image_alt', true );
+            ?>
+            <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
             <?php else: ?>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/text_kakko_kari.png" alt="">
             <?php endif; ?>

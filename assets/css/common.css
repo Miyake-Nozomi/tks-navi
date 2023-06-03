@@ -577,14 +577,6 @@ body {
     padding: 0 10%;
 }
 
-.footer_banner {
-    padding-top: 50px;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
 /* .footer_banner a {
     display: inline-block;
 }
