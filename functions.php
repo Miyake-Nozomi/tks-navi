@@ -191,10 +191,8 @@ function add_my_files() {
     if (is_page('find')) {
         wp_enqueue_style('page-search', get_template_directory_uri() . '/assets/css/page-search.css', array('my-common')
         );
-        //find_ajax.jsの読み込み
-        wp_enqueue_script('find_ajax',get_template_directory_uri().'/assets/js/find_ajax.js',array('header'),'1.0',true);
         //page-search.jsの読み込み
-        wp_enqueue_script('page-search',get_template_directory_uri().'/assets/js/page-search.js',array('find_ajax'),'1.0',true);
+        wp_enqueue_script('page-search',get_template_directory_uri().'/assets/js/page-search.js',array('header'),'1.0',true);
     }
 
         // 協賛団体リンク集ページのみ出力
@@ -242,11 +240,55 @@ function add_my_files() {
 
 add_action('wp_enqueue_scripts' ,'add_my_files');
 
+/* フォームの内容を取得してAjaxに送信するプログラムが記述されたJavascriptをheadタグにキュー */
+add_action('wp_enqueue_scripts', function () {
+    $handle = 'find_ajax';
+            $file = get_template_directory_uri() . '/assets/js/' . $handle . '.js';
+    wp_register_script($handle, $file, array('jquery'), '3.6.0', true);
+
+    $localize = [
+    'ajax_url' => admin_url('admin-ajax.php'),
+    'action' => 'view_search_results',
+    'nonce' => wp_create_nonce('view_search_results')
+    ];
+    wp_localize_script($handle, 'localize', $localize);
+    wp_enqueue_script($handle);
+    ?>
+<script>
+console.log("キューは成功:");
+</script>
+<?php
+});
+
+
+/* Ajaxから取得したnonceを認証し、認証通過したらテンプレートを出力する */
+function view_search_results()
+{
+    $nonce = $_REQUEST['nonce'];
+    if (wp_verify_nonce($nonce, 'view_search_results')) {
+    get_template_part('template-parts/ajax-search');
+            ?>
+<script>
+console.log("テンプレート出力も成功:");
+</script>
+<?php
+    }
+    die();
+
+
+}
+
+add_action('wp_ajax_view_search_results', 'view_search_results'); //第一引数は wp_ajax_{ファンクション名} にする
+add_action('wp_ajax_nopriv_view_search_results', 'view_search_results'); //第一引数は wp_ajax_nopriv_{ファンクション名} にする
+
+
 // Contact Form 7で自動挿入されるPタグ、brタグを削除
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
     return false;
 }
+
+//
 
 
 //投稿表示件数を変更する
