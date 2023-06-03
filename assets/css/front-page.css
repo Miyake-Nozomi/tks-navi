@@ -615,7 +615,7 @@ hr {
 
     .serch_map_img {
         display: block;
-        width: 100%;
+        width: 350px;
         height: 350px;
         opacity: 30%;
         transform: rotate(0deg);
