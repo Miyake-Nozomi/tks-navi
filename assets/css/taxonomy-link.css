@@ -17,6 +17,7 @@
 .tab a {
     display: block;
     padding: 18px 0;
+    font-size: 15px;
 }
 
 .tab_1,
@@ -78,6 +79,7 @@
 
 .link_third {
     background-color: #fdffb0;
+    position: relative;
 }
 
 .link_title {
@@ -173,7 +175,7 @@
     display: none;
 }
 
-.girl {
+.yagi {
     display: none;
 }
 
@@ -221,7 +223,6 @@
 
     .link_third {
         padding-bottom: 110px;
-        background-color: #fdffb0;
     }
 
     .link_title {
@@ -249,7 +250,7 @@
         bottom: 20px;
     }
 
-    .girl {
+    .yagi {
         display: block;
         width: 180px;
         height: 180px;

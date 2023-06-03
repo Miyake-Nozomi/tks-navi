@@ -12,9 +12,9 @@
     position: relative;
 }
 
-.news_title {
+/* .news_title {
     text-decoration: underline solid #f8b600;
-}
+} */
 
 .news_title + .news_title {
     margin-top: 30px;
