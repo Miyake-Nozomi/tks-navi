@@ -59,7 +59,7 @@
 .category_title {
     font-size: 24px;
     display: inline-block;
-    width: 304px;
+    width: 220px;
     background-color: #d9cdb0;
     border-radius: 10px;
     border-top: 5px dotted white;
@@ -80,10 +80,10 @@
     margin: 70px auto 40px;
     background-color: white;
     border: 3px solid #ffdf8c;
-    width: 265px;
+    width: 230px;
     border-radius: 37px;
     padding-top: 80px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .category_list {
@@ -95,9 +95,9 @@
     position: absolute;
     margin-bottom: 0;
     margin-top: 0;
-    left: -20px;
+    left: 22px;
     right: 0;
-    top: 15px;
+    top: 21px;
 }
 
 @media (min-width: 770px) {
@@ -131,7 +131,7 @@
     }
 
     .category_tag {
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     /* カテゴリーリスト */
