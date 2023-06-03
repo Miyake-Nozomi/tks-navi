@@ -614,7 +614,7 @@ $sponsor_query = new WP_Query($piyo);
                         このサイトの存在意義や、活動に協賛しご支援下さった団体・企業様のリンク集です。素敵な団体ばかりですので、ぜひご覧ください。
                     </p>
                 </div>
-                <div class="banner">
+                <div class="banner flex">
                     <?php if ($sponsor_query->have_posts()) : ?>
                     <?php while($sponsor_query->have_posts()) : ?>
                     <?php $sponsor_query->the_post(); ?>

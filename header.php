@@ -77,7 +77,7 @@ if (is_tax('area')) {
             <!-- PC版キーワード -->
             <form class="btn_header_search_pc header_flex" action="<?php echo home_url('/'); ?>" method="get">
                 <input type="hidden" name="search_type" value="keywords" />
-                <input class="hbg_form" size="20" type="search" name="s" maxlength="20" value="<?php the_search_query(); ?>" placeholder="キーワード" id="" />
+                <input class="hbg_form" size="20" type="search" name="s" maxlength="20" value="<?php the_search_query(); ?>" placeholder="キーワードを入力" id="" />
                 <input class="hbg_submit_pc" type="submit" value="" />
             </form>
         </div>

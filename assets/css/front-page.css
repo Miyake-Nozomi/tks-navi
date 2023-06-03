@@ -1051,15 +1051,16 @@ hr {
 
 /* 協賛団体リンク */
 .banner {
-    padding-top: 50px;
-    padding-left: 15px;
-    display: flex;
+    margin-top: 50px;
+    /* padding-left: 15px; */
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    row-gap: 30px;
 }
 
 .banner a {
     display: inline-block;
+    min-height: 44px;
 }
 
 .banner img {
@@ -1069,13 +1070,32 @@ hr {
     aspect-ratio: auto;
 }
 
+@media (min-width: 660px) {
+    .banner {
+        width: 90%;
+        margin: 50px auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: calc(100% - 440px);
+        row-gap: 30px;
+    }
+}
+
 @media (min-width: 770px) {
     .banner {
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        /* gap: 50px; */
-        padding-left: 0;
+        width: 80%;
+        margin: 70px auto;
+        gap: calc(100% - 440px);
+        row-gap: 50px;
+    }
+}
+
+@media (min-width: 880px) {
+    .banner {
+        width: 100%;
+        gap: calc(50% - 330px);
+        row-gap: 50px;
     }
 }
 
