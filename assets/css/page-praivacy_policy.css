@@ -12,7 +12,7 @@ main {
     margin-bottom: 150px;
 }
 
-.title {
+.sub_title {
     width: fit-content;
     font-size: 20px;
 }
@@ -29,7 +29,7 @@ main {
 }
 
 @media screen and (min-width: 770px) {
-    .title {
+    .sub_title {
         font-size: 24px;
     }
 
