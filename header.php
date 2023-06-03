@@ -81,9 +81,10 @@ if (is_tax('area')) {
                 <input class="hbg_submit_pc" type="submit" value="" />
             </form>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 1.5" preserveAspectRatio="none" class="header_wave">
-            <path d="M0,0 v1 q5,1 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-1 Z" fill="#FFF8E6">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 1.8" preserveAspectRatio="none" class="header_wave">
+            <path d="M0,0.2 v1 q5,1 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-1 Z" fill="rgba(0,0,0,0.1)">
             </path>
+            <path d="M0,0 v1 q5,1 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-1 Z" fill="#FFF8E6"></path>
         </svg>
         <nav class="menu">
             <ul>
