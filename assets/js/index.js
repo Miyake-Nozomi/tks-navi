@@ -31,7 +31,7 @@ $(".kv_slider").slick({
 // }
 
 $(".pickup_slider").slick({
-    autoplay: true, // 自動再生
+    autoplay: false, // 自動再生
     autoplaySpeed: 4000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
     infinite: true, // 無限スライド
     slidesToShow: 3,
@@ -64,19 +64,19 @@ $(".pickup_slider").slick({
 // slick(活動の様子スライド)
 $(function () {
     $(".activity_slide").slick({
+        autoplay: true, // 自動再生
+        autoplaySpeed: 4000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
         arrows: false,
-        autoplay: true,
         adaptiveHeight: true,
         centerMode: true,
-        centerPadding: "8%",
-        dots: true,
-        slidesToShow: 3,
+        centerPadding: "15%",
+        dots: false,
+        slidesToShow: 1,
         responsive: [
             {
                 breakpoint: 770,
                 settings: {
-                    slidesToShow: 1,
-                    dots: false,
+                    centerPadding: "10%",
                 },
             },
         ],
