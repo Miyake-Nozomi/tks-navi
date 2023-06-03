@@ -74,7 +74,7 @@
                         <a href="<?php echo home_url('/find'); ?>">条件からさがす</a>から探してみてください。
                     </p>
                 </div>
-                <div class="btn_item btn_item_faq">
+                <div class="btn_item btn_faq">
                     <a href="<?php echo home_url('/contact'); ?>">お問い合わせはこちら</a>
                 </div>
 
