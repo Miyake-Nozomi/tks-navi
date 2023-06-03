@@ -416,6 +416,10 @@ td {
     border: 1px solid #ffb700;
 }
 
+.orange_td {
+    background-color: #f7eac6;
+}
+
 @media (min-width: 770px) {
     .single_table_tdtitle {
         width: 300px;

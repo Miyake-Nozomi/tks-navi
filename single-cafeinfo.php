@@ -379,7 +379,7 @@ $the_query = new WP_Query($args);
                     <?php foreach( $events as $key => $event): ?>
                     <tr>
                         <?php if (!empty($event)) : ?>
-                        <td class="single_table_tdtitle">
+                        <td class="single_table_tdtitle orange_td">
                             <?php echo $key; ?>
                         </td>
                         <?php if (!is_array($event)) : ?>
