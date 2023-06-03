@@ -435,7 +435,7 @@ $sponsor_query = new WP_Query($piyo);
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
             <div class="section_inner link_inner">
-                <h2 class="title link_title">リンク集</h2>
+                <h2 class="title link_title">お役立ちリンク集</h2>
                 <div class="link_flex">
                     <a href="<?php echo home_url('/link/cafe'); ?>" class="link_cover">
                         <div class="link_item link_child">
