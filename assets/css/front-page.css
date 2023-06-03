@@ -1072,9 +1072,9 @@ hr {
 @media (min-width: 770px) {
     .banner {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        gap: 50px;
+        /* gap: 50px; */
         padding-left: 0;
     }
 }
