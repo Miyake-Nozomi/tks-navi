@@ -383,11 +383,11 @@ $the_query = new WP_Query($args);
                             <?php echo $key; ?>
                         </td>
                         <?php if (!is_array($event)) : ?>
-                        <td class="text">
+                        <td class="text text_single">
                             <?php echo $event; ?>
                         </td>
                         <?php else: ?>
-                        <td class="text">
+                        <td class="text text_single">
                             <?php foreach( $event as $value): ?>
                             <p>
                                 <?php echo $value; ?>
@@ -424,7 +424,7 @@ $the_query = new WP_Query($args);
                         <td class="single_table_tdtitle">
                             <h4>連絡先</h4>
                         </td>
-                        <td class="text">
+                        <td class="text text_single">
                             <?php if (!empty($tel)) : ?>
                             <p>
                                 電話番号:<br />
@@ -453,7 +453,7 @@ $the_query = new WP_Query($args);
                         <td class="single_table_tdtitle">
                             <h4>LINE QRコード</h4>
                         </td>
-                        <td class="text">
+                        <td class="text text_single">
                             <img src="<?php echo $line_qr; ?>" alt="LINEQRコード" class="qrcode" />
                             <?php if (!empty($line_url)) : ?>
                             <p class="subtitle_text"><?php echo $line_url; ?></p>
@@ -466,7 +466,7 @@ $the_query = new WP_Query($args);
                         <td class="single_table_tdtitle">
                             <h4>SNS</h4>
                         </td>
-                        <td class="text">
+                        <td class="text text_single">
                             <?php if (!empty($instagram)): ?>
                             <p class="subtitle_text">
                                 <?php echo $instagram; ?>
@@ -485,7 +485,7 @@ $the_query = new WP_Query($args);
                         <td class="single_table_tdtitle">
                             <h4>公式WEBサイト</h4>
                         </td>
-                        <td class="text">
+                        <td class="text text_single">
                             <p class="subtitle_text"><?php echo $site_url; ?></p>
                         </td>
                     </tr>
@@ -497,7 +497,7 @@ $the_query = new WP_Query($args);
                                 Amazonみんなで <br> 応援プログラム
                             </h4>
                         </td>
-                        <td class="text">
+                        <td class="text text_single">
                             <?php echo $amapro; ?>
                         </td>
                     </tr>
@@ -509,7 +509,7 @@ $the_query = new WP_Query($args);
                                 ボランティア募集
                             </h4>
                         </td>
-                        <td class="text">
+                        <td class="text text_single">
                             <?php echo $volunteer; ?>
                             <?php if (!empty($volunteer_info)): ?>
                             <p><?php echo $volunteer_info; ?></p>

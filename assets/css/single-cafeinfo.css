@@ -420,6 +420,10 @@ td {
     background-color: #f7eac6;
 }
 
+.text_single {
+    width: 180px;
+}
+
 @media (min-width: 770px) {
     .single_table_tdtitle {
         width: 300px;
