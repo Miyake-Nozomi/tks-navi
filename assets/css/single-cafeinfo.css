@@ -219,7 +219,7 @@
     .pc_w320 .text {
         font-size: 16px;
         text-align: left;
-        width: 320px;
+        /* width: 320px; */
     }
 
     .btn_box {
@@ -654,9 +654,9 @@ td {
         text-align: right;
     }
 
-    .subtitle_text {
+    /* .subtitle_text {
         width: 256px;
-    }
+    } */
 
     .others_subtitle {
         text-align: center;
