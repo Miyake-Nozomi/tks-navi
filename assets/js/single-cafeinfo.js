@@ -1,18 +1,20 @@
 "use strict";
 $(".ac_slide").slick({
     dots: false,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 4000,
+    arrows: false,
+    adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: "15%",
+    slidesToShow: 1,
     responsive: [
         {
             breakpoint: 770,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1000,
+                centerPadding: "10%",
             },
         },
     ],
