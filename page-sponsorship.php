@@ -52,7 +52,6 @@
             <?php original_pagenation(); ?>
         </section>
     </div>
-    </div>
 </main>
 
 
