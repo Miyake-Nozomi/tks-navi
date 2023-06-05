@@ -108,8 +108,7 @@
 
 .link_item :nth-child(2) {
     width: 90%;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 20px auto;
     text-align: left;
 }
 

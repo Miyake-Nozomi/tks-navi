@@ -36,6 +36,9 @@
                         <p class="link_item_name">
                             <?php the_field('s_name'); ?>
                         </p>
+                        <?php if (!empty(get_field('s_img'))): ?>
+                        <img src="<?php the_field('s_img'); ?>" alt="">
+                        <?php endif; ?>
                         <p>
                             <?php the_field('s_desc'); ?>
                         </p>
