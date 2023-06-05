@@ -7,6 +7,22 @@ $(".hamburger").on("click", function () {
     $(".menu").toggleClass("is-active");
 });
 
+$(function () {
+    var state = false;
+    var pos;
+    $(".hamburger").click(function () {
+        if (state == false) {
+            pos = $(window).scrollTop();
+            $("body").addClass("fixed").css({ top: -pos });
+            state = true;
+        } else {
+            $("body").removeClass("fixed").css({ top: 0 });
+            window.scrollTo(0, pos);
+            state = false;
+        }
+    });
+});
+
 //hamburgerメニューのタグを押した場合
 $(".menu a").on("click", function () {
     $(".hamburger").removeClass("is-active");
