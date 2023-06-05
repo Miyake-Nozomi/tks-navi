@@ -4,7 +4,9 @@
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <section class="section_inner">
-            <h2 class="title">FAQ</h2>
+            <div class="title">
+                <h2 class="title_text">FAQ</h2>
+            </div>
             <div class="faq">
                 <div class="text">
                     <p>
@@ -13,8 +15,8 @@
                     </p>
                     <p>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
-                        ご支援を頂ける場合は、各こども食堂紹介ページから支援したいこども食堂にご連絡ください。
-                        お問い合わせは<a href="./page-contact.html">コチラ</a>
+                        ご支援を頂ける場合は、各こども食堂紹介ページから支援したいこども食堂に直接ご連絡ください。<br>
+                        <a href="<?php echo home_url('/area/east'); ?>">エリアからさがす</a>または<a href="<?php echo home_url('/find'); ?>">条件からさがす</a>から探してみてください。
                     </p>
                 </div>
                 <div class="text">
@@ -25,8 +27,7 @@
                     <p>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
                         ボランティアスタッフを募集している食堂はたくさんあります。
-                        <a href="<?php echo home_url('/find'); ?>">条件からさがす</a>から『ボランティアスタッフ募集中』で絞り込み、
-                        支援したいこども食堂にコンタクトを取ってみてください。
+                        <a href="<?php echo home_url('/find'); ?>">条件からさがす</a>から『ボランティアスタッフ募集中』で絞り込み、支援したいこども食堂に直接コンタクトを取ってみてください。
                     </p>
                 </div>
                 <div class="text">

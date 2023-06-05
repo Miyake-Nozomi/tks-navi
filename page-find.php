@@ -143,7 +143,9 @@ $the_query = new WP_Query($args);
     <div class="main_inner">
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h2 class="title">条件からさがす</h2>
+        <div class="title">
+            <h2 class="title_text">条件からさがす</h2>
+        </div>
         <h3 class="text_look text subtitle">
             チェックしてさがしてみよう！
         </h3>
@@ -241,7 +243,9 @@ $the_query = new WP_Query($args);
 
         <!-- 検索結果表示 -->
         <div class="searcharea">
-            <h2 class="title">検索結果一覧</h2>
+            <div class="title">
+                <h2 class="title_text">検索結果一覧</h2>
+            </div>
             <div class="searcharea_item searcharea_flex">
                 <?php if ($the_query->have_posts()) : ?>
                 <?php while ($the_query->have_posts()) : ?>

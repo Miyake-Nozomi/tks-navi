@@ -226,10 +226,10 @@ function add_my_files() {
     }
 
         //index.phpのみ出力
-    if (is_singular('event')) {
-        wp_enqueue_style('single-event',get_template_directory_uri() . '/assets/css/single-event.css',array('my-common')
-        );
-    }
+    // if (is_singular('event')) {
+    //     wp_enqueue_style('single-event',get_template_directory_uri() . '/assets/css/single-event.css',array('my-common')
+    //     );
+    // }
 
         //search.phpのみ出力
             if (is_search()) {

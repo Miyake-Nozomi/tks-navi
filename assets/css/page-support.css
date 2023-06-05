@@ -109,7 +109,9 @@
     margin: 0 auto;
     width: fit-content;
     line-height: normal;
-    padding: 0.8em 1em;
+    padding: 0.2em 0.5em;
+    /* white-space: pre-wrap; */
+    word-break: keep-all;
 }
 
 .support_subtitle01 {

@@ -51,7 +51,9 @@
     <div class="main_inner">
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h2 class="title result_title"><?php echo $area->name.'こども食堂一覧'; ?></h2>
+        <div class="title">
+            <h2 class="title_text"><?php echo $area->name.'こども食堂一覧'; ?></h2>
+        </div>
         <h3 class="text_look text subtitle">
             エリアを選んでさがしてみよう！
         </h3>

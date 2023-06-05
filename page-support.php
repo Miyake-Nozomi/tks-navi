@@ -4,7 +4,9 @@
     <div class="main_inner">
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h2 class="title">支援したい方へ</h2>
+        <div class="title">
+            <h2 class="title_text">支援したい方へ</h2>
+        </div>
         <section class="section_inner">
             <p class="support_inner text">
                 こども食堂は、ほとんどがボランティアスタッフによって運営されています。<br>
@@ -37,10 +39,7 @@
             </div>
             <div class="support_money tab-b panel">
                 <h3 class="subtitle support_subtitle02">
-                    <nobr>
-                    金銭的に<wbr>
-                    支援する
-                    </nobr>
+                    金銭的に<wbr>支援する
                 </h3>
                 <p>
                     支援したいと思うこども食堂が決まっている方は、各こども食堂へ直接お問い合わせください。
@@ -55,10 +54,7 @@
             </div>
             <div class="support_help tab-c panel">
                 <h3 class="subtitle support_subtitle03">
-                    <nobr>
-                    ボランティア<wbr>スタッフ<wbr>
-                    として手伝う
-                    </nobr>
+                    ボランティア<wbr>スタッフ<wbr>として手伝う
                 </h3>
                 <p>
                     スタッフを募集している食堂はこちらのページから条件を絞り込んで検索できます！

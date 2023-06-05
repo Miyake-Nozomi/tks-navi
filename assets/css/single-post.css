@@ -51,6 +51,12 @@
 }
 
 /* カテゴリー一覧 */
+.title {
+    /* margin-bottom: 20px; */
+    /* margin-top: 0; */
+    text-align: left;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -108,7 +114,9 @@
         display: none;
     }
     .title {
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
+        margin-top: 0;
+        /* text-align: left; */
     }
 
     .post_title {

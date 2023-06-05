@@ -74,10 +74,12 @@
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <div class="pickup_title">
-            <h2 class="title">
-                特集記事 <br />
-                Pick upインタビュー　一覧
-            </h2>
+            <div class="title">
+                <h2 class="title_text">
+                    特集記事 <br />
+                    Pick upインタビュー　一覧
+                </h2>
+            </div>
             <div class="text">
                 <div class="pickup_text_p">
                     <!-- <p class="subtitle left">
@@ -104,8 +106,7 @@
                     <?php if(!empty($eye_catching)): ?>
                     <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
                     <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png"
-                        alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
                     <?php endif; ?>
                     <p class="item_card_title">
                         <?php the_field('title'); ?>

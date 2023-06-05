@@ -97,10 +97,9 @@ new WP_Query($wp_query);
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <div class="search_inner">
-            <?php //print_r($args) ;?>
-            <?php //print_r( $eventbase) ;?>
-
-            <h2 class="title"><?php echo '「'. $keywords . '」の検索結果一覧'; ?></h2>
+            <div class="title">
+                <h2 class="title_text"><?php echo '「'. $keywords . '」の検索結果一覧'; ?></h2>
+            </div>
             <!-- <h2 class="title"><?php //echo '「'. get_search_query() . '」の検索結果一覧'; ?></h2> -->
             <div class="search_item search_flex">
                 <?php if (have_posts()) : ?>

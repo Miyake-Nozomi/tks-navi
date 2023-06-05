@@ -14,7 +14,9 @@ $the_query = new WP_Query($args);
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <section class="section_inner">
-            <h2 class="title">おしらせ一覧</h2>
+            <div class="title">
+                <h2 class="title_text">おしらせ一覧</h2>
+            </div>
             <div class="news_flex">
                 <div class="tcenter column">
                     <?php if ($the_query->have_posts()) : ?>

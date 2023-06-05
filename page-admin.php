@@ -4,7 +4,9 @@
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <section class="section_inner admin_inner">
-            <h2 class="title">食堂運営者の方へ</h2>
+            <div class="title">
+                <h2 class="title_text">食堂運営者の方へ</h2>
+            </div>
             <p class="text">
                 「徳島こども食堂ナビ」では、徳島県下で活動されている、こども食堂さんであれば、所属に関わらず<span class="fontweight">無料で情報掲載が可能</span>です。
             </p>

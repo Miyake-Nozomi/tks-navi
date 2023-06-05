@@ -10,6 +10,5 @@ $categories = get_categories();
         .'</a>';
         }
         ?>
-        <a href="<?php echo home_url('/event'); ?>" class="category_item">開催情報</a>
     </div>
 </div>

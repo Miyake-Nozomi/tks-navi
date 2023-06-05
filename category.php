@@ -8,9 +8,11 @@ $cat = $cat[0];
     <div class="main_inner relative">
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h2 class="title">
+        <div class="title">
+            <h2 class="title_text">
             <?php echo $cat->cat_name .'記事一覧'; ?>
         </h2>
+        </div>
         <div class="news_flex">
             <div class="tcenter column">
                 <?php if (have_posts()) : ?>
@@ -52,7 +54,6 @@ $cat = $cat[0];
             <?php get_sidebar('categories'); ?>
         </div>
         <!-- ページナビ -->
-        <?php //original_pagenation(); ?>
         <div class="page_nav flex sp_none">
             <?php
                 global $wp_rewrite;

@@ -74,7 +74,7 @@ body {
 }
 
 .btn_item a:hover {
-    padding: 15px 40px;
+    /* padding: 15px 40px; */
     transform: translateY(-5px);
     background-color: rgba(255, 212, 102, 0.8);
 }
@@ -88,18 +88,22 @@ body {
 .title {
     /* 追加-このサイトについて,こども食堂とは */
     /* width: fit-content; */
-    display: inline-block;
+    /* display: inline; */
     font-size: 24px;
     font-weight: 500;
     margin: 70px auto 0;
-    /* text-align: center; */
-    border-bottom: dotted 0.2em #008000;
+    text-align: center;
     /* border-bottom-offset: 10px; */
     /* text-decoration-line: underline;
     text-decoration-color: #008000;
     text-decoration-style: dotted;
     text-decoration-thickness: 0.2em;
     text-underline-offset: 10px; */
+}
+
+.title_text {
+    display: inline;
+    border-bottom: dotted 0.2em #008000;
 }
 
 /* pのラップ */
@@ -112,7 +116,7 @@ body {
 /* h3 */
 .subtitle {
     font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* ボタン */
@@ -137,7 +141,6 @@ body {
 @media (min-width: 770px) {
     .main_inner {
         max-width: 1024px;
-        text-align: center;
     }
 
     .btn {

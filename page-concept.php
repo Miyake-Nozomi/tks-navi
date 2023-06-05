@@ -5,7 +5,9 @@
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <section class="concept section_inner">
-            <h2 class="title">こども食堂とは</h2>
+            <div class="title">
+                <h2 class="title_text">こども食堂とは</h2>
+            </div>
             <div class="textbox">
                 <div class="text">
                     <p>

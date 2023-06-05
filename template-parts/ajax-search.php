@@ -136,8 +136,9 @@ $the_query = new WP_Query($args);
 
 ?>
 
-
-<h2 class="title">検索結果一覧</h2>
+<div class="title">
+    <h2 class="title_text">検索結果一覧</h2>
+</div>
 <div class="searcharea_item searcharea_flex">
     <?php if ($the_query->have_posts()) : ?>
     <?php while ($the_query->have_posts()) : ?>
