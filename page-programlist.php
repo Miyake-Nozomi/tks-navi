@@ -30,7 +30,7 @@ $the_query = new WP_Query($args);
                 </p>
             </div>
         </div>
-        <div class="amazon_item">
+        <div class="amazon_item flex">
             <?php if ($the_query->have_posts()) : ?>
             <?php while($the_query->have_posts()) : ?>
             <?php $the_query->the_post(); ?>
@@ -51,7 +51,7 @@ $the_query = new WP_Query($args);
                                 <?php echo get_the_terms($post->ID, 'area')[1]->name; ?>
                             </p>
                 <div class="btn_item btn_cafeinfo">
-                    <a href="<?php the_permalink() ?>">食堂紹介へ</a>
+                    <a href="<?php the_permalink() ?>">食堂紹介</a>
                 </div>
                 <div class="btn_item btn_amapro">
                     <a href="<?php the_field('amapro'); ?>">Amazon応援プログラム</a>
