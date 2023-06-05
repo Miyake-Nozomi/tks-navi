@@ -1,4 +1,17 @@
 @charset "utf-8";
+.text {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 10%;
+    margin-top: 50px;
+}
+
+.text_inner {
+    border-radius: 30px;
+    background-color: #fffbf1;
+    border: 5px solid #ffdf8c;
+    padding: 30px;
+}
 
 .amazon_text {
     text-align: left;
@@ -6,23 +19,20 @@
 
 .amazon_item a {
     display: inline-block;
-    margin-top: 20px;
 }
 
 .amazon_item {
     max-width: 330px;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
-.amazon_item_card {
-    width: 100%;
-    max-width: 320px;
-    background-color: white;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0px 4px 7px -3px rgba(24, 24, 24, 0.5);
+.item_card {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item_card p + p {
+    margin-top: 0;
 }
 
 .amazon_item_card img {
@@ -43,43 +53,56 @@
     border-bottom: 1px solid #665a3d;
 }
 
-.amazon_item_card + .amazon_item_card {
+/* .amazon_item_card + .amazon_item_card {
     margin-top: 54px;
 }
 
 .amazon_item_card p + p {
     margin-top: 5px;
-}
+} */
 
 .btn_item {
-    background-color: rgba(255, 212, 102, 1);
-    border-radius: 10px;
-    padding: 10px 0;
+    margin-top: 0;
+}
+
+.btn_cafeinfo a {
+    background-color: #d7f794;
+}
+
+.btn_cafeinfo a:hover {
+    background-color: rgba(216, 247, 148, 0.5);
+}
+
+.btn_item a {
+    padding: 0.5em 1em;
 }
 
 @media screen and (min-width: 770px) {
+    .text {
+        margin-top: 70px;
+    }
+
     /* カード */
     .amazon_item {
         display: flex;
         max-width: 1024px;
         flex-wrap: wrap;
         gap: 20px;
-        margin-bottom: 200px;
+        /* margin-bottom: 200px; */
+        margin-top: 70px;
     }
 
-    .amazon_item_card {
-        display: inline-block;
-        transition: 0.3s;
+    .item_card {
+        display: flex;
     }
-    .amazon_item_card:hover {
-        opacity: 0.8;
-        transform: translateY(5px);
-        box-shadow: 0 0 0 #333;
+    .item_card:hover {
+        opacity: unset;
+        transform: unset;
     }
 
-    .btn_item:hover {
+    /* .btn_item:hover {
         padding: 15px 40px;
         transform: translateY(-5px);
         background-color: rgba(255, 212, 102, 0.8);
-    }
+    } */
 }

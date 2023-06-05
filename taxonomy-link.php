@@ -26,15 +26,14 @@
     <div class="main_inner">
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h2 class="title">リンク集</h2>
+        <div class="title">
+            <h2 class="title_text">お役立ちリンク集</h2>
+        </div>
         <!-- 項目タブ -->
         <ul class="tab flex">
-            <li class="tab_1 tab_js childcafe"><a class="tab_hover01"
-                    href="<?php echo home_url('/link/cafe'); ?>">こども食堂関連</a></li>
-            <li class="tab_2  tab_js childsupport"><a class="tab_hover02"
-                    href="<?php echo home_url('/link/care'); ?>">子育て支援関連</a></li>
-            <li class="tab_3  tab_js childplace"><a class="tab_hover03"
-                    href="<?php echo home_url('/link/third'); ?>">こども居場所関連</a></li>
+            <li class="tab_1 tab_js childcafe"><a class="tab_hover01" href="<?php echo home_url('/link/cafe'); ?>">こども食堂関連</a></li>
+            <li class="tab_2  tab_js childsupport"><a class="tab_hover02" href="<?php echo home_url('/link/care'); ?>">子育て支援関連</a></li>
+            <li class="tab_3  tab_js childplace"><a class="tab_hover03" href="<?php echo home_url('/link/third'); ?>">こども居場所関連</a></li>
         </ul>
         <!-- 関連リンク -->
         <section class="link_<?php echo $link->slug; ?>" panel is-show>
@@ -58,11 +57,9 @@
                 <?php wp_reset_postdata(); ?>
             </div>
             <?php if ($link->slug == 'cafe') : ?>
-            <img class="apple" src="<?php echo get_template_directory_uri(); ?>/assets/images/link/apple.png"
-                alt="背景画像りんご" />
+            <img class="apple" src="<?php echo get_template_directory_uri(); ?>/assets/images/link/apple.png" alt="背景画像りんご" />
             <?php elseif($link->slug == 'care') : ?>
-            <img class="yagi" src="<?php echo get_template_directory_uri(); ?>/assets/images/link/yagi.png"
-                alt="背景ヤギ" />
+            <img class="yagi" src="<?php echo get_template_directory_uri(); ?>/assets/images/link/yagi.png" alt="背景ヤギ" />
             <?php elseif($link->slug == 'third') : ?>
             <img class="veg" src="<?php echo get_template_directory_uri(); ?>/assets/images/link/veg.png" alt="背景野菜" />
             <?php endif; ?>

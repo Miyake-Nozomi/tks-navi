@@ -4,8 +4,12 @@
     <div class="main_inner">
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h2 class="title">プライバシーポリシー・免責事項</h2>
-        <h3 class="title sub_title">プライバシーポリシー</h3>
+        <div class="title">
+            <h2 class="title_text">プライバシーポリシー・免責事項</h2>
+        </div>
+        <div class="title">
+            <h3 class="title_text sub_title">プライバシーポリシー</h3>
+        </div>
         <div class="text">
             <h4 class="text_title">個人情報の取扱いについて</h4>
             <p>
@@ -41,7 +45,7 @@
         <div class="text">
             <h4 class="text_title">第５条・適用範囲</h4>
             <p>
-                本プライバシーポリシーは、当サイトにおいてのみ適用されます。
+                本プライバシーポリシーは、本サイトにおいてのみ適用されます。
             </p>
         </div>
         <div class="text">
@@ -50,7 +54,9 @@
                 本プライバシーポリシーの内容は、法令その他本プライバシーポリシーに別段の定めのある事項を除いて、ユーザーに通知することなく、変更することができるものとします。本サイトが別途定める場合を除いて、変更後のプライバシーポリシーは本サイトに掲載したときから効力を生じるものとします。
             </p>
         </div>
-        <h3 class="title sub_title">免責事項</h2>
+        <div class="title">
+            <h3 class="title_text sub_title">免責事項</h3>
+        </div>
         <div class="text">
             <p>
                 徳島こども食堂ナビ（以下、「本サイト」とします。）における免責事項は、下記の通りです。

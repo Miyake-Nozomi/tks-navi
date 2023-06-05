@@ -82,9 +82,6 @@
             </div>
             <div class="text">
                 <div class="pickup_text_p">
-                    <!-- <p class="subtitle left">
-                        Pick upインタビューとは
-                    </p> -->
                     <p>
                         Pick up
                         インタビューは、こども食堂を運営している方に、熱い想いや、こども食堂の特色、おすすめポイントなどを取材した特集記事です！ぜひお読みください！

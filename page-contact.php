@@ -42,7 +42,9 @@
     <div class="main_inner">
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h2 class="title">お問い合わせ</h2>
+        <div class="title">
+            <h2 class="title_text">お問い合わせ</h2>
+        </div>
         <?php
     //     if(isset($_COOKIE["cf7msm_posted_data"])) {
     // // クッキー名"cookie"に値がセットされていたら削除する

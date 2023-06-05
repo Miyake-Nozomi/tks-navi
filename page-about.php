@@ -4,7 +4,9 @@
         <div class="block"></div>
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <section class="section_inner">
-            <h2 class="title">このサイトについて</h2>
+            <div class="title">
+                <h2 class="title_text">このサイトについて</h2>
+            </div>
             <p class="text">
                 このサイトは、「徳島県に住む全ての人にとって、役立つ情報を提供したい！」という熱い想いを持った「徳島こども食堂ナビ」管理運営委員会のメンバーが、ボランティアで管理運営しています。<br>
             </p>
@@ -15,7 +17,9 @@
             </p>
         </section>
         <section class="section_inner">
-            <h3 class="title">このサイトの使い方</h3>
+            <div class="title">
+                <h3 class="title_text">このサイトの使い方</h3>
+            </div>
             <div class="text">
                 <p class="text_title">開催情報について</p>
                 <p>
