@@ -88,7 +88,7 @@ body {
 .title {
     /* 追加-このサイトについて,こども食堂とは */
     /* width: fit-content; */
-    display: inline;
+    display: inline-block;
     font-size: 24px;
     font-weight: 500;
     margin: 70px auto 0;
@@ -137,6 +137,7 @@ body {
 @media (min-width: 770px) {
     .main_inner {
         max-width: 1024px;
+        text-align: center;
     }
 
     .btn {
@@ -811,6 +812,7 @@ body {
 @media screen and (min-width: 770px) {
     .breadcrumb {
         display: block;
+        text-align: left;
         /* margin: 15px 0; */
         margin-top: 50px;
         margin-left: 20px;

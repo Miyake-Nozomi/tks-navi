@@ -4,9 +4,9 @@
 // eventの時点で該当するものがない場合 cafeinfo_idsが空になってしまい、エリアとボランティアだけになってしまう
 
 // エリア（タクソノミーに存在）を取得
-$area_slug = get_query_var('area');
+// $area_slug = get_query_var('area');
 
-if (is_array($_GET['area'])) {
+if (isset($_GET['area'])) {
     $area_slug = $_GET['area'];
 }
 
@@ -79,14 +79,25 @@ $food_pantry = $_GET['food_pantry'];
     ];
 }
 
+// ページ番号;
+if (isset($_GET['page'])) {
+$page = $_GET['pege'];
+}
+
+
+$now_post_num = $_POST['now_post_num'];
+$get_post_num = $_POST['get_post_num'];
+$loopcounter = 0;
+$html = '';
 
 
     // $post__in = $cafeinfo_ids;
 // クエリ作成
 $args = [
     'post_type' => 'cafeinfo',
-    'posts_per_page' => 6,
-    'paged' => get_query_var('paged'), //何ページ目の情報を表示すれば良いか
+    'posts_per_page' => $get_post_num,
+    'offset' => $now_post_num,
+    // 'paged' =>  'page', //何ページ目の情報を表示すれば良いか
     'post_status' => 'publish', // 公開された投稿を指定
     'orderby' => 'date',
     'order' => 'ASC',
@@ -120,6 +131,8 @@ $args['meta_query'] = $metaquerysp;       // 絞り込んだ情報を $args に�
 
 
 $the_query = new WP_Query($args);
+
+
 
 ?>
 
@@ -171,7 +184,7 @@ $the_query = new WP_Query($args);
     <?php
         global $wp_rewrite;
         $paginate_base = get_pagenum_link(1);
-        $paginate_base = str_replace("wp-admin/admin-ajax.php", "find", $paginate_base);
+        // $paginate_base = str_replace("wp-admin/admin-ajax.php", "find", $paginate_base);
         if(strpos($paginate_base, '?') || !$wp_rewrite->using_permalinks()){
             $paginate_format = '';
             $paginate_base = add_query_arg('paged', '%#%', $paginate_base);

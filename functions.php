@@ -274,8 +274,6 @@ console.log("テンプレート出力も成功:");
 <?php
     }
     die();
-
-
 }
 
 add_action('wp_ajax_view_search_results', 'view_search_results'); //第一引数は wp_ajax_{ファンクション名} にする
@@ -287,6 +285,8 @@ add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
     return false;
 }
+
+
 
 //
 

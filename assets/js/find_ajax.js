@@ -131,48 +131,50 @@ $(".submit_btn").click(function () {
     );
 });
 
-$(".next.page-numbers").click(function (e) {
-    e.stopPropagation();
+// ページネーションのリンクをクリックした時の処理
+$(document).on("click", ".page-numbers", function (e) {
+    e.preventDefault(); // ページ遷移をキャンセル
 
-    let area = [];
-    $("[name='area[]']:checked").each(function () {
-        area.push(this.value);
-    });
+    let page = $(this).attr("href"); // クリックされたリンクのURL（ページ番号）を取得
+    // let pageNumber = page.match(/paged=(\d+)/)[1];
+    // let area = page.match(/area[0]=([^&]+)/)[1];
+    // let learning_support = page.match(/learning_support=([^&]+)/)[1];
 
-    let child_price = $("[name='child_price']:checked").val();
-    let adult_price = $("[name='adult_price']:checked").val();
-    let person = $("[name='person']:checked").val();
-    let parking = $("[name='parking']:checked").val();
-    let food_pantry = $("[name='food_pantry']:checked").val();
-    let learning_support = $("[name='learning_support']:checked").val();
-    let volunteer = $("[name='volunteer']:checked").val();
+    var now_post_num = 6; // 現在表示されている数を指定
+    var get_post_num = 6; // 取得したい数を指定
 
+    // Ajaxリクエストを送信
     $.ajax({
-        type: "GET",
+        type: "post",
         url: localize.ajax_url,
         data: {
+            now_post_num: now_post_num,
+            get_post_num: get_post_num,
             action: "view_search_results",
-            area: area,
-            child_price: child_price,
-            adult_price: adult_price,
-            person: person,
-            parking: parking,
-            food_pantry: food_pantry,
-            learning_support: learning_support,
-            volunteer: volunteer,
+            // area: area,
+            // child_price: child_price,
+            // adult_price: adult_price,
+            // person: person,
+            // parking: parking,
+            // food_pantry: food_pantry,
+            // learning_support: learning_support,
+            // volunteer: volunteer,
             nonce: localize.nonce,
+            // paged: pageNumber, // ページ番号をリクエストに含める
         },
+        dataType: "html",
     })
-        .done(function (response) {
-            console.log("成功:", response);
-            $(".searcharea").html(response);
+        .done(function (data) {
+            console.log("成功:", data);
+            now_post_num = now_post_num + get_post_num;
+            // $("#more_disp").remove();
+            // $("#content").append(data);
+            $(".searcharea").append(data);
         })
-        .fail(function (response) {
+        .fail(function (data) {
             console.log("失敗");
         })
-        .always(function (response) {
+        .always(function (data) {
             console.log("完了");
         });
-
-    return false;
 });
