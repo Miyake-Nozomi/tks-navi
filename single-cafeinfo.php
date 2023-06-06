@@ -295,8 +295,10 @@ $the_query = new WP_Query($args);
         <section class="yellow">
             <?php get_template_part('template-parts/breadcrumb'); ?>
             <div class="section_inner">
-                <h2 class="title"><?php the_field('name'); ?></h2>
-                <div class="yellow_flex">
+                <div class="title">
+                    <h2 class="title_text"><?php the_field('name'); ?></h2>
+                </div>
+                <div class="yellow_flex flex">
                     <div class="yellow_imgbox">
                         <?php
                         $eye_catching = get_field('eye_catching');
@@ -379,19 +381,13 @@ $the_query = new WP_Query($args);
                     <?php endforeach; ?>
                 </table>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beigebottom.png" alt="波" class="wave_img bbottom" />
+            <!-- スクロール -->
+            <div class="scroll"></div>
         </section>
         <section class="green">
-            <!-- <<<<<<< HEAD  -->
-            <!-- <svg class="greentop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#d7f794" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                </svg> -->
-            <!-- ======= -->
-            <svg class="greentop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#d7f794" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#f7dd94"></path>
             </svg>
-            <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
             <div class="green_inner section_inner">
                 <h3 class="categorytitle green_address">
                     連絡先・SNSなど
@@ -503,18 +499,14 @@ $the_query = new WP_Query($args);
             </div>
             <!-- スクロール -->
             <div class="scroll"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/greenbottmo.png" alt="波" class="wave_img gbottom" />
         </section>
         <?php endwhile; ?>
         <?php endif; ?>
 
         <section class="bgcolor">
-            <!-- <<<<<<< HEAD  -->
-            <!-- <svg class="bgtop svgwave" xmlns="http://www.w3.org/2000/svg" viewBox="0  200 1440 100">
-                <path fill="#fff8e6" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                </svg> -->
-            <!-- ======= -->
-            <!-- >>>>>>> 0c574ad9ba3de9037f285134d23eb6aeb1b61f1b -->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#d7f794"></path>
+            </svg>
             <div class="section_inner bgcolor_inner">
                 <div class="bgcolor_flex">
                     <div class="others">
