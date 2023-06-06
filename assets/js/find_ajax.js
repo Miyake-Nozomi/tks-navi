@@ -153,9 +153,11 @@ $(document).on("click", ".page-numbers", function (e) {
         show_page = current_page + 1;
     }
 
-    let area = [];
-    area = document.querySelector(".my-element").dataset.area;
-    area = JSON.parse(area);
+    let area = document.querySelector(".my-element").dataset.area;
+    if (area !== undefined) {
+        area = JSON.parse(area);
+    }
+
     let child_price = document.querySelector(".my-element").dataset.child_price;
     let adult_price = document.querySelector(".my-element").dataset.adult_price;
     let person = document.querySelector(".my-element").dataset.person;
