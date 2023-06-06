@@ -253,11 +253,7 @@ add_action('wp_enqueue_scripts', function () {
     ];
     wp_localize_script($handle, 'localize', $localize);
     wp_enqueue_script($handle);
-    ?>
-<script>
-console.log("キューは成功:");
-</script>
-<?php
+
 });
 
 
@@ -267,11 +263,7 @@ function view_search_results()
     $nonce = $_REQUEST['nonce'];
     if (wp_verify_nonce($nonce, 'view_search_results')) {
     get_template_part('template-parts/ajax-search');
-            ?>
-<script>
-console.log("テンプレート出力も成功:");
-</script>
-<?php
+
     }
     die();
 }
