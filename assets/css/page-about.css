@@ -63,6 +63,23 @@
     left: 0px;
 }
 
+.tokosyo {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-image: url(../images/logo_act.png);
+}
+
+.tokosyo {
+    bottom: 90px;
+    left: 220px;
+}
+
 /* .about_img {
     position: absolute;
 }
@@ -72,6 +89,14 @@
     top: 90px;
     opacity: 25%;
 } */
+
+@media screen and (min-width: 470px) {
+    .tokosyo {
+        bottom: 70px;
+        left: 300px;
+        aspect-ratio: auto;
+    }
+}
 
 @media screen and (min-width: 770px) {
     .onigiri {

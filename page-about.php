@@ -61,15 +61,20 @@
                 </p>
             </div>
             <div class="text">
-                <p class="text_title">リンク集</p>
+                <p class="text_title">お役立ちリンク集</p>
                 <p>こども食堂以外のお役立ち情報をまとめてあります。</p>
                 <p><a href="<?php echo home_url('/link/care'); ?>">【子育て支援関連】</a></p>
                 <p><a href="<?php echo home_url('/link/third'); ?>">【こどもの居場所関連】</a></p>
             </div>
+            <div class="text">
+                <p class="text_title">ロゴデザインについて</p>
+                <p>ロゴデザインについてもご一読ください。</p>
+                <p><a href="<?php echo home_url('/logo'); ?>">【ロゴデザインについて】</a></p>
+            </div>
             <div class="onigiri">
             </div>
-            <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/about/onigiri.png" alt="背景のおにぎり"
-                class="about_img onigiri" /> -->
+            <div class="tokosyo">
+            </div>
         </section>
     </div>
 </main>
