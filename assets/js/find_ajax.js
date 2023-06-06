@@ -109,6 +109,15 @@ $(".search_form").submit(function (e) {
         })
         .always(function (response) {
             console.log("完了");
+            var position = $(".searcharea").offset().top - 150;
+            $("html,body").animate(
+                {
+                    scrollTop: position,
+                },
+                {
+                    queue: false,
+                }
+            );
         });
 
     return false;
@@ -117,64 +126,92 @@ $(".search_form").submit(function (e) {
 // 「さがす」ボタンが押されたら、検索結果一覧まで移動
 
 //スクロールさせたい場所を定義;
-var position = $(".searcharea").offset().top;
+// var position = $(".searcharea").offset().top;
 
 // 指定のボタンを押したら、スクロールさせる。
-$(".submit_btn").click(function () {
-    $("html,body").animate(
-        {
-            scrollTop: position,
-        },
-        {
-            queue: false,
-        }
-    );
-});
+// $(".submit_btn").click(function () {
+//     $("html,body").animate(
+//         {
+//             scrollTop: position,
+//         },
+//         {
+//             queue: false,
+//         }
+//     );
+// });
 
 // ページネーションのリンクをクリックした時の処理
 $(document).on("click", ".page-numbers", function (e) {
     e.preventDefault(); // ページ遷移をキャンセル
 
-    let page = $(this).attr("href"); // クリックされたリンクのURL（ページ番号）を取得
-    // let pageNumber = page.match(/paged=(\d+)/)[1];
-    // let area = page.match(/area[0]=([^&]+)/)[1];
-    // let learning_support = page.match(/learning_support=([^&]+)/)[1];
+    let show_page = $(this).text();
+    let current_page = Number($(".current").text());
 
-    var now_post_num = 6; // 現在表示されている数を指定
-    var get_post_num = 6; // 取得したい数を指定
+    if ($(this).hasClass("prev")) {
+        show_page = current_page - 1;
+    } else if ($(this).hasClass("next")) {
+        show_page = current_page + 1;
+    }
+
+    let area = [];
+    area = document.querySelector(".my-element").dataset.area;
+    area = JSON.parse(area);
+    let child_price = document.querySelector(".my-element").dataset.child_price;
+    let adult_price = document.querySelector(".my-element").dataset.adult_price;
+    let person = document.querySelector(".my-element").dataset.person;
+    let parking = document.querySelector(".my-element").dataset.parking;
+    let food_pantry = document.querySelector(".my-element").dataset.food_pantry;
+    let learning_support =
+        document.querySelector(".my-element").dataset.learning_support;
+    let volunteer = document.querySelector(".my-element").dataset.volunteer;
+
+    console.log(area);
+    console.log(child_price);
+    console.log(adult_price);
+    console.log(person);
+    console.log(parking);
+    console.log(food_pantry);
+    console.log(learning_support);
+    console.log(volunteer);
 
     // Ajaxリクエストを送信
     $.ajax({
-        type: "post",
+        type: "get",
         url: localize.ajax_url,
         data: {
-            now_post_num: now_post_num,
-            get_post_num: get_post_num,
+            show_page: show_page,
             action: "view_search_results",
-            // area: area,
-            // child_price: child_price,
-            // adult_price: adult_price,
-            // person: person,
-            // parking: parking,
-            // food_pantry: food_pantry,
-            // learning_support: learning_support,
-            // volunteer: volunteer,
+            area: area,
+            child_price: child_price,
+            adult_price: adult_price,
+            person: person,
+            parking: parking,
+            food_pantry: food_pantry,
+            learning_support: learning_support,
+            volunteer: volunteer,
             nonce: localize.nonce,
-            // paged: pageNumber, // ページ番号をリクエストに含める
         },
         dataType: "html",
     })
         .done(function (data) {
             console.log("成功:", data);
-            now_post_num = now_post_num + get_post_num;
-            // $("#more_disp").remove();
-            // $("#content").append(data);
-            $(".searcharea").append(data);
+            $(".searcharea").html(data);
+            console.log("元の現在ページは", current_page);
+            console.log("現在ページは", show_page);
         })
         .fail(function (data) {
             console.log("失敗");
         })
         .always(function (data) {
             console.log("完了");
+            var position = $(".searcharea").offset().top - 150;
+            $("html,body").animate(
+                {
+                    scrollTop: position,
+                },
+                {
+                    queue: false,
+                }
+            );
         });
 });

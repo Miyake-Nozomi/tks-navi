@@ -10,6 +10,8 @@ if (isset($_GET['area'])) {
     $area_slug = $_GET['area'];
 }
 
+$area = json_encode($area_slug);
+
 // $volunteer ='';
 if (isset($_GET['volunteer'])) {
 $volunteer = $_GET['volunteer'];
@@ -80,14 +82,15 @@ $food_pantry = $_GET['food_pantry'];
 }
 
 // ページ番号;
-if (isset($_GET['page'])) {
-$page = $_GET['pege'];
-}
+// if (isset($_GET['page'])) {
+// $page = $_GET['pege'];
+// }
 
+$show_page = $_GET['show_page'];
 
-$now_post_num = $_POST['now_post_num'];
-$get_post_num = $_POST['get_post_num'];
-$loopcounter = 0;
+// $now_post_num = $_POST['now_post_num'];
+// $get_post_num = $_POST['get_post_num'];
+// $loopcounter = 0;
 $html = '';
 
 
@@ -95,9 +98,11 @@ $html = '';
 // クエリ作成
 $args = [
     'post_type' => 'cafeinfo',
-    'posts_per_page' => $get_post_num,
-    'offset' => $now_post_num,
+    'posts_per_page' => 6,
+    // 'posts_per_page' => $get_post_num,
+    // 'offset' => $now_post_num,
     // 'paged' =>  'page', //何ページ目の情報を表示すれば良いか
+    'paged' =>  $show_page, //何ページ目の情報を表示すれば良いか
     'post_status' => 'publish', // 公開された投稿を指定
     'orderby' => 'date',
     'order' => 'ASC',
@@ -177,10 +182,15 @@ $the_query = new WP_Query($args);
     <?php endif;?>
     <?php wp_reset_postdata(); ?>
 </div>
+<!--  HTML要素にデータ属性として埋め込む -->
+<div class="my-element" <?php if (isset($_GET['area'])) :?> data-area="<?php echo esc_attr( $area ); ?>" <?php endif; ?> <?php if (isset($_GET['child_price'])) :?> data-child_price="<?php echo esc_attr( $child_price ); ?>" <?php endif; ?> <?php if (isset($_GET['adult_price'])) :?>data-adult_price="<?php echo esc_attr( $adult_price ); ?>" <?php endif; ?> <?php if (isset($_GET['person'])) :?>data-person="<?php echo esc_attr( $person ); ?>" <?php endif; ?> <?php if (isset($_GET['parking'])) :?>data-parking="<?php echo esc_attr( $parking ); ?>" <?php endif; ?><?php if (isset($_GET['food_pantry'])) :?>data-food_pantry="<?php echo esc_attr( $food_pantry ); ?>" <?php endif; ?> <?php if (isset($_GET['learning_support'])) :?>data-learning_support="<?php echo esc_attr( $learning_support ); ?>" <?php endif; ?> <?php if (!empty($_GET['volunteer'])) :?>data-volunteer="<?php echo esc_attr( $volunteer ); ?>" <?php endif; ?>></div>
 <!-- ページナビ -->
 <div class="page_nav flex">
     <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        if (isset($show_page)) {
+            $paged = $show_page;
+        }
     ?>
     <?php
         global $wp_rewrite;
