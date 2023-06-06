@@ -114,8 +114,14 @@
 
 .link_item img {
     width: 80%;
+    max-width: 220px;
+    height: auto;
     margin-bottom: 20px;
     box-shadow: 0px 4px 7px -3px rgba(24, 24, 24, 0.5);
+}
+
+.link_item_text {
+    text-align: left;
 }
 
 .link_item span {
