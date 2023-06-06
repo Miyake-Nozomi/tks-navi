@@ -514,7 +514,7 @@ td {
     color: #fff; /*フォントカラー*/
     background: #f7a094; /*背景色*/
     text-align: center;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 .volunteer:before {
