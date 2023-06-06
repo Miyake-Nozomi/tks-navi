@@ -244,7 +244,11 @@ add_action('wp_enqueue_scripts' ,'add_my_files');
 add_action('wp_enqueue_scripts', function () {
     $handle = 'find_ajax';
             $file = get_template_directory_uri() . '/assets/js/' . $handle . '.js';
-    wp_register_script($handle, $file, array('jquery'), '3.6.0', true);
+
+    // 詳細検索ページのみ出力
+    if (is_page('find')) {
+        wp_register_script($handle, $file, array('jquery'), '3.6.0', true);
+    }
 
     $localize = [
     'ajax_url' => admin_url('admin-ajax.php'),
