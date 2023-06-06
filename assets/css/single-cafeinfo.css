@@ -5,6 +5,16 @@
     padding-top: 70px;
 } */
 
+.section_inner {
+    padding-top: 50px;
+}
+
+@media (min-width: 770px) {
+    .section_inner {
+        padding-top: 70px;
+    }
+}
+
 .breadcrumb {
     padding-top: 50px;
     margin-top: 0;
