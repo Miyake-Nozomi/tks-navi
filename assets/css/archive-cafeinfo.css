@@ -24,7 +24,7 @@
 }
 
 .cafeinfo_section {
-    margin: 50px 20%;
+    margin: 50px 10%;
 }
 
 /* 市町村装飾 */
@@ -80,7 +80,7 @@
     .cafeinfo_flex {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 10px;
     }
     .cafeinfo_flex p {
