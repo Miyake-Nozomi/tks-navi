@@ -9,11 +9,14 @@ $service_array = get_field('service');
 
 
 if (empty(get_field('address_2'))) {
-    $events = array(
-'開催住所' => ['〒'. get_field('postcode'),get_field('address')],
-'会場' => get_field('place_name'),
-'参加条件' => get_field('conditions'),
-);
+    if (!empty(get_field('address'))) {
+        $events = array(
+
+            '開催住所' => ['〒'. get_field('postcode'),get_field('address')],
+            '会場' => get_field('place_name'),
+            '参加条件' => get_field('conditions'),
+        );
+        };
 }else{
 $events = array(
 '開催住所' => ['〒'. get_field('postcode'),get_field('address')],
@@ -489,13 +492,13 @@ $the_query = new WP_Query($args);
                             <?php endif; ?>
                         </td>
                     </tr>
+                    <div class="volunteer">
+                        <span class="volunteer_text">
+                            ボランティア募集中
+                        </span>
+                    </div>
+                    <?php endif; ?>
                 </table>
-                <div class="volunteer">
-                    <span class="volunteer_text">
-                        ボランティア募集中
-                    </span>
-                </div>
-                <?php endif; ?>
             </div>
             <!-- スクロール -->
             <div class="scroll"></div>

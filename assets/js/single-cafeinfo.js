@@ -39,19 +39,18 @@ $(".past_slide").slick({
     ],
 });
 
-// スクロールの文字のアニメーション
 $(function () {
-    $(".firstview_scroll_p").textillate({
-        loop: true,
-        // フェードインのアニメーション
-        in: {
-            effect: "rotateIn",
-            delay: 50,
-        },
-        // フェードアウトのアニメーション
-        out: {
-            effect: "rotateOut",
-            delay: 50,
-        },
-    });
+    if ($(".firstview_scroll_p").length) {
+        $(".firstview_scroll_p").textillate({
+            loop: true,
+            in: {
+                effect: "rotateIn",
+                delay: 50,
+            },
+            out: {
+                effect: "rotateOut",
+                delay: 50,
+            },
+        });
+    }
 });
