@@ -23,6 +23,7 @@
 }
 
 .highlight {
+    display: inline-block;
     margin-bottom: 20px;
     text-align: left;
     text-decoration: underline;

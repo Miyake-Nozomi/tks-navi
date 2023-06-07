@@ -44,6 +44,8 @@ if (!empty($event_day)) {
 $child_price = get_field('child_price');
 if ($child_price == '0') {
     $child_price = '無料';
+} elseif($child_price == '9999'){
+        $child_price = '募金制';
 } else{
     $child_price = $child_price.'円';
 }
@@ -59,7 +61,9 @@ if (!is_null(get_field('adult_price')) && get_field('adult_price') !== '') {
     $adult_price = get_field('adult_price');
     if ($adult_price == '0') {
         $adult_price = '無料';
-    } else{
+    } elseif($adult_price == '9999'){
+        $adult_price = '募金制';
+    }else{
         $adult_price = $adult_price.'円';
     }
     if (!empty(get_field('adult_price_info'))) {
@@ -72,7 +76,7 @@ if (!empty(get_field('any'))) {
     $any = '募金制';
     if (!empty(get_field('any_info'))) {
     $any = $any.'【'.get_field('any_info').'】';
-    $price = $any;
+    $price[] = $any;
 }
 }
 
