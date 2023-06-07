@@ -46,3 +46,14 @@ $(window).on("scroll", function () {
         $(".toppage_btn").fadeOut();
     }
 });
+
+//カードUI内で食堂名が長くなった時に折り返さないようにする
+var titleElements = document.querySelectorAll(".item_card_title");
+
+titleElements.forEach(function (titleElement) {
+    var titleText = titleElement.textContent;
+
+    if (titleText.length >= 17) {
+        titleElement.style.fontSize = "14px";
+    }
+});
