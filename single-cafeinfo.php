@@ -2,7 +2,6 @@
 <?php
 $this_terms = get_the_terms($post->ID,'area');
 
-// $event_id = get_field('event_id');
 $cafeinfo_id = get_field('id');
 
 $service_array = get_field('service');
@@ -56,7 +55,7 @@ if (!empty(get_field('child_price_info'))) {
 $price = array('こども '.$child_price);
 
 
-if (!is_null(get_field('adult_price'))) {
+if (!is_null(get_field('adult_price')) && get_field('adult_price') !== '') {
     $adult_price = get_field('adult_price');
     if ($adult_price == '0') {
         $adult_price = '無料';
