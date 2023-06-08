@@ -1066,7 +1066,7 @@ hr {
 .banner img {
     width: 220px;
     /* height: 60px; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     aspect-ratio: auto;
 }
 
