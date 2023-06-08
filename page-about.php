@@ -47,7 +47,7 @@
             <div class="text">
                 <p class="text_title">お問い合わせ</p>
                 <p>
-                    徳島県のこども食堂についてやこのサイトに関するお問い合わせは<a href="<?php echo home_url('/contact'); ?>">【コチラ！】</a>
+                    このサイトに関するお問い合わせは<a href="<?php echo home_url('/contact'); ?>">【コチラ！】</a>
                 </p>
             </div>
             <div class="text">
