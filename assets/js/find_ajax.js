@@ -38,6 +38,16 @@ $(".search_form").submit(function (e) {
         .done(function (response) {
             // console.log("成功:", response);
             $(".searcharea").html(response);
+            //カードUI内で食堂名が長くなった時に折り返さないようにする
+            var titleElements = document.querySelectorAll(".item_card_title");
+
+            titleElements.forEach(function (titleElement) {
+                var titleText = titleElement.textContent;
+
+                if (titleText.length >= 17) {
+                    titleElement.style.fontSize = "14px";
+                }
+            });
         })
         .fail(function (response) {
             // console.log("失敗");
@@ -118,6 +128,16 @@ $(document).on("click", ".page-numbers", function (e) {
             $(".searcharea").html(data);
             // console.log("元の現在ページは", current_page);
             // console.log("現在ページは", show_page);
+            //カードUI内で食堂名が長くなった時に折り返さないようにする
+            var titleElements = document.querySelectorAll(".item_card_title");
+
+            titleElements.forEach(function (titleElement) {
+                var titleText = titleElement.textContent;
+
+                if (titleText.length >= 17) {
+                    titleElement.style.fontSize = "14px";
+                }
+            });
         })
         .fail(function (data) {
             // console.log("失敗");
