@@ -495,13 +495,15 @@ $the_query = new WP_Query($args);
                             <?php endif; ?>
                         </td>
                     </tr>
-                    <div class="volunteer">
-                        <span class="volunteer_text">
-                            ボランティア募集中
-                        </span>
-                    </div>
                     <?php endif; ?>
                 </table>
+                <?php if (!empty($volunteer)): ?>
+                <div class="volunteer">
+                    <span class="volunteer_text">
+                        ボランティア募集中
+                    </span>
+                </div>
+                <?php endif; ?>
             </div>
             <!-- スクロール -->
             <div class="scroll"></div>
@@ -542,7 +544,7 @@ $the_query = new WP_Query($args);
                         <?php the_field('map'); ?>
                     </div>
                 </div>
-                <?php if (!empty($pics)) :?>
+                <?php if (!empty(array_filter($pics))) :?>
                 <h3 class="subtitle_ulineorange">活動の様子</h3>
                 <ul class="ac_slide">
                     <?php foreach( $pics as $pic): ?>
