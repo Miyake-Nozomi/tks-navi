@@ -33,7 +33,7 @@
                 <div class="text">
                     <p>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/qicon.png" alt="qicon" />
-                        誰でも行っていいの？
+                        誰でも行っていいのでしょうか？
                     </p>
                     <p>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
@@ -75,10 +75,47 @@
                         <a href="<?php echo home_url('/find'); ?>">条件からさがす</a>から探してみてください。
                     </p>
                 </div>
+                <div class="text">
+                    <p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/qicon.png" alt="qicon" />
+                        経済的に困っていなくても行っていいのでしょうか？
+                    </p>
+                    <p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
+                        こども食堂ごとに参加条件がありますが、誰でも来ていいというところが多いです。
+                        <a href="<?php echo home_url('/find'); ?>">条件からさがす</a>から探してみてください。
+                    </p>
+                </div>
+                <div class="text">
+                    <p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/qicon.png" alt="qicon" />
+                        経済的に困っていなくても行っていいのでしょうか？
+                    </p>
+                    <p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
+                        こども食堂ごとに参加条件がありますが、誰でも来ていいというところが多いです。
+                        <a href="<?php echo home_url('/find'); ?>">条件からさがす</a>から探してみてください。
+                    </p>
+                </div>
+                <div class="text">
+                    <p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/qicon.png" alt="qicon" />
+                        サイトの運営費を支援したいと考えているのですが、どうすればいいですか？
+                    </p>
+                    <p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
+                        本サイトの存在意義や活動に協賛してくださる団体・企業様は<br>
+                        5,000円以上のご支援をいただけますと、協賛団体リンク集に掲載が可能です。<br>
+                        10,000円以上のご支援をいただけますと、トップページにバナー画像が表示できます。<br>
+                        徳島県に住む全ての人にとって、大切で役に立つ情報を掲載できていると自負しております。<br>
+                        本サイトの運営費をご支援いただくことで、永くこのサイトを存続させることができます。<br>
+                        ご支援をよろしくお願い申し上げます。<br>
+                        ご支援いただける場合は、<a href="<?php echo home_url('/contact'); ?>">お問い合わせ</a>よりお気軽にご連絡ください。
+                    </p>
+                </div>
                 <div class="btn_item btn_faq">
                     <a href="<?php echo home_url('/contact'); ?>">お問い合わせはこちら</a>
                 </div>
-
             </div>
         </section>
     </div>

@@ -633,24 +633,13 @@ $sponsor_query = new WP_Query($piyo);
                     <?php endif; ?>
                     <?php wp_reset_postdata(); ?>
                 </div>
+                <div class="btn_item">
+                    <a href="<?php echo home_url('/sponsorship'); ?>">
+                        もっと見る
+                    </a>
+                </div>
             </div>
         </section>
-
-
-        <!-- テスト -->
-        <?php //if ($pic_query->have_posts()) : ?>
-        <?php //while($pic_query->have_posts()) : ?>
-        <?php //$pic_query->the_post(); ?>
-        <p>
-            <?php
-            //     echo '<pre>';
-            //  print_r(get_field_objects());
-            //  echo '</pre>';
-            ?>
-        </p>
-        <?php //endwhile; ?>
-        <?php //endif; ?>
-
     </div>
     <!-- メインインナー終わり -->
 </main>

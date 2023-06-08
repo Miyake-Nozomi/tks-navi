@@ -21,13 +21,10 @@
                 <h3 class="title_text">このサイトの使い方</h3>
             </div>
             <div class="text">
-                <p class="text_title">開催情報について</p>
+                <p class="text_title">こども食堂のさがしかた</p>
                 <p>
-                    今後の開催日が決まっている食堂の情報は、<a href="<?php echo home_url('event'); ?>">【開催情報】</a>からご覧いただけます。 不定期開催の食堂も多いので、
-                    下記からお近くの食堂をさがしてみてください。<br>
-                <p> <a href="<?php echo home_url('/area/east'); ?>">【エリアからさがす】</a> </p>
-
-                <p> <a href="<?php echo home_url('/find'); ?>">【条件からさがす】</a> </p>
+                    <a href="<?php echo home_url('/area/east'); ?>">【エリアからさがす】</a>を使うと、地図からお近くのこども食堂をさがす事ができます。
+                    <a href="<?php echo home_url('/find'); ?>">【条件からさがす】</a>を使うと、いろいろなこだわり条件で絞り込めます。
                 </p>
             </div>
             <div class="text">
@@ -37,13 +34,6 @@
                         インタビュー】</a>と題して、こども食堂を運営している人に熱い思いや、こだわり、おすすめポイント、参加者の声などを取材し、記事にしました。
                     素敵な記事がたくさんあります。
                     こども食堂へ行ってみたい人・手伝いたい人・支援したい人へのメッセージもあります。ぜひ読んでみてください。
-                </p>
-            </div>
-            <div class="text">
-                <p class="text_title">こども食堂のさがしかた</p>
-                <p>
-                    <a href="<?php echo home_url('/area/east'); ?>">【エリアからさがす】</a>を使うと、地図からお近くのこども食堂をさがす事ができます。
-                    <a href="<?php echo home_url('/find'); ?>">【条件からさがす】</a>を使うと、いろいろなこだわり条件で絞り込めます。
                 </p>
             </div>
             <div class="text">

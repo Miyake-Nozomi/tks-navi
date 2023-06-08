@@ -561,7 +561,7 @@ $the_query = new WP_Query($args);
                 </ul>
                 <?php endif; ?>
                 <?php if (!empty(get_field('video'))) :?>
-                <video controls>
+                <video playsinline controls>
                     <source src="<?php the_field('video') ?>" type="video/mp4">
                 </video>
                 <?php endif; ?>
