@@ -1,6 +1,8 @@
-<?php
-
-?>
+<script>
+document.addEventListener('wpcf7mailsent', function(event) {
+    location = '<?php echo home_url('/contact/thanks'); ?>';
+}, false);
+</script>
 
 <?php get_header(); ?>
 

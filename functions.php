@@ -283,6 +283,40 @@ function wpcf7_autop_return_false() {
 }
 
 
+// /* フォームの内容を取得してAjaxに送信するプログラムが記述されたJavascriptをheadタグにキュー */
+// add_action('wp_enqueue_scripts', function () {
+//     $contact_handle = 'contact';
+//             $contact_file = get_template_directory_uri() . '/assets/js/' . $contact_handle . '.js';
+
+//     // 詳細検索ページのみ出力
+//     if (is_page('contact')) {
+//         wp_register_script($contact_handle, $contact_file, array('jquery'), '3.6.0', true);
+//     }
+
+//     $contact_localize = [
+//     'ajax_url' => admin_url('admin-ajax.php'),
+//     'action' => 'contact_form_confirm',
+//     'nonce' => wp_create_nonce('contact_form_confirm')
+//     ];
+//     wp_localize_script($contact_handle, 'localize', $contact_localize);
+//     wp_enqueue_script($contact_handle);
+
+// });
+
+
+// /* Ajaxから取得したnonceを認証し、認証通過したらテンプレートを出力する */
+// function contact_form_confirm()
+// {
+//     $contact_nonce = $_REQUEST['nonce'];
+//     if (wp_verify_nonce($contact_nonce, 'contact_form_confirm')) {
+//     echo do_shortcode('[contact-form-7 id="996" title="確認画面用_copy"]');
+//     }
+//     die();
+// }
+
+// add_action('wp_ajax_contact_form_confirm', 'contact_form_confirm'); //第一引数は wp_ajax_{ファンクション名} にする
+// add_action('wp_ajax_nopriv_contact_form_confirm', 'contact_form_confirm'); //第一引数は wp_ajax_nopriv_{ファンクション名} にする
+
 
 //
 
