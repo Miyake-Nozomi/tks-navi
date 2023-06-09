@@ -78,28 +78,6 @@
                 <div class="text">
                     <p>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/qicon.png" alt="qicon" />
-                        経済的に困っていなくても行っていいのでしょうか？
-                    </p>
-                    <p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
-                        こども食堂ごとに参加条件がありますが、誰でも来ていいというところが多いです。
-                        <a href="<?php echo home_url('/find'); ?>">条件からさがす</a>から探してみてください。
-                    </p>
-                </div>
-                <div class="text">
-                    <p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/qicon.png" alt="qicon" />
-                        経済的に困っていなくても行っていいのでしょうか？
-                    </p>
-                    <p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aicon.png" alt="aicon" />
-                        こども食堂ごとに参加条件がありますが、誰でも来ていいというところが多いです。
-                        <a href="<?php echo home_url('/find'); ?>">条件からさがす</a>から探してみてください。
-                    </p>
-                </div>
-                <div class="text">
-                    <p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/qicon.png" alt="qicon" />
                         サイトの運営費を支援したいと考えているのですが、どうすればいいですか？
                     </p>
                     <p>
