@@ -24,11 +24,9 @@ $this_terms = get_the_terms($cafeinfo_id,'area');
         <?php get_template_part('template-parts/breadcrumb'); ?>
         <div class="pickup_single">
             <h2 class="pickup_title_1 pickup_title">
-                <nobr>
                     <?php the_field('title'); ?>
                     <wbr>
                     <?php echo the_field('organizer'); ?>
-                </nobr>
             </h2>
             <div class="area_inner flex">
                 <div class="pickup">
