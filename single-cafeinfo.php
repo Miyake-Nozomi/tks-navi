@@ -252,7 +252,7 @@ if (!empty(get_field('site_url'))) {
 
 if (!empty(get_field('amapro'))) {
     $amapro = get_field('amapro');
-    $amapro = '<a href="'.$amapro.'">'.get_field('name').'のAmazonみんなで応援プログラム</a>';
+    $amapro = '<a href="'.$amapro.'" class = "hover">'.get_field('name').'のAmazonみんなで応援プログラム</a>';
 }
 
 if (get_field('recruitment')=== true) {
@@ -473,7 +473,7 @@ $the_query = new WP_Query($args);
                     <tr>
                         <td class="single_table_tdtitle">
                             <h4>
-                                Amazonみんなで <br> 応援プログラム
+                                Amazonみんなで <wbr> 応援プログラム
                             </h4>
                         </td>
                         <td class="text text_single">
