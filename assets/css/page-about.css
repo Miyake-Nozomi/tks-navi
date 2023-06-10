@@ -106,3 +106,13 @@
         height: 200px;
     }
 }
+
+.youtube {
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 770px) {
+    .youtube {
+        margin-top: 70px;
+    }
+}

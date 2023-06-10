@@ -74,6 +74,7 @@
                 <p>
                 ご支援いただける場合は、<a href="<?php echo home_url('/contact'); ?>">【お問い合わせ】</a>よりお気軽にご連絡ください。
             </p>
+                <iframe class="youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/rIDo4WSKG-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="onigiri">
             </div>
