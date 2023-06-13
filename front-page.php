@@ -248,10 +248,8 @@ $sponsor_query = new WP_Query($piyo);
                             こども食堂と聞くと、「貧困層のための場所」や「こどもや子育て世代向けのもの」といったイメージを抱く方も多いと思います。実際はそうではなく、こどものための場であることはもちろんですが、地域の人や大人、様々な世代の人が集まって、一緒にごはんを食べて交流できる場です。地域とのつながりや、多世代交流をする地域コミュニティとしての役割も担っています。
                         </p>
                     </div>
-                    <img class="onigiri"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png" alt="おにぎり" />
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png"
-                        class="onigiri_small" aria-hidden="true" />
+                    <img class="onigiri" src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png" alt="おにぎり" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/onigiri.png" class="onigiri_small" aria-hidden="true" />
                     <div class="btn_item">
                         <a href="<?php echo home_url('/concept'); ?>">
                             もっと見る
@@ -260,30 +258,22 @@ $sponsor_query = new WP_Query($piyo);
                 </div>
                 <div class="circle_orange">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#F7DD94"
-                            d="M55,-49.9C70.9,-39.1,83.1,-19.6,82,-1.1C80.9,17.4,66.5,34.8,50.6,48.9C34.8,63,17.4,73.9,-2.7,76.6C-22.9,79.4,-45.7,74,-58.3,59.9C-70.9,45.7,-73.1,22.9,-70.9,2.2C-68.7,-18.5,-62.1,-37,-49.5,-47.7C-37,-58.4,-18.5,-61.3,0.5,-61.9C19.6,-62.4,39.1,-60.6,55,-49.9Z"
-                            transform="translate(100 100)" />
+                        <path fill="#F7DD94" d="M55,-49.9C70.9,-39.1,83.1,-19.6,82,-1.1C80.9,17.4,66.5,34.8,50.6,48.9C34.8,63,17.4,73.9,-2.7,76.6C-22.9,79.4,-45.7,74,-58.3,59.9C-70.9,45.7,-73.1,22.9,-70.9,2.2C-68.7,-18.5,-62.1,-37,-49.5,-47.7C-37,-58.4,-18.5,-61.3,0.5,-61.9C19.6,-62.4,39.1,-60.6,55,-49.9Z" transform="translate(100 100)" />
                     </svg>
                 </div>
                 <div class="circle_yellow">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#FDFFB0"
-                            d="M49.2,-57.4C65.2,-45.3,80.6,-31.1,84.4,-14.2C88.2,2.8,80.6,22.4,69.8,39.5C59,56.5,45,70.8,28.2,76.5C11.5,82.1,-8.1,79.1,-27.7,73.2C-47.3,67.3,-66.9,58.6,-77.1,43.4C-87.3,28.1,-88.1,6.2,-83.1,-13.4C-78.2,-33,-67.5,-50.4,-52.7,-62.7C-37.9,-75.1,-18.9,-82.4,-1.2,-81.1C16.6,-79.7,33.3,-69.6,49.2,-57.4Z"
-                            transform="translate(100 100)" />
+                        <path fill="#FDFFB0" d="M49.2,-57.4C65.2,-45.3,80.6,-31.1,84.4,-14.2C88.2,2.8,80.6,22.4,69.8,39.5C59,56.5,45,70.8,28.2,76.5C11.5,82.1,-8.1,79.1,-27.7,73.2C-47.3,67.3,-66.9,58.6,-77.1,43.4C-87.3,28.1,-88.1,6.2,-83.1,-13.4C-78.2,-33,-67.5,-50.4,-52.7,-62.7C-37.9,-75.1,-18.9,-82.4,-1.2,-81.1C16.6,-79.7,33.3,-69.6,49.2,-57.4Z" transform="translate(100 100)" />
                     </svg>
                 </div>
                 <div class="circle_green">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#B9F731"
-                            d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z"
-                            transform="translate(100 100)" />
+                        <path fill="#B9F731" d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z" transform="translate(100 100)" />
                     </svg>
                 </div>
                 <div class="circle_green_two">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#B9F731"
-                            d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z"
-                            transform="translate(100 100)" />
+                        <path fill="#B9F731" d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z" transform="translate(100 100)" />
                     </svg>
                 </div>
             </div>
@@ -297,8 +287,7 @@ $sponsor_query = new WP_Query($piyo);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
             <div class="section_inner about_inner">
@@ -345,8 +334,7 @@ $sponsor_query = new WP_Query($piyo);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
             <div class="section_inner interviews_section_inner">
@@ -384,8 +372,7 @@ $sponsor_query = new WP_Query($piyo);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,-2 50,0 t50,0  v-5 Z" fill="#fdffb0"></path>
             </svg>
             <div class="section_inner">
@@ -395,16 +382,13 @@ $sponsor_query = new WP_Query($piyo);
                     </h2>
                 </div>
                 <div class="serch_map_img_inner">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/map_serch.png" alt="虫眼鏡"
-                        class="serch_map_img" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/map_serch.png" alt="虫眼鏡" class="serch_map_img" />
                 </div>
                 <div class="map_pic">
                     <a href="<?php echo home_url('/area/east'); ?>" class="serch_btn north">東部</a>
                     <a href="<?php echo home_url('/area/south'); ?>" class="serch_btn south">南部</a>
                     <a href="<?php echo home_url('/area/west'); ?>" class="serch_btn west">西部</a>
-                    <img class="pic"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/index/tokushima_map.png"
-                        alt="地図" />
+                    <img class="pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/index/tokushima_map.png" alt="地図" />
                 </div>
                 <div class="btn_item">
                     <a href="<?php echo home_url('/find'); ?>">
@@ -421,8 +405,7 @@ $sponsor_query = new WP_Query($piyo);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
             <div class="section_inner shien_inner">
@@ -461,8 +444,7 @@ $sponsor_query = new WP_Query($piyo);
         </section>
         <!-- リンク集 -->
         <section class="surporters w100">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
             <div class="section_inner link_inner">
@@ -511,8 +493,7 @@ $sponsor_query = new WP_Query($piyo);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
             <div class="section_inner support_inner">
@@ -544,8 +525,7 @@ $sponsor_query = new WP_Query($piyo);
                     d="M0,256L48,261.3C96,267,192,277,288,282.7C384,288,480,288,576,282.7C672,277,768,267,864,250.7C960,235,1056,213,1152,213.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,-2 50,0 t50,0  v-5 Z" fill="#fdffb0"></path>
             </svg>
             <div class="section_inner contact_circle_inner">
@@ -565,30 +545,22 @@ $sponsor_query = new WP_Query($piyo);
                 </div>
                 <div class="circle_orange circle_zindex">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#F7DD94"
-                            d="M55,-49.9C70.9,-39.1,83.1,-19.6,82,-1.1C80.9,17.4,66.5,34.8,50.6,48.9C34.8,63,17.4,73.9,-2.7,76.6C-22.9,79.4,-45.7,74,-58.3,59.9C-70.9,45.7,-73.1,22.9,-70.9,2.2C-68.7,-18.5,-62.1,-37,-49.5,-47.7C-37,-58.4,-18.5,-61.3,0.5,-61.9C19.6,-62.4,39.1,-60.6,55,-49.9Z"
-                            transform="translate(100 100)" />
+                        <path fill="#F7DD94" d="M55,-49.9C70.9,-39.1,83.1,-19.6,82,-1.1C80.9,17.4,66.5,34.8,50.6,48.9C34.8,63,17.4,73.9,-2.7,76.6C-22.9,79.4,-45.7,74,-58.3,59.9C-70.9,45.7,-73.1,22.9,-70.9,2.2C-68.7,-18.5,-62.1,-37,-49.5,-47.7C-37,-58.4,-18.5,-61.3,0.5,-61.9C19.6,-62.4,39.1,-60.6,55,-49.9Z" transform="translate(100 100)" />
                     </svg>
                 </div>
                 <div class="circle_yellow circle_zindex">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#FDFFB0"
-                            d="M49.2,-57.4C65.2,-45.3,80.6,-31.1,84.4,-14.2C88.2,2.8,80.6,22.4,69.8,39.5C59,56.5,45,70.8,28.2,76.5C11.5,82.1,-8.1,79.1,-27.7,73.2C-47.3,67.3,-66.9,58.6,-77.1,43.4C-87.3,28.1,-88.1,6.2,-83.1,-13.4C-78.2,-33,-67.5,-50.4,-52.7,-62.7C-37.9,-75.1,-18.9,-82.4,-1.2,-81.1C16.6,-79.7,33.3,-69.6,49.2,-57.4Z"
-                            transform="translate(100 100)" />
+                        <path fill="#FDFFB0" d="M49.2,-57.4C65.2,-45.3,80.6,-31.1,84.4,-14.2C88.2,2.8,80.6,22.4,69.8,39.5C59,56.5,45,70.8,28.2,76.5C11.5,82.1,-8.1,79.1,-27.7,73.2C-47.3,67.3,-66.9,58.6,-77.1,43.4C-87.3,28.1,-88.1,6.2,-83.1,-13.4C-78.2,-33,-67.5,-50.4,-52.7,-62.7C-37.9,-75.1,-18.9,-82.4,-1.2,-81.1C16.6,-79.7,33.3,-69.6,49.2,-57.4Z" transform="translate(100 100)" />
                     </svg>
                 </div>
                 <div class="circle_green">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#D7F794"
-                            d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z"
-                            transform="translate(100 100)" />
+                        <path fill="#D7F794" d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z" transform="translate(100 100)" />
                     </svg>
                 </div>
                 <div class="circle_green_two">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#D7F794"
-                            d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z"
-                            transform="translate(100 100)" />
+                        <path fill="#D7F794" d="M62.9,-48.2C79.1,-29.9,88,-3.9,82.2,17.8C76.5,39.4,56.1,56.7,33.3,66.7C10.6,76.7,-14.4,79.3,-34.1,70.1C-53.8,60.9,-68.2,39.9,-74.1,16.3C-80,-7.3,-77.3,-33.4,-63.5,-51.1C-49.8,-68.9,-24.9,-78.2,-0.7,-77.6C23.4,-77,46.8,-66.5,62.9,-48.2Z" transform="translate(100 100)" />
                     </svg>
                 </div>
             </div>
@@ -596,8 +568,7 @@ $sponsor_query = new WP_Query($piyo);
         <!-- 活動のようす -->
         <section class="contact w100">
             <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/index/contacttop.png" alt="波" class="contact_wave" /> -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q16.67,2 33.3,0 t33.3,0  t33.3,0 v-5 Z" fill="#fff8e6"></path>
             </svg>
             <div class="section_inner">
@@ -624,28 +595,22 @@ $sponsor_query = new WP_Query($piyo);
                         ?>
                         <?php //if (is_null($pic)) : ?>
                         <!-- <img src="<?php //echo $pic; ?>" alt="<?php //echo $pic_alt; ?>" /> -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kawashima_egaosyokudo_party_06.JPG"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kawashima_egaosyokudo_party_06.JPG" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kitajima_kodomosyokudo_party_01.jpg"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kitajima_kodomosyokudo_party_01.jpg" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kodomonosyokudominasyokudo_party_04.jpg"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/kodomonosyokudominasyokudo_party_04.jpg" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/manaka_shokudou_party_04.jpg"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/manaka_shokudou_party_04.jpg" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/nikonikokodomosyokudo_food_01.jpg"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/nikonikokodomosyokudo_food_01.jpg" alt="">
                     </div>
                     <div class="activity_slider">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/pokapoka_shokudou_party_01.png"
-                            alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/act/pokapoka_shokudou_party_01.png" alt="">
                     </div>
                     <?php //endif;?>
                     <?php //endif; ?>
@@ -660,8 +625,7 @@ $sponsor_query = new WP_Query($piyo);
         <!-- 活動風景 -->
         <!-- お問い合わせ -->
         <section class="notice w100">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
             <div class="section_inner">
@@ -677,7 +641,7 @@ $sponsor_query = new WP_Query($piyo);
                     <?php if ($sponsor_query->have_posts()) : ?>
                     <?php while($sponsor_query->have_posts()) : ?>
                     <?php $sponsor_query->the_post(); ?>
-                    <a href="<?php the_field('s_url'); ?>">
+                    <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
                         <img src="<?php echo the_field('s_img'); ?>" alt="">
                     </a>
                     <?php endwhile; ?>
