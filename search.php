@@ -8,40 +8,12 @@ if (isset($_GET['s'])) {
 $keywords = $_GET['s'];
 }
 
-$eventbase = array(
-    'post_type' => 'event',
-    'fields' => 'ids',
-    'posts_per_page' => -1,
-    'meta_query' => array(
-        array(
-            'key' => 'class',
-            'value' => 1,
-            // 'compare' => '=',
-        ),
-    )
-);
-
-$eventbase_query = new WP_Query($eventbase);
-
-$eventbase_ids = array(); // IDを格納する配列を用意する
-
-if ($eventbase_query->have_posts()) {
-    $event_ids = $eventbase_query->posts; // $postsプロパティからIDを取得して配列に格納する
-}
-
-$post__not_in = $event_ids;
-$post__not_in[] = 771;
-$post__not_in[] = 774;
-
-
 $args = array(
 'post_type' => array('page','cafeinfo','interview','event') ,
 'posts_per_page' => 6,
 'paged' => get_query_var('paged'), //何ページ目の情報を表示すれば良いか
 'post_status' => 'publish', // 公開された投稿を指定
 's' => $keywords,
-'post__not_in' => array(771,774,$event_ids),
-'post__not_in' =>  $post__not_in,
     // 'relation' => 'OR',
     //     array(
             // 'post_type' => 'cafeinfo' ,
