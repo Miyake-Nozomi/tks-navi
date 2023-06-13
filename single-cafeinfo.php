@@ -12,7 +12,7 @@ if (empty(get_field('address_2'))) {
         $events = array(
 
             '開催住所' => ['〒'. get_field('postcode'),get_field('address')],
-            '会場' => get_field('place_name'),
+            '会場' => get_field('place'),
             '参加条件' => get_field('conditions'),
         );
         };
@@ -20,7 +20,7 @@ if (empty(get_field('address_2'))) {
 $events = array(
 '開催住所' => ['〒'. get_field('postcode'),get_field('address')],
 '開催住所2' => ['〒'. get_field('postcode_2'),get_field('address_2')],
-'会場' => get_field('place_name'),
+'会場' => get_field('place'),
 '参加条件' => get_field('conditions'),
 );
 }
