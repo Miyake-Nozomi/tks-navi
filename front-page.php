@@ -244,7 +244,7 @@ $counter = 0;
                 <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
-                <div class="btn_item news_btn"><a href="">もっと見る</a></div>
+                <div class="btn_item news_btn"><a href="<?php echo home_url('/post'); ?>">もっと見る</a></div>
             </div>
         </section>
         <!-- こども食堂とは -->
