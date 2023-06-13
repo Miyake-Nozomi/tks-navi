@@ -136,27 +136,27 @@ $custom_query = new WP_Query( array(
 	// );
 	// $custom_query = new WP_Query($hoge);
 
-$current_time = date_i18n('Y-m-d');
-$fuga = array(
-		'post_type' => 'event',
-		'posts_per_page' => 3,
-        //非公開のは出さないようにする！！
+// $current_time = date_i18n('Y-m-d');
+// $fuga = array(
+// 		'post_type' => 'event',
+// 		'posts_per_page' => 3,
+//         //非公開のは出さないようにする！！
 
 
-        'meta_key' => 'class',
-        //不定期のもの
-        'meta_value' => 2,
-        'meta_query' => array(
-		array(
-			'key' => 'datetime', // 記事の日付を表すカスタムフィールドのキーを指定
-			'value' => $current_time, // 現在の日付以降の記事を表示するために、現在の日付を指定
-			'compare' => '>=', // 指定した値以上のものを取得する
-			'type' => ' DATETIME', // カスタムフィールドの値が日付形式であることを指定
-        )
-        )
+//         'meta_key' => 'class',
+//         //不定期のもの
+//         'meta_value' => 2,
+//         'meta_query' => array(
+// 		array(
+// 			'key' => 'datetime', // 記事の日付を表すカスタムフィールドのキーを指定
+// 			'value' => $current_time, // 現在の日付以降の記事を表示するために、現在の日付を指定
+// 			'compare' => '>=', // 指定した値以上のものを取得する
+// 			'type' => ' DATETIME', // カスタムフィールドの値が日付形式であることを指定
+//         )
+//         )
 
-	);
-$event_query = new WP_Query($fuga);
+// 	);
+// $event_query = new WP_Query($fuga);
 
 // $piyo = array(
     // 'post_type'      => 'cafeinfo',
@@ -179,9 +179,16 @@ $event_query = new WP_Query($fuga);
 
 $piyo = array(
     'post_type' => 'sponsor',
-    'paged' => get_query_var('paged'), //何ページ目の情報を表示すれば良いか
+    'posts_per_page' => 1,
     'orderby' => 'menu_order',
     'order' => ' ASC',
+        'meta_query' => array(
+    array(
+        'key' => 's_frontpage', // 記事の日付を表すカスタムフィールドのキーを指定
+        'value' => true,
+    )
+    )
+
 );
 $sponsor_query = new WP_Query($piyo);
 
