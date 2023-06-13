@@ -54,7 +54,7 @@ $the_query = new WP_Query($args);
                     <a href="<?php the_permalink() ?>">食堂紹介</a>
                 </div>
                 <div class="btn_item btn_amapro">
-                    <a href="<?php the_field('amapro'); ?>">Amazon応援プログラム</a>
+                    <a href="<?php the_field('amapro'); ?>" target="_blank" rel="noopener noreferrer">Amazon応援プログラム</a>
                 </div>
             </div>
             <?php endwhile; ?>
