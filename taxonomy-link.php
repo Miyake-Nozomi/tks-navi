@@ -42,7 +42,7 @@
                 <?php if ($the_query->have_posts()) : ?>
                 <?php while($the_query->have_posts()) : ?>
                 <?php $the_query->the_post(); ?>
-                <a class="link_a" href="<?php the_field('l_url'); ?>">
+                <a class="link_a" href="<?php the_field('l_url'); ?>" target="_blank" rel="noopener noreferrer">
                     <div class="link_item">
                         <p class="link_item_name">
                             <?php the_field('l_name'); ?>
