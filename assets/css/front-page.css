@@ -1166,6 +1166,21 @@ hr {
     margin: 40px 0px 0px;
 }
 
+.admin_slide .slick-track {
+    height: 240px;
+}
+
+.slick-row {
+    flex-direction: row;
+}
+
+.slick-column {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
 @media (min-width: 660px) {
     .banner {
         width: 90%;
@@ -1187,7 +1202,7 @@ hr {
         width: 80%;
         margin: 70px auto;
         gap: calc(100% - 440px);
-        row-gap: 50px;
+        gap: 50px;
     }
     .admin_slide {
         width: 600px;

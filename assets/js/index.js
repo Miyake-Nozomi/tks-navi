@@ -88,25 +88,28 @@ $(function () {
     $(".admin_slide").slick({
         autoplay: true, // 自動再生
         autoplaySpeed: 4000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
-        arrows: true,
+        arrows: false,
         adaptiveHeight: true,
         centerMode: false,
         //centerPadding: "15%",
-        dots: true,
+        dots: false,
         slidesToShow: 3,
+        slidesToScroll: 3,
         responsive: [
             {
                 breakpoint: 770,
                 settings: {
-                    centerPadding: "10%",
+                    // centerPadding: "10%",
                     slidesToShow: 1,
+                    slidesToScroll: 1,
                 },
             },
             {
                 breakpoint: 1090,
                 settings: {
-                    centerPadding: "10%",
+                    // centerPadding: "10%",
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                 },
             },
         ],
