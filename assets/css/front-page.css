@@ -134,16 +134,44 @@ html {
     justify-content: center;
 }
 
+.kv_news_title {
+    text-align: center;
+    display: inline;
+    border-bottom: dotted 0.2em #f8b600;
+}
+
 .Kv_news_text {
     font-size: 15px;
 }
 
 .kv_news {
-    padding: 10px 15px;
+    padding: 5px 15px;
     position: absolute;
-    bottom: 0px;
-    width: 100%;
-    max-width: 300px;
+    bottom: 5px;
+    width: 85%;
+    max-width: 733px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 248, 230, 0.8);
+}
+
+.news_link {
+    margin: 20px 0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: gray;
+    text-underline-offset: 5px;
+}
+
+.news_link:hover {
+    color: #f8b600;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #f8b600;
+    text-underline-offset: 5px;
 }
 
 .news_btn {
@@ -151,8 +179,8 @@ html {
 }
 
 .news_btn a {
-    padding: 10px 30px;
-    width: 170px;
+    padding: 5px 30px;
+    width: 150px;
 }
 
 @media (min-width: 770px) {
@@ -174,9 +202,24 @@ html {
         position: absolute;
     }
 
-    /* .hbg_submit {
-        width: 28.5px;
-    } */
+    .kv_news {
+        flex-direction: row;
+        gap: 20px;
+        bottom: 10px;
+    }
+
+    .kv_news_title {
+        width: 80px;
+    }
+
+    .news_btn {
+        margin-top: 0px;
+    }
+
+    .news_btn a {
+        width: 120px;
+        padding: 5px 20px;
+    }
 }
 
 /* 子ども食堂とは */
