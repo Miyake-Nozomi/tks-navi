@@ -671,11 +671,11 @@ $sponsor_query = new WP_Query($piyo);
                 viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0,0 v5 q25,2 50,0 t50,0  v-5 Z" fill="#d7f794"></path>
             </svg>
-            <div class="section_inner">
+            <div class="section_inner admin_inner">
                 <div class="title">
                     <h2 class="title_text">協賛団体リンク集</h2>
                 </div>
-                <div class="text text_border">
+                <div class="text text_border admin_text">
                     <p>
                         このサイトの存在意義や、活動に協賛しご支援下さった団体・企業様のリンク集です。素敵な団体ばかりですので、ぜひご覧ください。
                     </p>
@@ -684,9 +684,43 @@ $sponsor_query = new WP_Query($piyo);
                     <?php if ($sponsor_query->have_posts()) : ?>
                     <?php while($sponsor_query->have_posts()) : ?>
                     <?php $sponsor_query->the_post(); ?>
-                    <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
-                        <img src="<?php echo the_field('s_img'); ?>" alt="">
-                    </a>
+                    <div class="admin_slide">
+                        <div class="admin_slider">
+                            <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <img src="<?php echo the_field('s_img'); ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="admin_slider">
+                            <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <img src="<?php echo the_field('s_img'); ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="admin_slider">
+                            <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <img src="<?php echo the_field('s_img'); ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="admin_slider">
+                            <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <img src="<?php echo the_field('s_img'); ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="admin_slider">
+                            <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <img src="<?php echo the_field('s_img'); ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="admin_slider">
+                            <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <img src="<?php echo the_field('s_img'); ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="admin_slider">
+                            <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <img src="<?php echo the_field('s_img'); ?>" alt="">
+                            </a>
+                        </div>
+                    </div>
                     <?php endwhile; ?>
                     <?php endif; ?>
                     <?php wp_reset_postdata(); ?>
