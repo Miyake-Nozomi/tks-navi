@@ -137,11 +137,12 @@ html {
 .kv_news_title {
     text-align: center;
     display: inline;
-    border-bottom: dotted 0.2em #f8b600;
+    border-bottom: dotted 0.3em #f8b600;
 }
 
-.Kv_news_text {
+.kv_news_text {
     font-size: 15px;
+    padding: 3px 0px;
 }
 
 .kv_news {
@@ -149,7 +150,7 @@ html {
     position: absolute;
     bottom: 5px;
     width: 85%;
-    max-width: 733px;
+    max-width: 755px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,6 +173,7 @@ html {
     text-decoration-thickness: 1px;
     text-decoration-color: #f8b600;
     text-underline-offset: 5px;
+    -webkit-text-stroke: 0.02px black;
 }
 
 .news_btn {
@@ -206,12 +208,16 @@ html {
         flex-direction: row;
         gap: 20px;
         bottom: 10px;
+        padding: 10px 30px;
     }
 
     .kv_news_title {
         width: 80px;
     }
 
+    .kv_news_text {
+        padding: 0px;
+    }
     .news_btn {
         margin-top: 0px;
     }
