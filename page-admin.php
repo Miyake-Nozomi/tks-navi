@@ -11,7 +11,7 @@
                 「徳島こども食堂ナビ」では、徳島県下で活動されている、こども食堂さんであれば、所属に関わらず<span class="fontweight">無料で情報掲載が可能</span>です。
             </p>
             <p class="text">
-            <p class="highlight fontweight ">このサイトの目的</p>
+            <span class="highlight fontweight ">このサイトの目的</span><br>
             このサイトは、 <span class="fontweight">"こども食堂を利用したい人、手伝いたい人、支援したい人"へ情報をお届けすることを目的</span> としています。<br>
             徳島県下の、こども食堂の活動がより活発に行われる事を願って、有志ボランティアにより運営されています。
             </p>
@@ -19,7 +19,7 @@
                 情報掲載希望の食堂運営者の方は、<a class="link" href="<?php echo home_url('/contact/'); ?>">【お問い合わせ】</a>からご連絡ください。
             </p>
             <p class="text">
-            <p class="highlight fontweight">掲載例</p>
+            <span class="highlight fontweight">掲載例</span><br>
             こども食堂紹介ページに、こども食堂の基本情報や特色、写真を掲載できます。<br>
             実際に掲載されている、食堂をご覧ください。<br>
             （例）<a class="link" href="<?php echo home_url('/cafeinfo/356/'); ?>">お結びコロコロ～お茶の間～</a>

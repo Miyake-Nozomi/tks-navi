@@ -80,9 +80,9 @@
 /* ページナビ */
 
 .page_nav {
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    right: 0;
+    right: 0; */
     margin: 50px auto;
 }
 

@@ -2,18 +2,20 @@
 <?php
 $this_terms = get_the_terms($post->ID,'area');
 
-// $event_id = get_field('event_id');
 $cafeinfo_id = get_field('id');
 
 $service_array = get_field('service');
 
 
 if (empty(get_field('address_2'))) {
-    $events = array(
-'開催住所' => ['〒'. get_field('postcode'),get_field('address')],
-'会場' => get_field('place_name'),
-'参加条件' => get_field('conditions'),
-);
+    if (!empty(get_field('address'))) {
+        $events = array(
+
+            '開催住所' => ['〒'. get_field('postcode'),get_field('address')],
+            '会場' => get_field('place_name'),
+            '参加条件' => get_field('conditions'),
+        );
+        };
 }else{
 $events = array(
 '開催住所' => ['〒'. get_field('postcode'),get_field('address')],
@@ -42,6 +44,8 @@ if (!empty($event_day)) {
 $child_price = get_field('child_price');
 if ($child_price == '0') {
     $child_price = '無料';
+} elseif($child_price == '9999'){
+        $child_price = '募金制';
 } else{
     $child_price = $child_price.'円';
 }
@@ -53,11 +57,13 @@ if (!empty(get_field('child_price_info'))) {
 $price = array('こども '.$child_price);
 
 
-if (!is_null(get_field('adult_price'))) {
+if (!is_null(get_field('adult_price')) && get_field('adult_price') !== '') {
     $adult_price = get_field('adult_price');
     if ($adult_price == '0') {
         $adult_price = '無料';
-    } else{
+    } elseif($adult_price == '9999'){
+        $adult_price = '募金制';
+    }else{
         $adult_price = $adult_price.'円';
     }
     if (!empty(get_field('adult_price_info'))) {
@@ -70,7 +76,7 @@ if (!empty(get_field('any'))) {
     $any = '募金制';
     if (!empty(get_field('any_info'))) {
     $any = $any.'【'.get_field('any_info').'】';
-    $price = $any;
+    $price[] = $any;
 }
 }
 
@@ -246,7 +252,7 @@ if (!empty(get_field('site_url'))) {
 
 if (!empty(get_field('amapro'))) {
     $amapro = get_field('amapro');
-    $amapro = '<a href="'.$amapro.'">'.get_field('name').'のAmazonみんなで応援プログラム</a>';
+    $amapro = '<a href="'.$amapro.'" class = "hover">'.get_field('name').'のAmazonみんなで応援プログラム</a>';
 }
 
 if (get_field('recruitment')=== true) {
@@ -467,7 +473,7 @@ $the_query = new WP_Query($args);
                     <tr>
                         <td class="single_table_tdtitle">
                             <h4>
-                                Amazonみんなで <br> 応援プログラム
+                                Amazonみんなで <wbr> 応援プログラム
                             </h4>
                         </td>
                         <td class="text text_single">
@@ -489,7 +495,9 @@ $the_query = new WP_Query($args);
                             <?php endif; ?>
                         </td>
                     </tr>
+                    <?php endif; ?>
                 </table>
+                <?php if (!empty($volunteer)): ?>
                 <div class="volunteer">
                     <span class="volunteer_text">
                         ボランティア募集中
@@ -536,7 +544,7 @@ $the_query = new WP_Query($args);
                         <?php the_field('map'); ?>
                     </div>
                 </div>
-                <?php if (!empty($pics)) :?>
+                <?php if (!empty(array_filter($pics))) :?>
                 <h3 class="subtitle_ulineorange">活動の様子</h3>
                 <ul class="ac_slide">
                     <?php foreach( $pics as $pic): ?>
@@ -553,7 +561,7 @@ $the_query = new WP_Query($args);
                 </ul>
                 <?php endif; ?>
                 <?php if (!empty(get_field('video'))) :?>
-                <video controls>
+                <video playsinline controls>
                     <source src="<?php the_field('video') ?>" type="video/mp4">
                 </video>
                 <?php endif; ?>

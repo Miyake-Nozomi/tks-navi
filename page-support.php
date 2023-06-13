@@ -33,7 +33,7 @@
                 <div class="font_awsome">
                     <i class="fa-solid fa-circle-arrow-down fa-bounce fa-lg" style="color: #23ac38"></i>
                 </div>
-                <div class="support_btn_item btn01">
+                <div class="btn_item btn01">
                     <a href="<?php echo home_url('programlist'); ?>">参加食堂一覧へ</a>
                 </div>
             </div>
@@ -48,9 +48,23 @@
                 <div class="font_awsome">
                     <i class="fa-solid fa-circle-arrow-down fa-bounce fa-lg" style="color: #23ac38"></i>
                 </div>
-                <div class="support_btn_item btn02">
+                <div class="btn_item btn02">
                     <a href="<?php echo home_url('area/east'); ?>">エリアからさがす</a>
                 </div>
+                <p>
+                    サイトのサーバー代や、保守管理の費用をご支援いただけますと大変嬉しいです。<br>
+                    このサイトに意義を感じてくださった方は、是非ご支援をお願いします！<br>
+                    1,000円から受付しております。<br>
+                    <span class="mt1em">
+                        本サイトの存在意義や活動に協賛してくださる団体・企業様で<br>
+                    協賛団体リンク集・バナー画像の掲載希望の場合は<br>
+                    5,000円以上のご支援をいただけますと、協賛団体リンク集に掲載が可能です。<br>
+                    10,000円以上のご支援をいただけますと、トップページにバナー画像が表示できます。<br>
+                </span>
+                <span class="mt1em">
+                    <a href="<?php echo home_url('/contact'); ?>">【お問い合わせ】</a>からご連絡ください
+                    </span>
+                </p>
             </div>
             <div class="support_help tab-c panel">
                 <h3 class="subtitle support_subtitle03">
@@ -62,7 +76,7 @@
                 <div class="font_awsome">
                     <i class="fa-solid fa-circle-arrow-down fa-bounce fa-lg" style="color: #23ac38"></i>
                 </div>
-                <div class="support_btn_item btn03">
+                <div class="btn_item btn03">
                     <a href="<?php echo home_url('find'); ?>">条件からさがす</a>
                 </div>
             </div>

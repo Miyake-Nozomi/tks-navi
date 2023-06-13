@@ -21,13 +21,10 @@
                 <h3 class="title_text">このサイトの使い方</h3>
             </div>
             <div class="text">
-                <p class="text_title">開催情報について</p>
+                <p class="text_title">こども食堂のさがしかた</p>
                 <p>
-                    今後の開催日が決まっている食堂の情報は、<a href="<?php echo home_url('event'); ?>">【開催情報】</a>からご覧いただけます。 不定期開催の食堂も多いので、
-                    下記からお近くの食堂をさがしてみてください。<br>
-                <p> <a href="<?php echo home_url('/area/east'); ?>">【エリアからさがす】</a> </p>
-
-                <p> <a href="<?php echo home_url('/find'); ?>">【条件からさがす】</a> </p>
+                    <a href="<?php echo home_url('/area/east'); ?>">【エリアからさがす】</a>を使うと、地図からお近くのこども食堂をさがす事ができます。
+                    <a href="<?php echo home_url('/find'); ?>">【条件からさがす】</a>を使うと、いろいろなこだわり条件で絞り込めます。
                 </p>
             </div>
             <div class="text">
@@ -37,13 +34,6 @@
                         インタビュー】</a>と題して、こども食堂を運営している人に熱い思いや、こだわり、おすすめポイント、参加者の声などを取材し、記事にしました。
                     素敵な記事がたくさんあります。
                     こども食堂へ行ってみたい人・手伝いたい人・支援したい人へのメッセージもあります。ぜひ読んでみてください。
-                </p>
-            </div>
-            <div class="text">
-                <p class="text_title">こども食堂のさがしかた</p>
-                <p>
-                    <a href="<?php echo home_url('/area/east'); ?>">【エリアからさがす】</a>を使うと、地図からお近くのこども食堂をさがす事ができます。
-                    <a href="<?php echo home_url('/find'); ?>">【条件からさがす】</a>を使うと、いろいろなこだわり条件で絞り込めます。
                 </p>
             </div>
             <div class="text">
@@ -57,7 +47,7 @@
             <div class="text">
                 <p class="text_title">お問い合わせ</p>
                 <p>
-                    徳島県のこども食堂についてやこのサイトに関するお問い合わせは<a href="<?php echo home_url('/contact'); ?>">【コチラ！】</a>
+                    このサイトに関するお問い合わせは<a href="<?php echo home_url('/contact'); ?>">【コチラ！】</a>
                 </p>
             </div>
             <div class="text">
@@ -71,10 +61,25 @@
                 <p>ロゴデザインについてもご一読ください。</p>
                 <p><a href="<?php echo home_url('/logo'); ?>">【ロゴデザインについて】</a></p>
             </div>
+            <div class="text">
+                <p class="text_title">協賛団体リンク集・バナー画像の掲載について</p>
+                <p>
+                本サイトの存在意義や活動に協賛してくださる団体・企業様は<br>
+                5,000円以上のご支援をいただけますと、協賛団体リンク集に掲載が可能です。<br>
+                10,000円以上のご支援をいただけますと、トップページにバナー画像が表示できます。<br>
+                徳島県に住む全ての人にとって、大切で役に立つ情報を掲載できていると自負しております。<br>
+                本サイトの運営費をご支援いただくことで、永くこのサイトを存続させることができます。<br>
+                ご支援をよろしくお願い申し上げます。
+            </p>
+                <p>
+                ご支援いただける場合は、<a href="<?php echo home_url('/contact'); ?>">【お問い合わせ】</a>よりお気軽にご連絡ください。
+            </p>
+                <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/rIDo4WSKG-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
             <div class="onigiri">
             </div>
-            <div class="tokosyo">
-            </div>
+            <!-- <div class="tokosyo">
+            </div> -->
         </section>
     </div>
 </main>

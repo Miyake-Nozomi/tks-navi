@@ -1,40 +1,8 @@
-<?php
-// session_start();
-// //連想配列の中身を空にする
-// $_SESSION = []; //$_SESSION = array()と同じ意味
-// //連想配列の中身を空にする
-// if(isset($_COOKIE[session_name()])){
-//     $cparam = session_get_cookie_params();
-//     setcookie(session_name(),"",
-//     time() - 60 *60, //時間さかのぼり削除をここでしている
-//     $cparam['path'],
-//     $cparam['domain'],
-//     $cparam['secure'],
-//     $cparam['httponly'],
-// );
-// //sessionを切る
-// session_destroy();
-// }
-
-// if(isset($_COOKIE["cf7msm_posted_data"])) {
-//     // クッキー名"cookie"に値がセットされていたら削除する
-//     echo"クッキーの値：".$_COOKIE["cf7msm_posted_data"]."<br />";
-//     setcookie("cf7msm_posted_data", "", time() - 30);
-//     echo"クッキーを削除しました";
-
-// //     // 削除確認用メッセージをクッキーにセット
-// //     setcookie("cookie_delete", "cookieは削除されています", time() + 1800);
-// // } else if(isset($_COOKIE["cookie_delete"])) {
-// //     // クッキー削除確認メッセージ出力
-// //     echo $_COOKIE["cookie_delete"];
-// // } else {
-// //     // クッキーをセット
-// //     setcookie("cookie", "cookie_info", time() + 1800);
-// //     echo"クッキーをセットしました";
-// // }
-// }
-
-?>
+<script>
+document.addEventListener('wpcf7mailsent', function(event) {
+    location = '<?php echo home_url('/contact/thanks'); ?>';
+}, false);
+</script>
 
 <?php get_header(); ?>
 
@@ -45,19 +13,11 @@
         <div class="title">
             <h2 class="title_text">お問い合わせ</h2>
         </div>
-        <?php
-    //     if(isset($_COOKIE["cf7msm_posted_data"])) {
-    // // クッキー名"cookie"に値がセットされていたら削除する
-    // echo"クッキーの値：".$_COOKIE["cf7msm_posted_data"]."<br />";
-    // setcookie("cf7msm_posted_data", " ", time()-60);
-    // echo"クッキーを削除しました";
-    //     }
-        ?>
         <!-- 各子供食堂 -->
         <section class="section_inner contact1">
 
             <div class="text">
-                <h3 class="subtitle">
+                <h3 class="text_look subtitle">
                     このサイトに関する<wbr>お問い合わせはこちらから！
                 </h3>
                 <p class="contact1_text_p1">
