@@ -1168,6 +1168,8 @@ hr {
 
 .admin_slide .slick-track {
     height: 240px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .slick-row {
