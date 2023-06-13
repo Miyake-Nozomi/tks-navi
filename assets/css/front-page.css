@@ -18,6 +18,13 @@ body {
     width: 100%;
 }
 
+.text_border {
+    padding: 30px;
+    border: 5px solid #f7dd94;
+    border-radius: 30px;
+    background-color: #fffbf0;
+}
+
 /* 波 */
 /* .svgwave {
     position: relative;
@@ -120,6 +127,34 @@ html {
         1px 0 0 #ffb700;
 }
 
+.kv_inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Kv_news_text {
+    font-size: 15px;
+}
+
+.kv_news {
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.news_btn {
+    margin-top: 10px;
+}
+
+.news_btn a {
+    padding: 10px 30px;
+    width: 170px;
+}
+
 @media (min-width: 770px) {
     .kv {
         position: relative;
@@ -162,13 +197,6 @@ html {
 .concept_text {
     position: relative;
     z-index: 2;
-}
-
-.text_border {
-    padding: 30px;
-    border: 5px solid #f7dd94;
-    border-radius: 30px;
-    background-color: #fffbf0;
 }
 
 .onigiri {
