@@ -205,7 +205,7 @@ if (!empty(get_field('line_qr'))) {
 
 if (!empty(get_field('line_url'))) {
     $line_url = get_field('line_url');
-    $line_url = '<a href="'.$line_url.'">'.$line_url .'</a>';
+    $line_url = '<a href="'.$line_url.'" class = "hover line_url"  target="_blank" rel="noopener noreferrer">'.$line_url .'</a>';
 
 }
 
@@ -224,7 +224,7 @@ if(strpos($instagram_account, '/') !== false){
     $instagram_account = substr($instagram_account, 0, strpos($instagram_account, "?"));
 }
     $instagram_url = 'https://www.instagram.com/' . $instagram_account;
-    $instagram = '<a href="'.$instagram_url.'">instagram: @'.$instagram_account .'</a>';
+    $instagram = '<a href="'.$instagram_url.'"  class = "hover instagram"  target="_blank" rel="noopener noreferrer">instagram: @'.$instagram_account .'</a>';
 
 }
 
@@ -237,7 +237,7 @@ if(strpos($facebook_account, '/') !== false){
     $facebook_account = substr($facebook_account, 0, strpos($facebook_account, "?"));
 }
     $facebook_url = 'https://www.facebook.com/' . $facebook_account;
-    $facebook = '<a href="'.$facebook_url.'">facebook: @'.$facebook_account .'</a>';
+    $facebook = '<a href="'.$facebook_url.'" class = "hover facebook"  target="_blank" rel="noopener noreferrer">facebook: @'.$facebook_account .'</a>';
 
 }
 
@@ -247,12 +247,12 @@ if (!empty($sns)) {
 
 if (!empty(get_field('site_url'))) {
     $site_url = get_field('site_url');
-    $site_url = '<a href="'.$site_url.'">'.$site_url .'</a>';
+    $site_url = '<a href="'.$site_url.'"  class = "hover site_url"  target="_blank" rel="noopener noreferrer">'.$site_url .'</a>';
 }
 
 if (!empty(get_field('amapro'))) {
     $amapro = get_field('amapro');
-    $amapro = '<a href="'.$amapro.'" class = "hover">'.get_field('name').'のAmazonみんなで応援プログラム</a>';
+    $amapro = '<a href="'.$amapro.'" class = "hover amapro"  target="_blank" rel="noopener noreferrer">'.get_field('name').'のAmazonみんなで応援プログラム</a>';
 }
 
 if (get_field('recruitment')=== true) {

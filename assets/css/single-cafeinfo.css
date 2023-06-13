@@ -9,8 +9,36 @@
     padding-top: 50px;
 }
 
+.hover {
+    text-decoration: none;
+}
+
 .hover:hover {
     color: #f8b600;
+}
+
+.line_url,
+.instagram,
+.facebook,
+.site_url,
+.amapro {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: gray;
+    text-underline-offset: 5px;
+}
+
+.line_url:hover,
+.instagram:hover,
+.facebook:hover,
+.site_url:hover,
+.amapro:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: gray;
+    text-underline-offset: 5px;
 }
 
 @media (min-width: 770px) {
