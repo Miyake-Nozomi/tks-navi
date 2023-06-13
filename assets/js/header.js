@@ -51,9 +51,19 @@ $(window).on("scroll", function () {
 var titleElements = document.querySelectorAll(".item_card_title");
 
 titleElements.forEach(function (titleElement) {
-    var titleText = titleElement.textContent;
+    var titleText = titleElement.textContent.trim();
+    var titleWords = titleText.split(" ");
+    var isLongTitle = false;
 
-    if (titleText.length >= 17) {
+    titleWords.forEach(function (word) {
+        if (word.length >= 17) {
+            isLongTitle = true;
+        }
+    });
+
+    if (isLongTitle) {
         titleElement.style.fontSize = "14px";
+    } else {
+        titleElement.style.fontSize = "16px";
     }
 });
