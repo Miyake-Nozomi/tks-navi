@@ -66,7 +66,6 @@ $the_query = new WP_Query($args);
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                 ?>
 
-        <?php if ($paged != 1): ?>
         <div class="page_nav flex">
             <?php
                     global $wp_rewrite;
@@ -89,11 +88,7 @@ $the_query = new WP_Query($args);
                         'next_text' => '<div class="page_triangle_right"></div>',
                     ));
                 ?>
-
-            <?php //original_pagenation(); ?>
-
         </div>
-        <?php endif ?>
 
     </div>
 </main>

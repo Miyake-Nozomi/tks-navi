@@ -1200,7 +1200,7 @@ hr {
     }
     .banner {
         width: 100%;
-        gap: calc(50% - 330px);
+        gap: calc(50% - 340px);
         row-gap: 50px;
     }
 }
