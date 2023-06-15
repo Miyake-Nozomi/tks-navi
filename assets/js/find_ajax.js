@@ -6,6 +6,14 @@ $(".search_form").submit(function (e) {
     // $(".submit_btn").click(function (event) {
     e.stopPropagation();
 
+    // ローディング要素を表示
+    $(document).ajaxSend(function () {
+        $(".searcharea").append(
+            '<div class="overlay"><div class="cv-spinner"><span class="spinner"></span></div><div class="logo"></div></div>'
+        );
+        $(".overlay").fadeIn(300);
+    });
+
     let area = [];
     $("[name='area[]']:checked").each(function () {
         area.push(this.value);
@@ -54,6 +62,9 @@ $(".search_form").submit(function (e) {
         })
         .always(function (response) {
             // console.log("完了");
+            // ローディング要素を非表示にする
+            $(".searcharea .loading").remove();
+
             var position = $(".searcharea").offset().top - 150;
             $("html,body").animate(
                 {
@@ -95,15 +106,6 @@ $(document).on("click", ".page-numbers", function (e) {
         document.querySelector(".my-element").dataset.learning_support;
     let volunteer = document.querySelector(".my-element").dataset.volunteer;
 
-    // console.log(area);
-    // console.log(child_price);
-    // console.log(adult_price);
-    // console.log(person);
-    // console.log(parking);
-    // console.log(food_pantry);
-    // console.log(learning_support);
-    // console.log(volunteer);
-
     // Ajaxリクエストを送信
     $.ajax({
         type: "get",
@@ -126,8 +128,6 @@ $(document).on("click", ".page-numbers", function (e) {
         .done(function (data) {
             // console.log("成功:", data);
             $(".searcharea").html(data);
-            // console.log("元の現在ページは", current_page);
-            // console.log("現在ページは", show_page);
             //カードUI内で食堂名が長くなった時に折り返さないようにする
             var titleElements = document.querySelectorAll(".item_card_title");
 
