@@ -63,9 +63,20 @@
     margin: 15px 0;
 }
 
-.cafeinfo_flex {
+.cafeinfo_flex a {
     text-decoration: underline;
-    text-decoration-color: #c0c0c0;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: gray;
+    text-underline-offset: 5px;
+}
+
+.cafeinfo_flex a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #f8b600;
+    text-underline-offset: 5px;
 }
 
 /* 最後のコンテンツを左寄せにする指定 */
