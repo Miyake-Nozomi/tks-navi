@@ -453,21 +453,24 @@ body.fixed {
     }
 
     .hbg_form {
-        /* width: 140px; */
-        font-size: 12px;
-        /* margin-right: 40px; */
-        width: 110px;
-        margin: 10px;
+        font-size: 11px;
+        width: 115px;
+        padding: 3px;
+    }
+
+    /* Safariブラウザ用のスタイル */
+    @supports (-webkit-touch-callout: none) {
+        /* Safariブラウザのみで適用されるスタイル */
+        .hbg_form {
+            font-size: 11px;
+        }
     }
 
     .hbg_submit_pc {
         background: url(../images/serch.svg) no-repeat center center / auto 100%;
         width: 16px;
         height: 16px;
-        margin-right: 10px;
-        /* position: absolute; */
-        /* right: 10px; */
-        /* top: 11px; */
+        margin-right: 9px;
     }
 
     .btn_header_pc_1 {
