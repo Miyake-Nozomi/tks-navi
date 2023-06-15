@@ -9,10 +9,11 @@ $keywords = $_GET['s'];
 }
 
 $args = array(
-'post_type' => array('page','cafeinfo','interview','event') ,
+'post_type' => array('page','cafeinfo','interview') ,
 'posts_per_page' => 6,
 'paged' => get_query_var('paged'), //何ページ目の情報を表示すれば良いか
 'post_status' => 'publish', // 公開された投稿を指定
+'post__not_in' => array(774), // お問い合わせ完了ページを除外
 's' => $keywords,
     // 'relation' => 'OR',
     //     array(
@@ -88,7 +89,7 @@ new WP_Query($wp_query);
                         <?php if(!empty($eye_catching)): ?>
                         <img src="<?php echo $eye_catching; ?>" alt="<?php echo $image_alt; ?>">
                         <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noimage/logo_eye_catch.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_act.png" alt="">
                         <?php endif; ?>
                         <p class="item_card_title">
                             <?php the_title(); ?>
@@ -97,8 +98,10 @@ new WP_Query($wp_query);
                             <?php $this_terms = get_the_terms($post->ID,'area');?>
                             <?php if(!empty($this_terms)): ?>
                             <?php echo $this_terms[1]->name; ?>
+                            <?php elseif(get_post_type() =='interview'): ?>
+                            <?php echo '特集記事'; ?>
                             <?php else: ?>
-                            <?php echo ' '; ?>
+                            <?php echo 'サイト内ページ'; ?>
                             <?php endif; ?>
                         </p>
                         <p class="item_card_text">
@@ -133,7 +136,7 @@ new WP_Query($wp_query);
                             <?php elseif (get_post_type() =='interview'): ?>
                             <?php $excerpt = get_field('excerpt');
                                 //40文字にする
-                                if(mb_strlen($excerpt) > 40) {
+                                if(mb_strlen($excerpt) >= 40) {
                                     $excerpt = mb_substr($excerpt,0,40);
                                     echo $excerpt . '・・・' ;
                                 } else {
