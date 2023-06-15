@@ -312,8 +312,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     gap: 15px;
+    margin-top: 50px;
 }
 
 @media (min-width: 770px) {
@@ -328,26 +328,21 @@
     }
 
     .searcharea_item {
+        width: 660px;
         max-width: 1024px;
-        margin: 80px auto 80px;
+        margin: 70px auto;
         align-content: space-between;
         justify-content: flex-start;
         gap: 20px;
         flex-wrap: wrap;
     }
-    /* .searcharea_item:after {
-        content: "";
-        width: 341px;
-        margin-top: 20px;
-        color: aliceblue;
-        /* background-color: #f44336; */
 }
 
-/* .searcharea_item_card::before {
-        content: "";
-        width: 287px;
-        height: 50px;
-    } */
+@media (min-width: 1000px) {
+    .searcharea_item {
+        width: 100%;
+    }
+}
 
 /* 検索が引っ掛からなかった時 */
 
