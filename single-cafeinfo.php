@@ -175,10 +175,10 @@ if (!empty(get_field('note'))) {
 }
 
 //連絡先・SNSなど
-$infos = array();
+// $infos = array();
 
 if (!empty(get_field('staff'))) {
-    $infos['担当者'] = get_field('staff');
+    $staff = get_field('staff');
 }
 
 if (!empty(get_field('tel'))) {
@@ -404,11 +404,18 @@ $the_query = new WP_Query($args);
                             <h4>連絡先</h4>
                         </td>
                         <td class="text text_single">
+                            <p>
+                                担当者:<br />
+                                <?php echo $staff; ?>
+                            </p>
+
                             <?php if (!empty($tel)) : ?>
                             <p>
                                 電話番号:<br />
                                 <?php echo $tel; ?>
                             </p>
+                            <?php endif; ?>
+                            <?php if (!empty($staff)) : ?>
                             <?php endif; ?>
                             <?php if (!empty($email)) : ?>
                             <p>
