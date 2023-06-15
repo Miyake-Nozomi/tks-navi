@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <?php
-$cat = get_the_category();
-$cat = $cat[0];
+$categories = get_categories();
 ?>
 <main>
     <div class="main_inner">
@@ -13,8 +12,13 @@ $cat = $cat[0];
                     <div class="title">
                         <h2 class="title_text post_title"><?php the_title(); ?></h2>
                     </div>
-                    <div class="tag_box">
-                        <p class="category_tag"><?php echo $cat->cat_name; ?></p>
+                    <div class="tag_box flex">
+
+                        <?php
+                            foreach ($categories as $category) {
+                            echo '<p class="category_tag">'.$category->name.'</p>';
+                            }
+                        ?>
                     </div>
                 </div>
                 <div class="text">
@@ -51,7 +55,7 @@ $cat = $cat[0];
                         <?php //original_pagenation(); ?>
 
                     </div>
-                    <?php endif ?>
+                    <?php endif; ?>
 
                 </div>
                 <div class="btn_item">
