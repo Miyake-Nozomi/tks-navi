@@ -209,3 +209,41 @@
         padding: 20px 25px;
     }
 }
+
+/* 記事内のCSS */
+
+.has-inline-color {
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: #d7f794;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+}
+.text a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: gray;
+    text-underline-offset: 5px;
+}
+.text a:hover {
+    color: #f8b600;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #f8b600;
+    text-underline-offset: 5px;
+}
+.wp-block-image img {
+    margin-top: 20px;
+}
+
+.has-inline-color:not(:first-child) {
+    margin-top: 40px;
+}
+
+p + p {
+    margin-top: 10px;
+}
