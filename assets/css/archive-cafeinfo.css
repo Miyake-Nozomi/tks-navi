@@ -72,6 +72,7 @@
 }
 
 .cafeinfo_flex a:hover {
+    color: #f8b600;
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 1px;
@@ -113,11 +114,11 @@
 
     /* ホバーアクション */
 
-    .cafeinfo_flex {
+    /* .cafeinfo_flex {
         text-decoration: none;
-    }
+    } */
 
-    .cafeinfo_flex p:hover {
+    /* .cafeinfo_flex p:hover {
         color: #f8b600;
-    }
+    } */
 }

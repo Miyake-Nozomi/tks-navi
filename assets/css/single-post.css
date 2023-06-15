@@ -225,6 +225,7 @@
     text-decoration-color: #d7f794;
     text-decoration-thickness: 5px;
     text-underline-offset: 5px;
+    display: inline-block;
 }
 .text a {
     text-decoration: underline;
@@ -246,9 +247,13 @@
 }
 
 .has-inline-color:not(:first-child) {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 p + p {
+    margin-top: 10px;
+}
+
+.wp-block-image img + p {
     margin-top: 10px;
 }
