@@ -170,6 +170,11 @@
 }
 
 @media screen and (min-width: 770px) {
+    .text_inner {
+        max-width: 700px;
+        padding: unset;
+    }
+
     .tab_hover01:hover {
         height: 55px;
         background-color: #fcc800;
