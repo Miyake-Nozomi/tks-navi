@@ -8,6 +8,7 @@ $(".search_form").submit(function (e) {
 
     // ローディング要素を表示
     $(document).ajaxSend(function () {
+        $(".overlay").remove();
         $(".searcharea").append(
             '<div class="overlay"><div class="cv-spinner"><span class="spinner"></span></div><div class="logo"></div></div>'
         );
@@ -63,7 +64,7 @@ $(".search_form").submit(function (e) {
         .always(function (response) {
             // console.log("完了");
             // ローディング要素を非表示にする
-            $(".searcharea .loading").remove();
+            // $(".searcharea .loading").remove();
 
             var position = $(".searcharea").offset().top - 150;
             $("html,body").animate(
