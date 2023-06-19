@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <?php
-$cat = get_the_category();
-$cat = $cat[0];
+$current_url = $_SERVER['REQUEST_URI'];
+$current_slug = basename($current_url);
+
+$categories = get_categories();
 ?>
 
 <main>
@@ -11,7 +13,14 @@ $cat = $cat[0];
         <section class="section_inner">
             <div class="title">
                 <h2 class="title_text">
-                    <?php echo $cat->cat_name .'記事一覧'; ?>
+                    <?php
+                        foreach ($categories as $category) {
+                            if ($category->slug === $current_slug) {
+                                echo $category->name . '記事一覧';
+                                break;
+                            }
+                        }
+                    ?>
                 </h2>
             </div>
             <div class="news_flex">

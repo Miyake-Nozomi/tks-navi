@@ -232,7 +232,7 @@ $counter = 0;
                 &emsp;&emsp;食べるんじょ！
             </h2>
             <div class="kv_news text_border">
-                <p class="kv_news_title">おしらせ</p>
+                <p class="kv_news_title"><nobr>おしらせ</nobr></p>
                 <?php if ($the_query->have_posts()) : ?>
                 <?php while($the_query->have_posts()) : ?>
                 <?php $the_query->the_post(); ?>
