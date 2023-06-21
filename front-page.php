@@ -652,17 +652,21 @@ $counter = 0;
                     <?php if ($sponsor_query->have_posts()) : ?>
                     <div class="admin_slide">
                         <?php $counter = 0; // カウンターをリセット ?>
-                        <?php while ($sponsor_query->have_posts()) : $sponsor_query->the_post(); ?>
+                        <?php while ($sponsor_query->have_posts()) : ?>
+                        <?php $sponsor_query->the_post(); ?>
                         <?php $counter++; ?>
                         <div class="slick-row flex">
                             <!-- 奇数番目 -->
+                            <?php if ($counter % 2 != 0) : ?>
                             <div class="admin_slider slick-column flex">
                                 <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
                                     <img src="<?php echo the_field('s_img'); ?>" alt="">
                                 </a>
+                                <?php endif; ?>
+                                <?php $counter++; ?>
+                                <!-- 偶数番目 -->
                                 <?php if ($counter % 2 === 0 && $sponsor_query->current_post + 1 < $sponsor_query->post_count) : ?>
                                 <?php $sponsor_query->the_post(); // 次の記事を取得 ?>
-                                <!-- 偶数番目 -->
                                 <a href="<?php the_field('s_url'); ?>" target="_blank" rel="noopener noreferrer">
                                     <img src="<?php echo the_field('s_img'); ?>" alt="">
                                 </a>

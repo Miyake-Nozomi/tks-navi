@@ -1169,7 +1169,7 @@ hr {
 .admin_slide .slick-track {
     height: 240px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .slick-row {
@@ -1178,7 +1178,7 @@ hr {
 
 .slick-column {
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     gap: 50px;
 }
